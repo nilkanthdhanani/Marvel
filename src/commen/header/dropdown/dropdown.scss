@@ -1,0 +1,346 @@
+@import "../../../styles/index.scss";
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: var(--color-white);
+    box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    padding: 20px 0;
+    z-index: 9;
+    font-family: var(--font-family-condensed);
+    color: var(--bgcolor-sidebar);
+
+    .drop-links {
+        @include flex-center;
+        gap: 25px;
+
+        a {
+            @include font12;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: var(--bgcolor-sidebar);
+
+            &:hover {
+                color: var(--font-color3);
+            }
+        }
+    }
+
+    .drop-links2 {
+        padding: 125px 0;
+        @include flex-center;
+        gap: 60px;
+
+        a {
+            @include font26b;
+            color: var(--bgcolor-sidebar);
+
+            &:hover {
+                color: var(--font-color3);
+            }
+        }
+    }
+
+    h2 {
+        margin: 30px 0;
+        text-align: center;
+        @include font34;
+    }
+
+    .drop-grid {
+        @include grid4c;
+
+        .drop-grid-div {
+            margin: 0 10px;
+            cursor: pointer;
+
+            .drop-drid-image {
+                position: relative;
+
+                .watch-svg {
+                    position: absolute;
+                    top: calc(50% - 15px);
+                    left: calc(50% - 15px);
+                    background-color: rgba(255, 255, 255, 0.7);
+                    width: 30px;
+                    aspect-ratio: 1/ 1;
+                    @include flex-center;
+                }
+
+                .time-pera {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    padding: 0 7px;
+                    background-color: var(--bgcolor-sidebar);
+
+                    p {
+                        @include font12;
+                        font-weight: 800;
+                        color: var(--color-white);
+                    }
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(255, 255, 255, 0.1);
+                    transition: 0.3s ease-in-out;
+                    opacity: 0;
+                }
+
+                &:hover {
+                    .watch-svg {
+                        background-color: var(--color-white);
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    min-height: 135px;
+                    object-fit: cover;
+                }
+            }
+
+            .drop-grid-text {
+                padding: 20px 30px 0 0;
+
+                h4 {
+                    @include font14;
+                    font-weight: 700;
+                    color: var(--bgcolor2);
+                    margin-bottom: 8px;
+                }
+
+                p {
+                    @include font15b;
+                    color: var(--bgcolor-sidebar);
+
+                    &:hover {
+                        color: var(--font-color3);
+                    }
+                }
+            }
+
+            &:hover {
+                .drop-drid-image {
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .drop-grid2 {
+        @include grid6c;
+        margin-bottom: 20px;
+
+        .drop-grid2-div {
+            margin: 0 9px;
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                transition: 0.2s ease-in-out;
+            }
+
+            .drop-grid2-text {
+                padding: 13px 0 0 0;
+
+                h4 {
+                    @include font12;
+                    font-weight: 700;
+                    color: var(--bgcolor2);
+                    margin-top: 5px;
+                }
+
+                p {
+                    @include font15b;
+                    letter-spacing: 0.5px;
+                    color: var(--bgcolor-sidebar);
+                }
+            }
+
+            &:hover {
+                img {
+                    transform: translateY(-5px);
+                    transition: 0.2s ease-in-out;
+                }
+                .drop-grid2-text {
+                    p {
+                        color: var(--font-color3);
+                    }
+                }
+            }
+        }
+    }
+
+    .drop-grid3 {
+        @include grid6c;
+        padding-bottom: 20px;
+
+        .drop-grid3-div {
+            margin: 0 9px;
+            cursor: pointer;
+
+            .drop-grid3-image {
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    min-height: 185px;
+                    object-fit: cover;
+                    transition: 0.2s ease-in-out;
+                }
+            }
+
+            .drop-grid3-text {
+                padding: 16px 24px 17px 20px;
+                background-color: var(--bgcolor-sidebar);
+                min-height: 145px;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 4px;
+                    background-color: var(--font-color3);
+                    transition: 0.3s ease-in-out;
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 0;
+                    height: 0;
+                    z-index: 1;
+                    border-bottom: 12px solid var(--color-white);
+                    border-left: 12px solid transparent;
+                    transition: 0.3s ease-in-out;
+                }
+
+                h4 {
+                    z-index: 1;
+                    @include font16;
+                    font-weight: 700;
+                    letter-spacing: 0.5px;
+                    color: var(--color-white);
+                    margin-top: 5px;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    z-index: 1;
+                    text-transform: uppercase;
+                    @include font12;
+                    font-weight: 500;
+                    letter-spacing: 0.5px;
+                    color: var(--font-color5);
+                    transition: 0.2s ease-in-out;
+                }
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.05);
+                    transition: 0.2s ease-in-out;
+                }
+                .drop-grid3-text {
+                    &::after {
+                        height: 100%;
+                    }
+                    p {
+                        color: var(--color-white);
+                        transition: 0.2s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+
+    .drop-grid8 {
+        padding: 0 40px 0 20px;
+        @include grid3c;
+        gap: 10px;
+
+        .drop-grid8-box1 {
+            @include grid5c;
+
+            svg {
+                margin: 10px 15px;
+                fill: var(--bgcolor2);
+                cursor: pointer;
+
+                &:hover {
+                    fill: var(--color-black);
+                    transition: 0.3s ease-in-out;
+                }
+            }
+        }
+
+        .drop-grid8-box2 {
+            .insider-links {
+                display: flex;
+                gap: 10px;
+
+                h5 {
+                    @include font14;
+                    color: var(--color-black);
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                    text-align: center;
+                    margin: 20px 0 5px 0;
+                }
+
+                p {
+                    @include font14;
+                    color: var(--bgcolor2);
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    .drop-links-last {
+        margin-top: 26px;
+        @include flex-center;
+        gap: 20px;
+
+        h3 {
+            @include font12;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: var(--font-color4);
+        }
+
+        a {
+            @include font12;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: var(--bgcolor-sidebar);
+
+            &:hover {
+                color: var(--font-color3);
+            }
+        }
+    }
+}

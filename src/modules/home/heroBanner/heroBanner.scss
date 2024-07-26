@@ -1,0 +1,202 @@
+@import "../../../styles/index.scss";
+
+.hero-banner-main {
+    position: relative;
+    background-color: var(--color-white);
+    overflow: hidden;
+
+    @include breakpoint("lg-max") {
+        display: none;
+    }
+
+    .hero-banner-wrapper {
+        display: flex;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .hero-banner {
+        width: 100%;
+        height: 65vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        clip-path: polygon(0 0, 0 100%, 100% 92%, 100% 0);
+        flex-shrink: 0;
+        position: relative;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+
+        @media (max-width: 1280px) {
+            height: 70vh;
+        }
+
+        .banner-main {
+            height: 100%;
+            width: 100%;
+            position: relative;
+
+            .containerH {
+                position: relative;
+                z-index: 3;
+                height: 100%;
+
+                .banner-content {
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    color: var(--color-white);
+                    padding-bottom: 20px;
+
+                    .banner-content-div {
+                        h1 {
+                            @include font44;
+                            color: var(--color-white);
+                            max-width: 680px;
+                            margin: 20px 0;
+                            text-transform: uppercase;
+                        }
+
+                        p {
+                            margin-bottom: 20px;
+                            @include font16;
+                            letter-spacing: 0.5px;
+                            line-height: 1.3;
+                            max-width: 650px;
+                            color: var(--color-white);
+                        }
+
+                        .sale-div {
+                            position: relative;
+                            @include font16;
+                            font-weight: 600;
+                            margin: 35px 0 40px 0;
+
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                top: -6px;
+                                left: 55px;
+                                width: 30px;
+                                height: 2px;
+                                display: block;
+                                transform-origin: left bottom;
+                                background-color: #c6a972;
+                                transform: rotate(-45deg) skewX(45deg);
+                            }
+
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                bottom: -5px;
+                                left: 0;
+                                width: 30px;
+                                height: 2px;
+                                display: block;
+                                transform-origin: right top;
+                                background-color: #c6a972;
+                                transform: rotate(-45deg) skewX(45deg);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .banner-main-blur {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: 2;
+                background: rgb(0, 0, 0);
+                background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0) 100%);
+            }
+        }
+
+        &.active {
+            opacity: 1;
+            transition-delay: 0.2s;
+        }
+    }
+
+    .banner1 {
+        background-image: url("../../../assets/images/jpg/herobanner1.jpg");
+    }
+
+    .banner2 {
+        background-image: url("../../../assets/images/jpg/herobanner2.jpg");
+    }
+
+    .banner3 {
+        background-image: url("../../../assets/images/jpg/herobanner3.jpg");
+    }
+
+    .banner4 {
+        background-image: url("../../../assets/images/jpg/herobanner4.jpg");
+    }
+
+    .banner5 {
+        background-image: url("../../../assets/images/jpg/herobanner5.jpg");
+    }
+
+    .hero-banner-batch {
+        position: relative;
+        margin-top: -50px;
+
+        .batch-main {
+            @include flex-between;
+
+            .hero-banner-batch-div {
+                width: 80%;
+                padding: 0 20px;
+                background-color: var(--color-white);
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                @include grid5c;
+
+                .batch-box {
+                    padding: 20px 30px 20px 0;
+                    position: relative;
+                    cursor: pointer;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 0%;
+                        height: 6px;
+                        background-color: var(--font-color3);
+                    }
+
+                    &.active::after {
+                        width: 100%;
+                        transition: 6s ease-in-out;
+                    }
+
+                    h2 {
+                        @include font14;
+                        font-weight: 700;
+                        letter-spacing: 0.5px;
+                        color: var(--color-black);
+                    }
+                }
+            }
+
+            .social-links {
+                padding: 30px 10px 10px 10px;
+                @include flex-between;
+                gap: 15px;
+
+                svg {
+                    fill: var(--bgcolor2);
+                    cursor: pointer;
+
+                    &:hover {
+                        fill: var(--color-black);
+                        transition: 0.3s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}

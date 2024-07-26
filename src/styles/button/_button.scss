@@ -1,0 +1,86 @@
+.banner-content-button {
+    @include flex;
+    gap: 20px;
+
+    button {
+        padding: 16px 0;
+        border: none;
+        background-color: transparent;
+        color: var(--color-white);
+        @include font14;
+        font-weight: 600;
+        cursor: pointer;
+        position: relative;
+
+        span {
+            padding: 0 35px 1px 35px;
+            background-color: var(--font-color3);
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: calc(100% - 16px);
+            padding: 8px 0;
+            top: 0;
+            left: 0;
+            margin-left: 16px;
+            background-color: var(--font-color3);
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: calc(100% - 16px);
+            padding: 8px 0;
+            bottom: 0;
+            left: 0;
+            margin-right: 16px;
+            background-color: var(--font-color3);
+        }
+
+        .inner-cut {
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 0;
+                height: 0;
+                border-bottom: 17px solid var(--font-color3);
+                border-left: 17px solid transparent;
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                height: 0;
+                height: 0;
+                border-top: 16px solid var(--font-color3);
+                border-right: 17px solid transparent;
+            }
+        }
+
+        &:hover {
+            &::after {
+                background-color: var(--bgcolor3);
+            }
+            &::before {
+                background-color: var(--bgcolor3);
+            }
+            span {
+                background-color: var(--bgcolor3);
+            }
+            .inner-cut {
+                &::after {
+                    border-bottom: 16px solid var(--bgcolor3);
+                }
+                &::before {
+                    border-top: 16px solid var(--bgcolor3);
+                }
+            }
+        }
+    }
+}

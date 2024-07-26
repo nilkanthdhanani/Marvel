@@ -1,0 +1,22 @@
+@import '../../styles/index.scss';
+
+.disney {
+    background-color: var(--bgcolor-sidebar);
+    @include flex-center;
+
+    .disney-div {
+        @include flex;
+        gap: 10px;
+
+        p {
+            @include font14;
+            color: var(--color-white);
+            letter-spacing: 0.5px;
+            font-family: var(--font-family-condensed);
+        }
+
+        img {
+            width: 57px;
+        }
+    }
+}

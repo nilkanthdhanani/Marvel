@@ -1,0 +1,227 @@
+@import "../../styles/index.scss";
+
+body.sidebar-open {
+    overflow: hidden;
+}
+
+header {
+    background: var(--bgcolor-header);
+    font-family: var(--font-family-condensed);
+    position: sticky;
+    width: 100%;
+    z-index: 999;
+    transition: top 0.3s ease;
+
+    &.scroll-up {
+        top: 0;
+    }
+
+    &.scroll-down {
+        top: -100px;
+    }
+
+    .header-first {
+        border-bottom: 1px solid var(--border-color-header);
+        position: relative;
+
+        @include breakpoint("lg-max") {
+            border: none;
+        }
+
+        .logo {
+            position: absolute;
+            top: 0;
+            left: calc(50% - 65px);
+            img {
+                width: 130px;
+                cursor: pointer;
+            }
+        }
+
+        .header-main {
+            border-left: 1px solid var(--border-color-header);
+            border-right: 1px solid var(--border-color-header);
+            @include flex-between;
+
+            @include breakpoint("lg-max") {
+                border: none;
+            }
+
+            .header-main1 {
+                border-right: 1px solid var(--border-color-header);
+                padding: 0 25px;
+                min-height: 52px;
+                @include flex;
+
+                @include breakpoint("lg-max") {
+                    border: none;
+                    padding: 0 10px;
+                }
+
+                .header-main1-div {
+                    @include flex;
+                    height: 100%;
+                    gap: 8px;
+                    svg {
+                        width: 20px;
+                        fill: var(--color-white);
+                        cursor: pointer;
+                    }
+
+                    a {
+                        @include font12;
+                        font-weight: 700;
+                        line-height: 15px;
+                        letter-spacing: 1px;
+                        color: var(--color-white);
+                    }
+
+                    span {
+                        margin: 0 1px;
+                        @include font12;
+                        font-weight: 800;
+                        color: var(--color-white);
+                    }
+
+                    @include breakpoint("lg-max") {
+                        display: none;
+                    }
+                }
+
+                .header-main1-menu {
+                    display: none;
+                    max-height: 16px;
+
+                    @include breakpoint("lg-max") {
+                        display: block;
+                    }
+
+                    svg {
+                        fill: var(--color-white);
+                        cursor: pointer;
+                    }
+                }
+            }
+            .header-main2 {
+                @include flex;
+
+                .header-main2-div1 {
+                    border-left: 1px solid var(--border-color-header);
+                    border-right: 1px solid var(--border-color-header);
+                    @include flex;
+                    gap: 10px;
+                    min-height: 52px;
+                    padding: 0 15px;
+                    cursor: pointer;
+
+                    @include breakpoint("lg-max") {
+                        display: none;
+                    }
+
+                    img {
+                        width: 22px;
+                    }
+
+                    .unlimited-text {
+                        color: var(--color-white);
+                        p,
+                        span {
+                            display: block;
+                            text-align: center;
+                            @include font12;
+                            font-weight: 700;
+                            letter-spacing: 1px;
+                            color: var(--color-white);
+                        }
+                        span {
+                            font-size: 10px;
+                        }
+                    }
+                }
+                .header-main2-div2 {
+                    padding: 0 15px;
+                    max-height: 17px;
+
+                    @include breakpoint("lg-max") {
+                        padding: 0 10px;
+                    }
+
+                    svg {
+                        stroke: var(--color-white);
+                        fill: transparent;
+                        stroke-width: 2px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .header-second {
+        @include breakpoint("lg-max") {
+            display: none;
+        }
+        .header-second-ancer {
+            @include flex-center;
+
+            .header-second-hover {
+                @include flex-center;
+
+                li {
+                    list-style: none;
+
+                    .ancer-link {
+                        a {
+                            display: block;
+                            padding: 12px 18px;
+                            @include font12;
+                            font-weight: 700;
+                            line-height: 16px;
+                            letter-spacing: 1px;
+                            color: var(--color-white);
+                            transition: color 0.3s ease;
+                            position: relative;
+                            display: flex;
+                            justify-content: center;
+
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                bottom: 0;
+                                height: 2px;
+                                width: calc(100% - 36px);
+                                background-color: var(--font-color3);
+                                opacity: 0;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        .dropdown {
+                            visibility: visible;
+                            opacity: 1;
+                            transition: 0.3s ease-in-out;
+                        }
+                        .ancer-link {
+                            a {
+                                color: var(--color-white) !important;
+                                &::after {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    li {
+                        .ancer-link {
+                            a {
+                                color: gray;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

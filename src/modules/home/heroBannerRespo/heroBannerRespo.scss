@@ -1,0 +1,14 @@
+@import "../../../styles/index.scss";
+
+.hero-respo-main {
+    display: none;
+    @include breakpoint("lg-max") {
+        display: block;
+    }
+    .hero-respo-image {
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
