@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import './heroBanner.scss';
 import Facebook from '../../../assets/images/svg/sidebarIcon/facebook';
 import Twitter from '../../../assets/images/svg/sidebarIcon/twitter';
@@ -113,16 +113,18 @@ export default function HeroBanner() {
         },
     ];
 
-    useEffect(() => {
-        return () => clearInterval(intervalRef.current);
-    }, [banners.length]);
-
-    const startInterval = () => {
+    const startInterval = useCallback(() => {
         clearInterval(intervalRef.current);
         intervalRef.current = setInterval(() => {
             setCurrentBanner((prev) => (prev + 1) % banners.length);
         }, 5000);
-    };
+    }, [banners.length]);
+
+    useEffect(() => {
+        startInterval();
+
+        return () => clearInterval(intervalRef.current);
+    }, [banners.length, startInterval]);
 
     const handleBatchClick = (index) => {
         clearInterval(intervalRef.current);
@@ -132,6 +134,7 @@ export default function HeroBanner() {
             startInterval();
         }, 10000);
     };
+
 
     return (
         <>
