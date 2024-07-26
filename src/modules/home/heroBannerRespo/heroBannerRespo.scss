@@ -36,6 +36,10 @@
             @include breakpoint("sm-max") {
                 padding: 50px 20px 20px 20px;
             }
+            
+            @media (max-width: 380px) {
+                min-height: 450px;
+            }
 
             .hero-respo-track {
                 position: absolute;
@@ -52,11 +56,11 @@
                     display: block;
                     background-color: var(--bgcolor4);
                     cursor: pointer;
-                    
+
                     &:hover {
                         background-color: var(--font-color3);
                     }
-                    
+
                     &.active {
                         background-color: var(--font-color3);
                     }
@@ -85,5 +89,35 @@
             }
         }
     }
-}
 
+    .follow-link {
+        @include flex-between;
+        background-color: var(--color-white);
+        padding: 15px 20px 10px 20px;
+
+        span {
+            color: var(--bgcolor2);
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .follow-link-div {
+            @include flex;
+            gap: 15px;
+
+            a {
+                max-height: 18px;
+                
+                svg {
+                    fill: var(--bgcolor2);
+                    cursor: pointer;
+
+                    &:hover {
+                        fill: var(--color-black);
+                        transition: 0.3s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}

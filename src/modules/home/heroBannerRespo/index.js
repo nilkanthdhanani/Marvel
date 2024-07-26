@@ -2,6 +2,11 @@ import React, { useState, useEffect, useCallback } from 'react';
 import './heroBannerRespo.scss';
 import { heroR1, heroR2, heroR3, heroR4, heroR5 } from '../../../assets/images/jpg';
 import { herobanner5logo } from '../../../assets/images/png';
+import Facebook from '../../../assets/images/svg/sidebarIcon/facebook';
+import Twitter from '../../../assets/images/svg/sidebarIcon/twitter';
+import Instagram from '../../../assets/images/svg/sidebarIcon/instagram';
+import Twitch from '../../../assets/images/svg/sidebarIcon/twitch';
+import Tiktok from '../../../assets/images/svg/sidebarIcon/tiktok';
 
 const banners = [
   {
@@ -110,6 +115,16 @@ export default function HeroBannerRespo() {
           </div>
         </div>
       ))}
+      <div className="follow-link">
+        <span>FOLLOW</span>
+        <div className="follow-link-div">
+          <a href="https://www.facebook.com/Marvel/" target='blank'><Facebook /></a>
+          <a href="https://x.com/Marvel" target='blank'><Twitter /></a>
+          <a href="https://www.instagram.com/marvel/" target='blank'><Instagram /></a>
+          <a href="https://www.twitch.tv/Marvel" target='blank'><Twitch /></a>
+          <a href="https://www.tiktok.com/@marvel" target='blank'><Tiktok /></a>
+        </div>
+      </div>
     </div>
   );
 }
