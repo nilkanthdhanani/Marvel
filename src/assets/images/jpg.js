@@ -30,12 +30,13 @@ import drop7img1 from './jpg/drop7img1.jpg';
 import drop7img2 from './jpg/drop7img2.jpg';
 import drop7img3 from './jpg/drop7img3.jpg';
 import drop7img4 from './jpg/drop7img4.jpg';
-import herobanner1 from './jpg/herobanner1.jpg';
-import herobanner2 from './jpg/herobanner2.jpg';
-import herobanner3 from './jpg/herobanner3.jpg';
-import herobanner4 from './jpg/herobanner4.jpg';
-import herobanner5 from './jpg/herobanner5.jpg';
+import heroR1 from './jpg/heroR1.jpg';
+import heroR2 from './jpg/heroR2.jpg';
+import heroR3 from './jpg/heroR3.jpg';
+import heroR4 from './jpg/heroR4.jpg';
+import heroR5 from './jpg/heroR5.jpg';
 
 export {
-  drop1img1, drop1img2, drop1img3, drop1img4, drop2img1, drop2img2, drop2img3, drop2img4, drop2img5, drop2img6, drop3img4, drop4img1, drop4img2, drop4img3, drop4img4, drop4img5, drop4img6, drop5img6, drop5img1, drop5img2, drop5img3, drop5img4, drop5img5, drop6img1, drop6img2, drop6img3, drop6img4, drop6img5, drop7img1, drop7img2, drop7img3, drop7img4,herobanner1, herobanner2, herobanner3, herobanner4, herobanner5
+  drop1img1, drop1img2, drop1img3, drop1img4, drop2img1, drop2img2, drop2img3, drop2img4, drop2img5, drop2img6, drop3img4, drop4img1, drop4img2, drop4img3, drop4img4, drop4img5, drop4img6, drop5img6, drop5img1, drop5img2, drop5img3, drop5img4, drop5img5, drop6img1, drop6img2, drop6img3, drop6img4, drop6img5, drop7img1, drop7img2, drop7img3, drop7img4,
+  heroR1, heroR2, heroR3, heroR4, heroR5
 };

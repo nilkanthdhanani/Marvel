@@ -9,12 +9,12 @@ export default function Home() {
     <>
       <div className="disney">
         <div className="disney-div">
-          <p href="/">STREAM X-MEN '97 EXCLUSIVELY ON </p>
+          <p href="/">STREAM X-MEN '97 <span>EXCLUSIVELY</span> ON </p>
           <img src={disney} alt="disney" />
         </div>
       </div>
-      <HeroBanner/>
-      <HeroBannerRespo/>
+      <HeroBanner />
+      <HeroBannerRespo />
     </>
   )
 }

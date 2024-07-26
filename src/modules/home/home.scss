@@ -1,4 +1,4 @@
-@import '../../styles/index.scss';
+@import "../../styles/index.scss";
 
 .disney {
     background-color: var(--bgcolor-sidebar);
@@ -13,6 +13,12 @@
             color: var(--color-white);
             letter-spacing: 0.5px;
             font-family: var(--font-family-condensed);
+
+            @include breakpoint("sm-max") {
+                span {
+                    display: none;
+                }
+            }
         }
 
         img {

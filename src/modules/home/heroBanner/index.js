@@ -103,7 +103,7 @@ export default function HeroBanner() {
                         <p>Celebrate the release of Marvel Studios' 'Deadpool & Wolverine' with an Infinity Comics takeover. Read over 50 issues featuring the best buds for free!</p>
                         <div className="banner-content-button">
                             <button>
-                                <span>READ MORE</span>
+                                <span>READ NOW</span>
                                 <div className="inner-cut"></div>
                             </button>
                         </div>
