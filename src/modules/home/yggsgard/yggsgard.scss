@@ -1,0 +1,225 @@
+@import "../../../styles/index.scss";
+
+.yggsgard {
+    padding: 50px 0;
+
+    .yggsgard-main {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            right: 1px;
+            width: 2px;
+            height: 100%;
+            background-color: var(--border-color);
+        }
+
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--font-color3);
+            cursor: pointer;
+        }
+
+        .yggsgard-div1 {
+            .yggsgard-div1-image {
+                position: relative;
+                box-shadow: 0 35px 54px -25px rgba(0, 0, 0, 0.4);
+
+                .watch-svg {
+                    position: absolute;
+                    top: calc(50% - 30px);
+                    left: calc(50% - 30px);
+                    background-color: var(--color-white);
+                    width: 60px;
+                    aspect-ratio: 1/ 1;
+                    @include flex-center;
+                    transition: 0.3s ease-in-out;
+
+                    svg {
+                        width: 20px;
+                        fill: var(--font-color3);
+                    }
+                }
+
+                .time-pera {
+                    position: absolute;
+                    bottom: 15px;
+                    right: 20px;
+                    padding: 8px 10px 5px 10px;
+                    background-color: rgba(21, 21, 21, 0.6);
+
+                    p {
+                        @include font12;
+                        letter-spacing: 1px;
+                        font-weight: 600;
+                        color: var(--color-white);
+                    }
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(255, 255, 255, 0.1);
+                    transition: 0.3s ease-in-out;
+                    opacity: 0;
+                }
+
+                &:hover {
+                    .watch-svg {
+                        background-color: var(--font-color3);
+                        transition: 0.3s ease-in-out;
+
+                        svg {
+                            fill: var(--color-white);
+                        }
+                    }
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .yggsgard-content {
+                padding-top: 30px;
+
+                span {
+                    @include font12;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    color: var(--bgcolor2);
+                    text-transform: uppercase;
+                    font-family: var(--font-family-condensed);
+                }
+
+                h2 {
+                    @include font26b;
+                    font-weight: 600;
+                    margin: 8px 0 16px 0;
+                }
+
+                p {
+                    @include font16;
+                    letter-spacing: 0.5px;
+                    max-width: 570px;
+                }
+            }
+        }
+
+        .yggsgard-div2 {
+            position: relative;
+            z-index: 1;
+            max-height: 506px;
+            overflow: auto;
+            padding: 0 30px;
+
+            .side-image {
+                margin-bottom: 20px;
+                cursor: pointer;
+                position: relative;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(255, 255, 255, 0.7);
+                    transition: 0.3s ease-in-out;
+                    opacity: 1;
+                }
+
+                .side-image-text {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    z-index: 1;
+                    display: flex;
+                    align-items: flex-end;
+
+                    .watch-svg {
+                        background-color: var(--color-white);
+                        width: 30px;
+                        height: 30px;
+                        @include flex-center;
+                        transition: 0.3s ease-in-out;
+
+                        svg {
+                            width: 10px;
+                            fill: var(--font-color3);
+                        }
+                    }
+
+                    h3 {
+                        width: 80%;
+                        padding: 8px 10px;
+                        @include font11;
+                        letter-spacing: 0.5px;
+                        font-weight: 800;
+                        color: var(--bgcolor-sidebar);
+                    }
+                }
+
+                img {
+                    width: 100%;
+                }
+
+                &:hover {
+                    &::after {
+                        opacity: 0;
+                    }
+
+                    .side-image-text {
+                        .watch-svg {
+                            background-color: var(--font-color3);
+                            transition: 0.3s ease-in-out;
+
+                            svg {
+                                fill: var(--color-white);
+                            }
+                        }
+
+                        h3 {
+                            display: none;
+                        }
+                    }
+                }
+
+                &.active {
+                    &::after {
+                        opacity: 0;
+                    }
+
+                    .side-image-text {
+                        h3 {
+                            display: none;
+                        }
+                    }
+
+                    img {
+                        border: 2px solid var(--font-color3);
+                    }
+                }
+            }
+        }
+    }
+}

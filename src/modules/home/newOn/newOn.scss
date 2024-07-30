@@ -1,0 +1,79 @@
+@import "../../../styles/index.scss";
+
+.newOn {
+    background-color: var(--bgcolor-sidebar);
+    clip-path: polygon(0 0, 0 100%, 100% 92%, 100% 0);
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 44.9%;
+        width: 160px;
+        height: 100%;
+        z-index: 2;
+        background-color: var(--bgcolor-sidebar);
+        clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    }
+
+    .newOn-two {
+        position: absolute;
+        background-image: url("../../../assets/images/jpg/newOnBg.jpg");
+        width: 55%;
+        height: 100%;
+        right: 0;
+        z-index: 1;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #second {
+        background-image: url("../../../assets/images/jpg/newComics.jpg");
+    }
+
+    .newOn-one {
+        padding: 105px 0;
+        position: relative;
+        z-index: 3;
+        
+        .newOn-one-div {
+            padding: 0 0 20px 50px;
+            max-width: 50%;
+            color: var(--color-white);
+            font-family: var(--font-family-condensed);
+
+            h3 {
+                position: relative;
+                @include font18;
+                font-weight: 600;
+                letter-spacing: 4px;
+                margin: 35px 0;
+
+                &::after {
+                    @include fontline-top;
+                }
+
+                &::before {
+                    @include fontline-bottom;
+                }
+            }
+
+            h2 {
+                @include font40;
+            }
+
+            p {
+                @include font16;
+                letter-spacing: 0.5px;
+                margin: 10px 0 25px 0;
+            }
+        }
+    }
+
+    #newComic {
+        padding: 150px 0;
+    }
+
+}

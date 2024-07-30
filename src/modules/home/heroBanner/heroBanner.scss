@@ -72,29 +72,11 @@
                             margin: 35px 0 40px 0;
 
                             &::after {
-                                content: "";
-                                position: absolute;
-                                top: -6px;
-                                left: 55px;
-                                width: 30px;
-                                height: 2px;
-                                display: block;
-                                transform-origin: left bottom;
-                                background-color: #c6a972;
-                                transform: rotate(-45deg) skewX(45deg);
+                                @include fontline-top;
                             }
-
+            
                             &::before {
-                                content: "";
-                                position: absolute;
-                                bottom: -5px;
-                                left: 0;
-                                width: 30px;
-                                height: 2px;
-                                display: block;
-                                transform-origin: right top;
-                                background-color: #c6a972;
-                                transform: rotate(-45deg) skewX(45deg);
+                                @include fontline-bottom;
                             }
                         }
                     }
