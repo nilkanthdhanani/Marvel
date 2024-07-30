@@ -9,6 +9,7 @@ import Latest from './latest';
 import Yggsgard from './yggsgard';
 import NewComics from './newOn/newComic';
 import Slider2 from './slider/slider2';
+import Redeem from './redeem/indeex';
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <Yggsgard/>
       <NewComics />
       <Slider2 />
+      <Redeem />
     </>
   )
 }

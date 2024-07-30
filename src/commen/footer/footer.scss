@@ -1,1 +1,132 @@
-@import '../../styles/index.scss';
+@import "../../styles/index.scss";
+
+footer {
+    padding: 80px 0 30px 0;
+    background-color: var(--bgcolor-sidebar);
+
+    .footer-div {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 70px;
+
+        .footer-div1 {
+            display: flex;
+            gap: 60px;
+
+            svg {
+                width: 80px;
+                max-height: 115px;
+            }
+
+            ul {
+                width: 140px;
+
+                li {
+                    list-style: none;
+                    margin-bottom: 10px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    a {
+                        @include font13;
+                        font-weight: 700;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                        color: var(--color-white);
+
+                        &:hover {
+                            color: var(--border-color2);
+                        }
+                    }
+                }
+            }
+
+            .lighter {
+                li {
+                    a {
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+        .footer-div2 {
+            padding: 0 40px;
+
+            .footer-div2-logo {
+                display: flex;
+                gap: 30px;
+
+                &:last-child {
+                    padding-top: 30px;
+                }
+
+                img {
+                    width: 100%;
+                    max-width: 55px;
+                    max-height: 25px;
+                }
+
+                .footer-div2-text {
+                    
+                    h2 {
+                        font-family: var(--font-family-condensed);
+                        @include font14b;
+                        color: var(--color-white);
+                        letter-spacing: 2px;
+                    }
+                    
+                    p {
+                        @include font14;
+                        letter-spacing: 0.5px;
+                        color: var(--bgcolor2);
+                    }
+                }
+            }
+        }
+
+        .footer-div3 {
+            margin-right: 35px;
+                    
+            h2 {
+                font-family: var(--font-family-condensed);
+                @include font14b;
+                color: var(--color-white);
+                letter-spacing: 2px;
+                margin-bottom: 30px;
+            }
+
+            .footer-div3-box1 {
+                @include grid4c;
+                gap: 20px 35px;
+    
+                svg {
+                    fill: var(--bgcolor2);
+                    cursor: pointer;
+    
+                    &:hover {
+                        fill: var(--color-white);
+                        transition: 0.3s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-div-last {
+        @include flex-center;
+
+        a {
+            padding: 0 10px 10px 10px;
+            @include font12;
+            letter-spacing: .5px;
+            color: var(--bgcolor2);
+
+            &:hover {
+                color: var(--color-white);
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+@import "../../../styles/index.scss";
+
+.redeem {
+    background-color: var(--color-black);
+
+    .redeem-flex {
+        @include flex;
+
+        .redeem-flex-div {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            @include flex-center;
+            flex-direction: column;
+
+            h3 {
+                @include font16;
+                font-family: var(--font-family-condensed);
+                color: var(--font-color3);
+                letter-spacing: 3px;
+            }
+
+            h2 {
+                @include font26b;
+                color: var(--color-white);
+                margin: 20px 0 15px 0;
+            }
+
+            p {
+                @include font16;
+                letter-spacing: .5px;
+                color: var(--color-white);
+                margin-bottom: 20px;
+            }
+
+            .promo-div {
+                position: absolute;
+                bottom: -45px;
+                color: var(--color-white);
+                @include font11;
+                line-height: 1px;
+            }
+        }
+    }
+}

@@ -46,20 +46,22 @@ export default function Yggsgard() {
                         </div>
                     </div>
                     <div className="yggsgard-div2">
-                        {images.map((image, index) => (
-                            <div
-                                key={index}
-                                className={`side-image ${index === activeIndex ? 'active' : ''}`}
-                                onClick={() => handleImageClick(image, index)}>
-                                <div className="side-image-text">
-                                    <div className="watch-svg">
-                                        <Watch2 />
+                        <div className="yggsgard-div2-slider">
+                            {images.map((image, index) => (
+                                <div
+                                    key={index}
+                                    className={`side-image ${index === activeIndex ? 'active' : ''}`}
+                                    onClick={() => handleImageClick(image, index)}>
+                                    <div className="side-image-text">
+                                        <div className="watch-svg">
+                                            <Watch2 />
+                                        </div>
+                                        <h3>{image.title}</h3>
                                     </div>
-                                    <h3>{image.title}</h3>
+                                    <img src={image.src} alt={`side-${index}`} />
                                 </div>
-                                <img src={image.src} alt={`side-${index}`} />
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 @import "../breakpoints/_breakpoint.scss";
 
-.banner-content-button {
+.banner-content-button, .banner-content-button2 {
     @include flex;
     gap: 20px;
 
@@ -94,6 +94,10 @@
             flex-wrap: wrap;
         }
     }
+}
+
+.banner-content-button2 {
+    justify-content: center;
 }
 
 .newOn-one-button {

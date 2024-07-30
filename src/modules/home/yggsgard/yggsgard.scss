@@ -6,17 +6,6 @@
     .yggsgard-main {
         display: grid;
         grid-template-columns: 1fr 300px;
-        position: relative;
-
-        &::after {
-            position: absolute;
-            content: "";
-            top: 0;
-            right: 1px;
-            width: 2px;
-            height: 100%;
-            background-color: var(--border-color);
-        }
 
         ::-webkit-scrollbar {
             width: 5px;
@@ -121,102 +110,116 @@
 
         .yggsgard-div2 {
             position: relative;
-            z-index: 1;
             max-height: 506px;
-            overflow: auto;
-            padding: 0 30px;
 
-            .side-image {
-                margin-bottom: 20px;
-                cursor: pointer;
-                position: relative;
+            &::after {
+                position: absolute;
+                content: "";
+                top: 0;
+                right: 1px;
+                width: 2px;
+                height: 100%;
+                z-index: -1;
+                background-color: var(--border-color);
+            }
+            
+            .yggsgard-div2-slider {
+                height: 100%;
+                overflow: auto;
+                padding: 0 30px;
 
-                &:last-child {
-                    margin-bottom: 0;
-                }
+                .side-image {
+                    margin-bottom: 20px;
+                    cursor: pointer;
+                    position: relative;
 
-                &::after {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background-color: rgba(255, 255, 255, 0.7);
-                    transition: 0.3s ease-in-out;
-                    opacity: 1;
-                }
-
-                .side-image-text {
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    width: 100%;
-                    z-index: 1;
-                    display: flex;
-                    align-items: flex-end;
-
-                    .watch-svg {
-                        background-color: var(--color-white);
-                        width: 30px;
-                        height: 30px;
-                        @include flex-center;
-                        transition: 0.3s ease-in-out;
-
-                        svg {
-                            width: 10px;
-                            fill: var(--font-color3);
-                        }
+                    &:last-child {
+                        margin-bottom: 0;
                     }
 
-                    h3 {
-                        width: 80%;
-                        padding: 8px 10px;
-                        @include font11;
-                        letter-spacing: 0.5px;
-                        font-weight: 800;
-                        color: var(--bgcolor-sidebar);
-                    }
-                }
-
-                img {
-                    width: 100%;
-                }
-
-                &:hover {
                     &::after {
-                        opacity: 0;
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(255, 255, 255, 0.7);
+                        transition: 0.3s ease-in-out;
+                        opacity: 1;
                     }
 
                     .side-image-text {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        z-index: 1;
+                        display: flex;
+                        align-items: flex-end;
+
                         .watch-svg {
-                            background-color: var(--font-color3);
+                            background-color: var(--color-white);
+                            width: 30px;
+                            height: 30px;
+                            @include flex-center;
                             transition: 0.3s ease-in-out;
 
                             svg {
-                                fill: var(--color-white);
+                                width: 10px;
+                                fill: var(--font-color3);
                             }
                         }
 
                         h3 {
-                            display: none;
-                        }
-                    }
-                }
-
-                &.active {
-                    &::after {
-                        opacity: 0;
-                    }
-
-                    .side-image-text {
-                        h3 {
-                            display: none;
+                            width: 80%;
+                            padding: 8px 10px;
+                            @include font11;
+                            letter-spacing: 0.5px;
+                            font-weight: 800;
+                            color: var(--bgcolor-sidebar);
                         }
                     }
 
                     img {
-                        border: 2px solid var(--font-color3);
+                        width: 100%;
+                    }
+
+                    &:hover {
+                        &::after {
+                            opacity: 0;
+                        }
+
+                        .side-image-text {
+                            .watch-svg {
+                                background-color: var(--font-color3);
+                                transition: 0.3s ease-in-out;
+
+                                svg {
+                                    fill: var(--color-white);
+                                }
+                            }
+
+                            h3 {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    &.active {
+                        &::after {
+                            opacity: 0;
+                        }
+
+                        .side-image-text {
+                            h3 {
+                                display: none;
+                            }
+                        }
+
+                        img {
+                            border: 2px solid var(--font-color3);
+                        }
                     }
                 }
             }
