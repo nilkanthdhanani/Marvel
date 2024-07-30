@@ -3,19 +3,25 @@
 .yggsgard {
     padding: 50px 0;
 
+    ::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: var(--font-color3);
+        cursor: pointer;
+    }
+
     .yggsgard-main {
         display: grid;
         grid-template-columns: 1fr 300px;
 
-        ::-webkit-scrollbar {
-            width: 5px;
-        }
-        ::-webkit-scrollbar-track {
-            background: transparent;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: var(--font-color3);
-            cursor: pointer;
+        @include breakpoint("md-max") {
+            grid-template-columns: 1fr;
+            gap: 40px;
         }
 
         .yggsgard-div1 {
@@ -98,6 +104,10 @@
                     @include font26b;
                     font-weight: 600;
                     margin: 8px 0 16px 0;
+
+                    @include breakpoint("sm-max") {
+                        font-size: 22px;
+                    }
                 }
 
                 p {
@@ -110,7 +120,12 @@
 
         .yggsgard-div2 {
             position: relative;
-            max-height: 506px;
+
+            @include breakpoint("md-max") {
+                max-height: none;
+                width: 100%;
+                overflow: auto;
+            }
 
             &::after {
                 position: absolute;
@@ -121,6 +136,13 @@
                 height: 100%;
                 z-index: -1;
                 background-color: var(--border-color);
+
+                @include breakpoint("md-max") {
+                    top: auto;
+                    bottom: 1px;
+                    width: 100%;
+                    height: 2px;
+                }
             }
             
             .yggsgard-div2-slider {
@@ -128,10 +150,29 @@
                 overflow: auto;
                 padding: 0 30px;
 
+                @include breakpoint("md-max") {
+                    display: flex;
+                    gap: 25px;
+                    padding: 0 0 50px 0;
+                }
+
+                @include breakpoint("sm-max") {
+                    padding-bottom: 30px;
+                }
+
                 .side-image {
                     margin-bottom: 20px;
                     cursor: pointer;
                     position: relative;
+
+                    @include breakpoint("md-max") {
+                        min-width: 200px;
+                        margin-bottom: 10px;
+                    }
+
+                    @include breakpoint("sm-max") {
+                        min-width: 150px;
+                    }
 
                     &:last-child {
                         margin-bottom: 0;
@@ -158,6 +199,11 @@
                         display: flex;
                         align-items: flex-end;
 
+                        @include breakpoint("md-max") {
+                            justify-content: center;
+                            bottom: calc(50% - 15px);
+                        }
+
                         .watch-svg {
                             background-color: var(--color-white);
                             width: 30px;
@@ -171,13 +217,17 @@
                             }
                         }
 
-                        h3 {
+                        h3.image-title {
                             width: 80%;
                             padding: 8px 10px;
                             @include font11;
                             letter-spacing: 0.5px;
                             font-weight: 800;
                             color: var(--bgcolor-sidebar);
+
+                            @include breakpoint("md-max") {
+                                display: none;
+                            }
                         }
                     }
 
@@ -220,6 +270,19 @@
                         img {
                             border: 2px solid var(--font-color3);
                         }
+                    }
+                }
+
+                h3.image-title.outside {
+                    display: none;
+                    width: 80%;
+                    @include font11;
+                    letter-spacing: 0.5px;
+                    font-weight: 700;
+                    color: var(--bgcolor-sidebar);
+
+                    @include breakpoint("md-max") {
+                        display: block;
                     }
                 }
             }

@@ -4,49 +4,100 @@ footer {
     padding: 80px 0 30px 0;
     background-color: var(--bgcolor-sidebar);
 
+    @include breakpoint("lg-max") {
+        padding: 50px 0 30px 0;
+    }
+
     .footer-div {
         display: flex;
         justify-content: space-between;
         margin-bottom: 70px;
 
+        @include breakpoint("lg-max") {
+            display: block;
+            margin-bottom: 40px;
+        }
+
         .footer-div1 {
             display: flex;
             gap: 60px;
 
-            svg {
-                width: 80px;
-                max-height: 115px;
+            @include breakpoint("lg-max") {
+                padding-bottom: 25px;
             }
 
-            ul {
-                width: 140px;
+            @include breakpoint("sm-max") {
+                display: block;
+            }
 
-                li {
-                    list-style: none;
-                    margin-bottom: 10px;
+            .footer-logo {
 
-                    &:last-child {
-                        margin-bottom: 0;
-                    }
+                @include breakpoint("lg-max") {
+                    @include flex-center;
+                    margin-bottom: 30px;
+                }
 
-                    a {
-                        @include font13;
-                        font-weight: 700;
-                        letter-spacing: 1px;
-                        text-transform: uppercase;
-                        color: var(--color-white);
+                svg {
+                    min-width: 80px;
+                    height: 115px;
 
-                        &:hover {
-                            color: var(--border-color2);
-                        }
+                    @include breakpoint("sm-max") {
+                        min-width: 35px;
+                        height: 50px;
                     }
                 }
             }
 
-            .lighter {
-                li {
-                    a {
-                        font-weight: 400;
+            .footer-list {
+                display: flex;
+                gap: 60px;
+
+                @include breakpoint("lg-max") {
+                    width: 100%;
+                }
+
+                @include breakpoint("xs-max") {
+                    gap: 20px;
+                }
+
+                ul {
+                    width: 140px;
+
+                    @include breakpoint("lg-max") {
+                        width: 100%;
+                    }
+
+                    li {
+                        list-style: none;
+                        margin-bottom: 10px;
+
+                        @include breakpoint("lg-max") {
+                            margin-bottom: 25px;
+                        }
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+
+                        a {
+                            @include font13;
+                            font-weight: 700;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                            color: var(--color-white);
+
+                            &:hover {
+                                color: var(--border-color2);
+                            }
+                        }
+                    }
+                }
+
+                .lighter {
+                    li {
+                        a {
+                            font-weight: 400;
+                        }
                     }
                 }
             }
@@ -54,6 +105,20 @@ footer {
 
         .footer-div2 {
             padding: 0 40px;
+
+            @include breakpoint("lg-max") {
+                padding: 40px 0 25px 0;
+                border-top: 1px solid var(--border-color-header);
+                border-bottom: 1px solid var(--border-color-header);
+                display: flex;
+                justify-content: space-between;
+                gap: 30px;
+            }
+
+            @include breakpoint("lg-max") {
+                flex-wrap: wrap;
+                gap: 60px;
+            }
 
             .footer-div2-logo {
                 display: flex;
@@ -63,6 +128,14 @@ footer {
                     padding-top: 30px;
                 }
 
+                @include breakpoint("lg-max") {
+                    order: 1;
+
+                    &:last-child {
+                        padding: 0;
+                    }
+                }
+
                 img {
                     width: 100%;
                     max-width: 55px;
@@ -70,14 +143,13 @@ footer {
                 }
 
                 .footer-div2-text {
-                    
                     h2 {
                         font-family: var(--font-family-condensed);
                         @include font14b;
                         color: var(--color-white);
                         letter-spacing: 2px;
                     }
-                    
+
                     p {
                         @include font14;
                         letter-spacing: 0.5px;
@@ -89,7 +161,13 @@ footer {
 
         .footer-div3 {
             margin-right: 35px;
-                    
+
+            @include breakpoint("lg-max") {
+                margin: 0;
+                padding: 40px 0;
+                border-bottom: 1px solid var(--border-color-header);
+            }
+
             h2 {
                 font-family: var(--font-family-condensed);
                 @include font14b;
@@ -100,12 +178,21 @@ footer {
 
             .footer-div3-box1 {
                 @include grid4c;
+                align-items: center;
                 gap: 20px 35px;
-    
+
+                @include breakpoint("lg-max") {
+                    grid-template-columns: repeat(9, 1fr);
+                }
+
+                @include breakpoint("sm-max") {
+                    gap: 20px 0;
+                }
+
                 svg {
                     fill: var(--bgcolor2);
                     cursor: pointer;
-    
+
                     &:hover {
                         fill: var(--color-white);
                         transition: 0.3s ease-in-out;
@@ -117,11 +204,12 @@ footer {
 
     .footer-div-last {
         @include flex-center;
+        flex-wrap: wrap;
 
         a {
             padding: 0 10px 10px 10px;
             @include font12;
-            letter-spacing: .5px;
+            letter-spacing: 0.5px;
             color: var(--bgcolor2);
 
             &:hover {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './yggsgard.scss';
 import { videoImg1, videoImg10, videoImg2, videoImg3, videoImg4, videoImg5, videoImg6, videoImg7, videoImg8, videoImg9 } from '../../../assets/images/jpg';
 import Watch2 from '../../../assets/images/svg/watch2';
@@ -19,18 +19,42 @@ const images = [
 export default function Yggsgard() {
     const [mainImage, setMainImage] = useState(images[0]);
     const [activeIndex, setActiveIndex] = useState(0);
+    const imageDivRef = useRef(null);
+    const sideDivRef = useRef(null);
+    const mdMax = 768;
 
     const handleImageClick = (image, index) => {
         setMainImage(image);
         setActiveIndex(index);
     };
 
+    useEffect(() => {
+        const updateHeight = () => {
+            if (window.innerWidth > mdMax) {
+                if (imageDivRef.current && sideDivRef.current) {
+                    sideDivRef.current.style.height = `${imageDivRef.current.clientHeight}px`;
+                }
+            } else {
+                if (sideDivRef.current) {
+                    sideDivRef.current.style.height = 'auto';
+                }
+            }
+        };
+
+        updateHeight();
+        window.addEventListener('resize', updateHeight);
+
+        return () => {
+            window.removeEventListener('resize', updateHeight);
+        };
+    }, [mdMax]);
+
     return (
         <div className="yggsgard">
             <div className="containerH">
                 <div className="yggsgard-main">
                     <div className="yggsgard-div1">
-                        <div className="yggsgard-div1-image">
+                        <div className="yggsgard-div1-image" ref={imageDivRef}>
                             <div className="watch-svg">
                                 <Watch2 />
                             </div>
@@ -45,20 +69,22 @@ export default function Yggsgard() {
                             <p>After the Timestream Entanglement, Asgard fused with Yggdrasill, the World Tree that connects all Ten Realms. Now Loki, the God of Mischief, uses his tricks to seize control and build his new kingdom: Yggsgard in Marvel Rivals!</p>
                         </div>
                     </div>
-                    <div className="yggsgard-div2">
+                    <div className="yggsgard-div2" ref={sideDivRef}>
                         <div className="yggsgard-div2-slider">
                             {images.map((image, index) => (
-                                <div
-                                    key={index}
-                                    className={`side-image ${index === activeIndex ? 'active' : ''}`}
-                                    onClick={() => handleImageClick(image, index)}>
-                                    <div className="side-image-text">
-                                        <div className="watch-svg">
-                                            <Watch2 />
+                                <div className="responsive-div" key={index}>
+                                    <div
+                                        className={`side-image ${index === activeIndex ? 'active' : ''}`}
+                                        onClick={() => handleImageClick(image, index)}>
+                                        <div className="side-image-text">
+                                            <div className="watch-svg">
+                                                <Watch2 />
+                                            </div>
+                                            <h3 className="image-title">{image.title}</h3>
                                         </div>
-                                        <h3>{image.title}</h3>
+                                        <img src={image.src} alt={`side-${index}`} />
                                     </div>
-                                    <img src={image.src} alt={`side-${index}`} />
+                                    <h3 className="image-title outside">{image.title}</h3>
                                 </div>
                             ))}
                         </div>

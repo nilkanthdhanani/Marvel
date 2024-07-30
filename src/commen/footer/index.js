@@ -18,19 +18,23 @@ export default function Footer() {
       <div className="container">
         <div className="footer-div">
           <div className="footer-div1">
-            <FooterLogo />
-            <ul>
-              <li><a href="/">About Marvel</a></li>
-              <li><a href="/">Help/FAQs</a></li>
-              <li><a href="/">Careers</a></li>
-              <li><a href="/">Internships</a></li>
-            </ul>
-            <ul className="lighter">
-              <li><a href="/">Advertising</a></li>
-              <li><a href="/">Disney+</a></li>
-              <li><a href="/">Marvelhq.com</a></li>
-              <li><a href="/">Redeem Digital Comics</a></li>
-            </ul>
+            <div className="footer-logo">
+              <FooterLogo />
+            </div>
+            <div className="footer-list">
+              <ul>
+                <li><a href="/">About Marvel</a></li>
+                <li><a href="/">Help/FAQs</a></li>
+                <li><a href="/">Careers</a></li>
+                <li><a href="/">Internships</a></li>
+              </ul>
+              <ul className="lighter">
+                <li><a href="/">Advertising</a></li>
+                <li><a href="/">Disney+</a></li>
+                <li><a href="/">Marvelhq.com</a></li>
+                <li><a href="/">Redeem Digital Comics</a></li>
+              </ul>
+            </div>
           </div>
           <div className="footer-div2">
             <div className="footer-div2-logo">

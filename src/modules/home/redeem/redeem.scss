@@ -3,8 +3,26 @@
 .redeem {
     background-color: var(--color-black);
 
+    @include breakpoint("lg-max") {
+        .container {
+            padding: 0;
+        }
+    }
+
     .redeem-flex {
         @include flex;
+
+        @include breakpoint("lg-max") {
+            display: block;
+        }
+
+        .redeem-flex-image {
+            img {
+                @include breakpoint("lg-max") {
+                    width: 100%;
+                }
+            }
+        }
 
         .redeem-flex-div {
             width: 100%;
@@ -13,6 +31,10 @@
             position: relative;
             @include flex-center;
             flex-direction: column;
+                    
+            @include breakpoint("lg-max") {
+                padding-bottom: 80px;
+            }
 
             h3 {
                 @include font16;
@@ -29,7 +51,7 @@
 
             p {
                 @include font16;
-                letter-spacing: .5px;
+                letter-spacing: 0.5px;
                 color: var(--color-white);
                 margin-bottom: 20px;
             }
@@ -40,6 +62,10 @@
                 color: var(--color-white);
                 @include font11;
                 line-height: 1px;
+                    
+                @include breakpoint("lg-max") {
+                    bottom: 10px;
+                }
             }
         }
     }

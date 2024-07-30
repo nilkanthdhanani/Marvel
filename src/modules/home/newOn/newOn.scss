@@ -15,6 +15,10 @@
         z-index: 2;
         background-color: var(--bgcolor-sidebar);
         clip-path: polygon(0 0, 0% 100%, 100% 100%);
+
+        @include breakpoint("md-max") {
+            display: none;
+        }
     }
 
     .newOn-two {
@@ -27,6 +31,16 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+
+        @include breakpoint("md-max") {
+            position: relative;
+            width: 100%;
+            min-height: 440px;
+        }
+
+        @include breakpoint("sm-max") {
+            min-height: 300px;
+        }
     }
 
     #second {
@@ -37,6 +51,14 @@
         padding: 105px 0;
         position: relative;
         z-index: 3;
+
+        @include breakpoint("md-max") {
+            padding: 60px 30px 80px 30px;
+
+            .container {
+                padding: 0;
+            }
+        }
         
         .newOn-one-div {
             padding: 0 0 20px 50px;
@@ -44,12 +66,21 @@
             color: var(--color-white);
             font-family: var(--font-family-condensed);
 
+            @include breakpoint("md-max") {
+                padding: 0 0 20px 0;
+                max-width: 100%;
+            }
+
             h3 {
                 position: relative;
                 @include font18;
                 font-weight: 600;
                 letter-spacing: 4px;
                 margin: 35px 0;
+
+                @include breakpoint("sm-max") {
+                    font-size: 14px;
+                }
 
                 &::after {
                     @include fontline-top;
@@ -62,6 +93,10 @@
 
             h2 {
                 @include font40;
+
+                @include breakpoint("sm-max") {
+                    @include font26b;
+                }
             }
 
             p {
@@ -74,6 +109,10 @@
 
     #newComic {
         padding: 150px 0;
+
+        @include breakpoint("md-max") {
+            padding: 60px 30px 80px 30px;
+        }
     }
 
 }
