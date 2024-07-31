@@ -121,7 +121,7 @@
                     bottom: 0;
                     @include flex;
                     
-                    @include breakpoint("sm-max") {
+                    @include breakpoint("md-max") {
                         position: relative;
                         margin-top: 20px;
                     }
