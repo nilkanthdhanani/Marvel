@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useLayoutEffect } from 'react';
 import './yggsgard.scss';
 import { videoImg1, videoImg10, videoImg2, videoImg3, videoImg4, videoImg5, videoImg6, videoImg7, videoImg8, videoImg9 } from '../../../assets/images/homeImg';
 import Watch2 from '../../../assets/images/svg/watch2';
@@ -22,33 +22,35 @@ export default function Yggsgard() {
     const imageDivRef = useRef(null);
     const sideDivRef = useRef(null);
     const minWidth = 768;
-    const maxWidth = 1240;
+    const maxWidth = 1200;
 
     const handleImageClick = (image, index) => {
         setMainImage(image);
         setActiveIndex(index);
     };
 
-    useEffect(() => {
-        const updateHeight = () => {
-            if (window.innerWidth >= minWidth && window.innerWidth < maxWidth) {
-                if (imageDivRef.current && sideDivRef.current) {
-                    sideDivRef.current.style.height = `${imageDivRef.current.clientHeight}px`;
-                }
-            } else {
-                if (sideDivRef.current) {
-                    sideDivRef.current.style.height = 'auto';
-                }
+    const updateHeight = () => {
+        if (window.innerWidth >= minWidth && window.innerWidth < maxWidth) {
+            if (imageDivRef.current && sideDivRef.current) {
+                sideDivRef.current.style.height = `${imageDivRef.current.clientHeight}px`;
             }
-        };
+        } else {
+            if (sideDivRef.current) {
+                sideDivRef.current.style.height = 'auto';
+            }
+        }
+    };
 
+    useLayoutEffect(() => {
         updateHeight();
-        window.addEventListener('resize', updateHeight);
+    }, [mainImage]);
 
+    useEffect(() => {
+        window.addEventListener('resize', updateHeight);
         return () => {
             window.removeEventListener('resize', updateHeight);
         };
-    }, [minWidth, maxWidth]);
+    }, []);
 
     return (
         <div className="yggsgard">
