@@ -6,7 +6,7 @@ import './styles/index.scss';
 function App() {
   return (
     <>
-    <RouterProvider router={router}/>
+      <RouterProvider router={router} />
     </>
   );
 }

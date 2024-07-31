@@ -3,7 +3,7 @@ import './slider.scss';
 import { 
     slider1, slider2, slider3, slider4, slider5, slider6, 
     slider7, slider8, slider9, slider10, slider11, slider12, slider13 
-} from '../../../assets/images/jpg';
+} from '../../../assets/images/homeImg';
 
 export default function Slider() {
     const scrollTrackRef = useRef(null);

@@ -1,0 +1,72 @@
+@import "../../../styles/index.scss";
+
+.redeem-mu {
+    background-color: var(--color-black);
+
+    @include breakpoint("lg-max") {
+        .container {
+            padding: 0;
+        }
+    }
+
+    .redeem-flex {
+        display: flex;
+
+        @include breakpoint("lg-max") {
+            display: block;
+        }
+
+        .redeem-flex-image {
+            img {
+                @include breakpoint("lg-max") {
+                    width: 100%;
+                }
+            }
+        }
+
+        .redeem-flex-div {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            @include flex-center;
+            flex-direction: column;
+
+            @include breakpoint("lg-max") {
+                padding-bottom: 80px;
+            }
+
+            h3 {
+                @include font16;
+                font-family: var(--font-family-condensed);
+                color: var(--font-color3);
+                letter-spacing: 3px;
+            }
+
+            h2 {
+                @include font26b;
+                color: var(--color-white);
+                margin: 20px 0 15px 0;
+            }
+
+            p {
+                @include font16;
+                letter-spacing: 0.5px;
+                color: var(--color-white);
+                margin-bottom: 20px;
+                max-width: 500px;
+            }
+
+            .promo-div {
+                position: absolute;
+                bottom: 10px;
+
+                span {
+                    display: block;
+                    color: var(--color-white);
+                    @include font11;
+                }
+            }
+        }
+    }
+}

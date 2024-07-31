@@ -1,6 +1,6 @@
 import React from 'react';
 import './redeem.scss';
-import { promo } from '../../../assets/images/jpg';
+import { promo } from '../../../assets/images/homeImg';
 
 export default function Redeem() {
     return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import './dropdown.scss';
-import { drop7img1, drop7img2, drop7img3, drop7img4 } from '../../../assets/images/jpg';
+import { drop7img1, drop7img2, drop7img3, drop7img4 } from '../../../assets/images/homeImg';
 import Watch from '../../../assets/images/svg/watch';
 
 export default function Dropdown7() {

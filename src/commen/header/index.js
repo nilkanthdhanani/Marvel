@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './header.scss';
-import { logo, unlimited } from '../../assets/images/png';
+import { logo, unlimited } from '../../assets/images/homeImg';
 import Login from '../../assets/images/svg/login';
 import Search from '../../assets/images/svg/search';
 import Menu from '../../assets/images/svg/menu';
@@ -85,7 +85,7 @@ export default function Header() {
             <div className="header-second-hover">
               <li>
                 <div className="ancer-link">
-                  <a href="/">NEWS</a>
+                  <a href="/news">NEWS</a>
                 </div>
                 <Dropdown1 />
               </li>

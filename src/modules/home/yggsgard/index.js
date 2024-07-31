@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './yggsgard.scss';
-import { videoImg1, videoImg10, videoImg2, videoImg3, videoImg4, videoImg5, videoImg6, videoImg7, videoImg8, videoImg9 } from '../../../assets/images/jpg';
+import { videoImg1, videoImg10, videoImg2, videoImg3, videoImg4, videoImg5, videoImg6, videoImg7, videoImg8, videoImg9 } from '../../../assets/images/homeImg';
 import Watch2 from '../../../assets/images/svg/watch2';
 
 const images = [

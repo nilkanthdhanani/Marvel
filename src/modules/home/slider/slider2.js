@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './slider.scss';
-import { drop2img1, drop2img2, drop2img5, drop2img4, drop2img3, drop2img6, drop2img7, drop2img8, drop2img9, drop2img10, drop2img11, drop2img12, drop2img13, drop2img14 } from '../../../assets/images/jpg';
+import { drop2img1, drop2img2, drop2img5, drop2img4, drop2img3, drop2img6, drop2img7, drop2img8, drop2img9, drop2img10, drop2img11, drop2img12, drop2img13, drop2img14 } from '../../../assets/images/homeImg';
 
 export default function Slider2() {
     const scrollTrackRef = useRef(null);

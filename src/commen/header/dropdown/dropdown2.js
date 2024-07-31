@@ -1,6 +1,6 @@
 import React from 'react'
 import './dropdown.scss';
-import { drop2img1, drop2img2, drop2img3, drop2img4, drop2img5, drop2img6 } from '../../../assets/images/jpg';
+import { drop2img1, drop2img2, drop2img3, drop2img4, drop2img5, drop2img6 } from '../../../assets/images/homeImg';
 
 export default function Dropdown2() {
   return (

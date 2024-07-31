@@ -5,7 +5,7 @@ import Twitter from '../../../assets/images/svg/sidebarIcon/twitter';
 import Instagram from '../../../assets/images/svg/sidebarIcon/instagram';
 import Twitch from '../../../assets/images/svg/sidebarIcon/twitch';
 import Tiktok from '../../../assets/images/svg/sidebarIcon/tiktok';
-import { herobanner5logo } from '../../../assets/images/png';
+import { herobanner5logo } from '../../../assets/images/homeImg';
 
 export default function HeroBanner() {
     const [currentBanner, setCurrentBanner] = useState(0);

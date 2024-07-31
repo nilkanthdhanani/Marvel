@@ -1,6 +1,6 @@
 import React from 'react'
 import './home.scss';
-import { disney } from '../../assets/images/png';
+import { disney } from '../../assets/images/homeImg';
 import HeroBanner from './heroBanner';
 import HeroBannerRespo from './heroBannerRespo';
 import NewOn from './newOn';
@@ -25,7 +25,7 @@ export default function Home() {
       <NewOn />
       <Slider />
       <Latest />
-      <Yggsgard/>
+      <Yggsgard />
       <NewComics />
       <Slider2 />
       <Redeem />

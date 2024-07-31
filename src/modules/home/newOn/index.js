@@ -1,6 +1,6 @@
 import React from 'react'
 import './newOn.scss';
-import { newOnLogo } from '../../../assets/images/png';
+import { newOnLogo } from '../../../assets/images/homeImg';
 
 export default function NewOn() {
     return (

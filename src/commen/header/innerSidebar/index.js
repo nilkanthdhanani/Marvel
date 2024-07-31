@@ -5,8 +5,8 @@ import Less from '../../../assets/images/svg/less';
 export default function InnerSidebar({ isOpen, closeInnerSidebar, contentKey }) {
     const contentMap = {
         'NEWS': <>
-            <a href="/">LATEST NEWS</a>
-            <a href="/">ALL NEWS</a>
+            <a href="/news">LATEST NEWS</a>
+            <a href="/news">ALL NEWS</a>
             <div className="secondary">
                 <h2>SEARCH BY</h2>
                 <a href="/">MOVIES</a>

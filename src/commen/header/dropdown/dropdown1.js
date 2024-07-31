@@ -1,6 +1,6 @@
 import React from 'react'
 import './dropdown.scss';
-import { drop1img1, drop1img2, drop1img3, drop1img4 } from '../../../assets/images/jpg';
+import { drop1img1, drop1img2, drop1img3, drop1img4 } from '../../../assets/images/homeImg';
 
 export default function Dropdown1() {
   return (
@@ -8,8 +8,8 @@ export default function Dropdown1() {
       <div className="dropdown">
         <div className="container-dropdown">
           <div className="drop-links">
-            <a href="/">LATEST NEWS</a>
-            <a href="/">ALL NEWS</a>
+            <a href="/news">LATEST NEWS</a>
+            <a href="/news">ALL NEWS</a>
           </div>
           <h2>TRENDING NEWS</h2>
           <div className="drop-grid">
@@ -52,13 +52,13 @@ export default function Dropdown1() {
           </div>
           <div className="drop-links-last">
             <h3>SEARCH BY</h3>
-            <a href="/">MOVIES</a>
-            <a href="/">COMICS</a>
-            <a href="/">TV SHOWS</a>
-            <a href="/">GAMES</a>
-            <a href="/">DIGITAL SERIES</a>
-            <a href="/">CULTURE & LIFESTYLE</a>
-            <a href="/">PODCASTS</a>
+            <a href="/news">MOVIES</a>
+            <a href="/news">COMICS</a>
+            <a href="/news">TV SHOWS</a>
+            <a href="/news">GAMES</a>
+            <a href="/news">DIGITAL SERIES</a>
+            <a href="/news">CULTURE & LIFESTYLE</a>
+            <a href="/news">PODCASTS</a>
           </div>
         </div>
       </div>
