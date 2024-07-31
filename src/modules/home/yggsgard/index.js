@@ -22,7 +22,7 @@ export default function Yggsgard() {
     const imageDivRef = useRef(null);
     const sideDivRef = useRef(null);
     const minWidth = 768;
-    const maxWidth = 1200;
+    const maxWidth = 1240;
 
     const handleImageClick = (image, index) => {
         setMainImage(image);
