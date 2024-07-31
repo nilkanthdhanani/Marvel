@@ -21,7 +21,8 @@ export default function Yggsgard() {
     const [activeIndex, setActiveIndex] = useState(0);
     const imageDivRef = useRef(null);
     const sideDivRef = useRef(null);
-    const mdMax = 768;
+    const minWidth = 768;
+    const maxWidth = 1240;
 
     const handleImageClick = (image, index) => {
         setMainImage(image);
@@ -30,7 +31,7 @@ export default function Yggsgard() {
 
     useEffect(() => {
         const updateHeight = () => {
-            if (window.innerWidth > mdMax) {
+            if (window.innerWidth >= minWidth && window.innerWidth < maxWidth) {
                 if (imageDivRef.current && sideDivRef.current) {
                     sideDivRef.current.style.height = `${imageDivRef.current.clientHeight}px`;
                 }
@@ -41,26 +42,13 @@ export default function Yggsgard() {
             }
         };
 
-        // Use requestAnimationFrame to ensure it's run after the render
-        requestAnimationFrame(updateHeight);
-
+        updateHeight();
         window.addEventListener('resize', updateHeight);
 
-        // Clean up
         return () => {
             window.removeEventListener('resize', updateHeight);
         };
-    }, [mdMax, mainImage]);
-
-    // Force an update after the component mounts
-    useEffect(() => {
-        setTimeout(() => {
-            if (imageDivRef.current && sideDivRef.current) {
-                sideDivRef.current.style.height = `${imageDivRef.current.clientHeight}px`;
-            }
-        }, 100); // Delay to ensure everything is rendered
-    }, []);
-
+    }, [minWidth, maxWidth]);
 
     return (
         <div className="yggsgard">

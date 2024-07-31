@@ -120,8 +120,7 @@
 
         .yggsgard-div2 {
             position: relative;
-            background-color: rgba(255, 0, 0, 0.1); // Temporary for debugging
-            border: 1px solid red;
+            max-height: 506px;
 
             @include breakpoint("md-max") {
                 max-height: none;
