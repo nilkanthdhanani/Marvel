@@ -52,6 +52,10 @@ export default function Yggsgard() {
         };
     }, []);
 
+    const handleImageLoad = () => {
+        updateHeight();
+    };
+
     return (
         <div className="yggsgard">
             <div className="containerH">
@@ -64,7 +68,7 @@ export default function Yggsgard() {
                             <div className="time-pera">
                                 <p>0:48</p>
                             </div>
-                            <img src={mainImage.src} alt="main" />
+                            <img src={mainImage.src} alt="main" onLoad={handleImageLoad} />
                         </div>
                         <div className="yggsgard-content">
                             <span>Trailers & Extras</span>
@@ -85,7 +89,7 @@ export default function Yggsgard() {
                                             </div>
                                             <h3 className="image-title">{image.title}</h3>
                                         </div>
-                                        <img src={image.src} alt={`side-${index}`} />
+                                        <img src={image.src} alt={`side-${index}`} onLoad={handleImageLoad} />
                                     </div>
                                     <h3 className="image-title outside">{image.title}</h3>
                                 </div>
