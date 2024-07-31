@@ -40,16 +40,27 @@ export default function Yggsgard() {
                 }
             }
         };
-    
-        const timeoutId = setTimeout(updateHeight, 0);
-    
+
+        // Use requestAnimationFrame to ensure it's run after the render
+        requestAnimationFrame(updateHeight);
+
         window.addEventListener('resize', updateHeight);
-    
+
+        // Clean up
         return () => {
-            clearTimeout(timeoutId);
             window.removeEventListener('resize', updateHeight);
         };
     }, [mdMax, mainImage]);
+
+    // Force an update after the component mounts
+    useEffect(() => {
+        setTimeout(() => {
+            if (imageDivRef.current && sideDivRef.current) {
+                sideDivRef.current.style.height = `${imageDivRef.current.clientHeight}px`;
+            }
+        }, 100); // Delay to ensure everything is rendered
+    }, []);
+
 
     return (
         <div className="yggsgard">
