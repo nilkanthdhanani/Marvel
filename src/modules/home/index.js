@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react';
 import './home.scss';
 import { disney } from '../../assets/images/homeImg';
 import HeroBanner from './heroBanner';
@@ -13,8 +13,11 @@ import Redeem from './redeem/indeex';
 
 export default function Home() {
   const topRef = useRef(null);
+
   useEffect(() => {
-    topRef.current.scrollIntoView({ behavior: 'auto' });
+    if (topRef.current) {
+      window.scrollTo({ top: topRef.current.offsetTop - 100, behavior: 'smooth' });
+    }
   }, []);
 
   return (
@@ -35,5 +38,5 @@ export default function Home() {
       <Slider2 />
       <Redeem />
     </>
-  )
+  );
 }

@@ -31,16 +31,18 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY < lastScrollY) {
-        setIsScrollingUp(true);
-      } else {
-        setIsScrollingUp(false);
+      if (window.scrollY > 100) {
+        if (window.scrollY < lastScrollY) {
+          setIsScrollingUp(true);
+        } else {
+          setIsScrollingUp(false);
+        }
       }
       setLastScrollY(window.scrollY);
     };
-
+  
     window.addEventListener('scroll', handleScroll);
-
+  
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
