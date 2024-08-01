@@ -13,6 +13,7 @@ import Dropdown5 from './dropdown/dropdown5';
 import Dropdown6 from './dropdown/dropdown6';
 import Dropdown7 from './dropdown/dropdown7';
 import Dropdown8 from './dropdown/dropdown8';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -49,7 +50,9 @@ export default function Header() {
     <header className={isScrollingUp ? 'scroll-up' : 'scroll-down'}>
       <div className="header-first">
         <div className="logo">
-          <img src={logo} alt="logo" />
+          <Link to={"/"}>
+            <img src={logo} alt="logo" />
+          </Link>
         </div>
         <div className="containerH">
           <div className="header-main">

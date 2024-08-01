@@ -2,6 +2,7 @@ import React from 'react'
 import './dropdown.scss';
 import { drop7img1, drop7img2, drop7img3, drop7img4 } from '../../../assets/images/homeImg';
 import Watch from '../../../assets/images/svg/watch';
+import { Link } from 'react-router-dom';
 
 export default function Dropdown7() {
   return (
@@ -9,9 +10,9 @@ export default function Dropdown7() {
       <div className="dropdown">
         <div className="container-dropdown">
           <div className="drop-links">
-            <a href="/">TRAILERS & EXTRAS</a>
-            <a href="/">DIGITAL SERIES</a>
-            <a href="/">ALL VIDEO</a>
+            <Link to="/">TRAILERS & EXTRAS</Link>
+            <Link to="/">DIGITAL SERIES</Link>
+            <Link to="/">ALL VIDEO</Link>
           </div>
           <h2>TRENDING VIDEO</h2>
           <div className="drop-grid">
@@ -78,9 +79,9 @@ export default function Dropdown7() {
           </div>
           <div className="drop-links-last">
             <h3>OUR SHOWS</h3>
-            <a href="/">EARTH'S MIGHTIEST SHOW</a>
-            <a href="/">THIS WEEK IN MARVEL</a>
-            <a href="/">WOMEN OF MARVEL</a>
+            <Link to="/">EARTH'S MIGHTIEST SHOW</Link>
+            <Link to="/">THIS WEEK IN MARVEL</Link>
+            <Link to="/">WOMEN OF MARVEL</Link>
           </div>
         </div>
       </div>

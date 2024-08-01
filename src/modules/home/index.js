@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './home.scss';
 import { disney } from '../../assets/images/homeImg';
 import HeroBanner from './heroBanner';
@@ -12,9 +12,14 @@ import Slider2 from './slider/slider2';
 import Redeem from './redeem/indeex';
 
 export default function Home() {
+  const topRef = useRef(null);
+  useEffect(() => {
+    topRef.current.scrollIntoView({ behavior: 'auto' });
+  }, []);
+
   return (
     <>
-      <div className="disney">
+      <div className="disney" ref={topRef}>
         <div className="disney-div">
           <p href="/">STREAM X-MEN '97 <span>EXCLUSIVELY</span> ON </p>
           <img src={disney} alt="disney" />

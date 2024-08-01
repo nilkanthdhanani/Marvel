@@ -1,72 +1,73 @@
 import React from 'react';
 import './innersidebar.scss';
 import Less from '../../../assets/images/svg/less';
+import { Link } from 'react-router-dom';
 
-export default function InnerSidebar({ isOpen, closeInnerSidebar, contentKey }) {
+export default function InnerSidebar({ isOpen, closeInnerSidebar, toggleSidebar, contentKey }) {
     const contentMap = {
         'NEWS': <>
-            <a href="/news">LATEST NEWS</a>
-            <a href="/news">ALL NEWS</a>
+            <Link to="/news" onClick={toggleSidebar}>LATEST NEWS</Link>
+            <Link to="/news" onClick={toggleSidebar}>ALL NEWS</Link>
             <div className="secondary">
                 <h2>SEARCH BY</h2>
-                <a href="/">MOVIES</a>
-                <a href="/">COMICS</a>
-                <a href="/">TV SHOWS</a>
-                <a href="/">GAMES</a>
-                <a href="/">DIGITAL SERIES</a>
-                <a href="/">CULTURE & LIFESTYLE</a>
-                <a href="/">PODCASTS</a>
+                <Link to="/news#movies" onClick={toggleSidebar}>MOVIES</Link>
+                <Link to="/news#comics" onClick={toggleSidebar}>COMICS</Link>
+                <Link to="/news#shows" onClick={toggleSidebar}>TV SHOWS</Link>
+                <Link to="/news#games" onClick={toggleSidebar}>GAMES</Link>
+                <Link to="/news#series" onClick={toggleSidebar}>DIGITAL SERIES</Link>
+                <Link to="/news#culture" onClick={toggleSidebar}>CULTURE & LIFESTYLE</Link>
+                <Link to="/news#podcasts" onClick={toggleSidebar}>PODCASTS</Link>
             </div>
         </>,
         'COMICS': <>
-            <a href="/">RELEASE CALENDAR</a>
-            <a href="/">MARVEL UNLIMITED</a>
-            <a href="/">STROMBREAKERS</a>
-            <a href="/">READING GUIDES</a>
-            <a href="/">PRINT SUBSCRIPTIONS</a>
-            <a href="/">ALL COMICS</a>
+            <Link to="/" onClick={toggleSidebar}>RELEASE CALENDAR</Link>
+            <Link to="/" onClick={toggleSidebar}>MARVEL UNLIMITED</Link>
+            <Link to="/" onClick={toggleSidebar}>STROMBREAKERS</Link>
+            <Link to="/" onClick={toggleSidebar}>READING GUIDES</Link>
+            <Link to="/" onClick={toggleSidebar}>PRINT SUBSCRIPTIONS</Link>
+            <Link to="/" onClick={toggleSidebar}>ALL COMICS</Link>
             <div className="secondary">
                 <h2>BROWSE BY</h2>
-                <a href="/">SERIES</a>
-                <a href="/">CHARACTER</a>
-                <a href="/">CREATOR</a>
+                <Link to="/" onClick={toggleSidebar}>SERIES</Link>
+                <Link to="/" onClick={toggleSidebar}>CHARACTER</Link>
+                <Link to="/" onClick={toggleSidebar}>CREATOR</Link>
             </div>
         </>,
         'CHARACTERS': <>
-            <a href="/">ALL CHARACTERS</a>
-            <a href="/">TEAMS & GROUPS</a>
-            <a href="/">EXPLORE ALL</a>
+            <Link to="/" onClick={toggleSidebar}>ALL CHARACTERS</Link>
+            <Link to="/" onClick={toggleSidebar}>TEAMS & GROUPS</Link>
+            <Link to="/" onClick={toggleSidebar}>EXPLORE ALL</Link>
         </>,
         'MOVIES': <>
-            <a href="/">CAPTAIN AMERICA: BRAVE NEW WORLD</a>
-            <a href="/">DEADPOOL & WOLVERINE</a>
-            <a href="/">THE MARVELS</a>
-            <a href="/">SEE ALL MOVIES</a>
-            <a href="/">DISNEY+</a>
+            <Link to="/" onClick={toggleSidebar}>CAPTAIN AMERICA: BRAVE NEW WORLD</Link>
+            <Link to="/" onClick={toggleSidebar}>DEADPOOL & WOLVERINE</Link>
+            <Link to="/" onClick={toggleSidebar}>THE MARVELS</Link>
+            <Link to="/" onClick={toggleSidebar}>SEE ALL MOVIES</Link>
+            <Link to="/" onClick={toggleSidebar}>DISNEY+</Link>
         </>,
         'TV SHOWS': <>
-            <a href="/">X-MEN '97</a>
-            <a href="/">ECHO</a>
-            <a href="/">WHAT IF...?</a>
-            <a href="/">SEE ALL TV SHOWS</a>
-            <a href="/">DISNE+</a>
+            <Link to="/" onClick={toggleSidebar}>X-MEN '97</Link>
+            <Link to="/" onClick={toggleSidebar}>ECHO</Link>
+            <Link to="/" onClick={toggleSidebar}>WHAT IF...?</Link>
+            <Link to="/" onClick={toggleSidebar}>SEE ALL TV SHOWS</Link>
+            <Link to="/" onClick={toggleSidebar}>DISNEY+</Link>
         </>,
         'GAMES': <>
-            <a href="/">MARVEL 1943: RISE OF HYDRA</a>
-            <a href="/">MARVEL VS. CAPCOM</a>
-            <a href="/">MARVEL'S SPIDER-MAN 2</a>
-            <a href="/">MARVEL SNAP</a>
-            <a href="/">SEE ALL GAMES</a>
+            <Link to="/" onClick={toggleSidebar}>MARVEL 1943: RISE OF HYDRA</Link>
+            <Link to="/" onClick={toggleSidebar}>MARVEL VS. CAPCOM</Link>
+            <Link to="/" onClick={toggleSidebar}>MARVEL'S SPIDER-MAN 2</Link>
+            <Link to="/" onClick={toggleSidebar}>MARVEL SNAP</Link>
+            <Link to="/" onClick={toggleSidebar}>SEE ALL GAMES</Link>
         </>,
         'VIDEOS': <>
-            <a href="/">TRAILERS & EXTRAS</a>
-            <a href="/">DIGITAL SERIES</a>
-            <a href="/">ALL VIDEO</a>
+            <Link to="/" onClick={toggleSidebar}>TRAILERS & EXTRAS</Link>
+            <Link to="/" onClick={toggleSidebar}>DIGITAL SERIES</Link>
+            <Link to="/" onClick={toggleSidebar}>ALL VIDEO</Link>
             <div className="secondary">
                 <h2>OUR SHOWS</h2>
-                <a href="/">EARTH'S MIGHTIEST SHOW</a>
-                <a href="/">THIS WEEK IN MARVEL</a>
-                <a href="/">WOMEN OF MARVEL</a>
+                <Link to="/" onClick={toggleSidebar}>EARTH'S MIGHTIEST SHOW</Link>
+                <Link to="/" onClick={toggleSidebar}>THIS WEEK IN MARVEL</Link>
+                <Link to="/" onClick={toggleSidebar}>WOMEN OF MARVEL</Link>
             </div>
         </>,
     };

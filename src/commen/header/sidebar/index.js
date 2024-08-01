@@ -93,7 +93,7 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
                             </div>
                         </a>
                     </div>
-                    <InnerSidebar isOpen={innerSidebarOpen} closeInnerSidebar={closeInnerSidebar} contentKey={currentContentKey} />
+                    <InnerSidebar isOpen={innerSidebarOpen} closeInnerSidebar={closeInnerSidebar} toggleSidebar={toggleSidebar} contentKey={currentContentKey} />
                 </div>
             </div>
         </>

@@ -1,6 +1,7 @@
 import React from 'react'
 import './dropdown.scss';
 import { drop3img4, drop3img1, drop3img2, drop3img3, drop3img5, drop3img6 } from '../../../assets/images/homeImg';
+import { Link } from 'react-router-dom';
 
 export default function Dropdown3() {
   return (
@@ -8,9 +9,9 @@ export default function Dropdown3() {
       <div className="dropdown">
         <div className="container-dropdown">
           <div className="drop-links">
-            <a href="/">ALL CHARACTERS</a>
-            <a href="/">TEAMS & GROUPS</a>
-            <a href="/">EXPLORE ALL</a>
+            <Link to="/">ALL CHARACTERS</Link>
+            <Link to="/">TEAMS & GROUPS</Link>
+            <Link to="/">EXPLORE ALL</Link>
           </div>
           <h2>TRENDING IN THE UNIVERSE</h2>
           <div className="drop-grid3">

@@ -1,6 +1,7 @@
 import React from 'react'
 import './dropdown.scss';
 import { drop2img1, drop2img2, drop2img3, drop2img4, drop2img5, drop2img6 } from '../../../assets/images/homeImg';
+import { Link } from 'react-router-dom';
 
 export default function Dropdown2() {
   return (
@@ -8,12 +9,12 @@ export default function Dropdown2() {
       <div className="dropdown">
         <div className="container-dropdown">
           <div className="drop-links">
-            <a href="/">RELEASE CALENDAR</a>
-            <a href="/">MARVEL UNLIMITED</a>
-            <a href="/">STROMBREAKERS</a>
-            <a href="/">READING GUIDES</a>
-            <a href="/">PRINT SUBSCRIPTIONS</a>
-            <a href="/">ALL COMICS</a>
+            <Link to="/">RELEASE CALENDAR</Link>
+            <Link to="/">MARVEL UNLIMITED</Link>
+            <Link to="/">STROMBREAKERS</Link>
+            <Link to="/">READING GUIDES</Link>
+            <Link to="/">PRINT SUBSCRIPTIONS</Link>
+            <Link to="/">ALL COMICS</Link>
           </div>
           <h2>LATEST COMICS</h2>
           <div className="drop-grid2">
@@ -62,9 +63,9 @@ export default function Dropdown2() {
           </div>
           <div className="drop-links-last">
                 <h3>BROWSE BY</h3>
-                <a href="/">SERIES</a>
-                <a href="/">CHARACTER</a>
-                <a href="/">CREATOR</a>
+                <Link to="/">SERIES</Link>
+                <Link to="/">CHARACTER</Link>
+                <Link to="/">CREATOR</Link>
           </div>
         </div>
       </div>

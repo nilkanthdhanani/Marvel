@@ -1,67 +1,66 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import './dropdown.scss';
 import { drop1img1, drop1img2, drop1img3, drop1img4 } from '../../../assets/images/homeImg';
 
 export default function Dropdown1() {
   return (
-    <>
-      <div className="dropdown">
-        <div className="container-dropdown">
-          <div className="drop-links">
-            <a href="/news">LATEST NEWS</a>
-            <a href="/news">ALL NEWS</a>
-          </div>
-          <h2>TRENDING NEWS</h2>
-          <div className="drop-grid">
-            <div className="drop-grid-div">
-              <div className="drop-drid-image">
-                <img src={drop1img1} alt="drop1img1" />
-              </div>
-              <div className="drop-grid-text">
-                <h4>MOVIES</h4>
-                <p>‘Deadpool & Wolverine’ Makes Its Worldwide Premiere in New York City</p>
-              </div>
+    <div className="dropdown">
+      <div className="container-dropdown">
+        <div className="drop-links">
+          <Link to="/news">LATEST NEWS</Link>
+          <Link to="/news">ALL NEWS</Link>
+        </div>
+        <h2>TRENDING NEWS</h2>
+        <div className="drop-grid">
+          <div className="drop-grid-div">
+            <div className="drop-drid-image">
+              <img src={drop1img1} alt="drop1img1" />
             </div>
-            <div className="drop-grid-div">
-              <div className="drop-drid-image">
-                <img src={drop1img2} alt="drop1img2" />
-              </div>
-              <div className="drop-grid-text">
-                <h4>COMICS</h4>
-                <p>July 24's New Marvel Comics: The Full List</p>
-              </div>
-            </div>
-            <div className="drop-grid-div">
-              <div className="drop-drid-image">
-                <img src={drop1img3} alt="drop1img3" />
-              </div>
-              <div className="drop-grid-text">
-                <h4>MOVIES</h4>
-                <p>Sam Wilson Takes Flight in First 'Captain America: Brave New World' Trailer</p>
-              </div>
-            </div>
-            <div className="drop-grid-div">
-              <div className="drop-drid-image">
-                <img src={drop1img4} alt="drop1img4" />
-              </div>
-              <div className="drop-grid-text">
-                <h4>TV SHOWS</h4>
-                <p>Kathryn Hahn’s Agatha Harkness Returns in 'Agatha All Along' Trailer</p>
-              </div>
+            <div className="drop-grid-text">
+              <h4>MOVIES</h4>
+              <p>‘Deadpool & Wolverine’ Makes Its Worldwide Premiere in New York City</p>
             </div>
           </div>
-          <div className="drop-links-last">
-            <h3>SEARCH BY</h3>
-            <a href="/news">MOVIES</a>
-            <a href="/news">COMICS</a>
-            <a href="/news">TV SHOWS</a>
-            <a href="/news">GAMES</a>
-            <a href="/news">DIGITAL SERIES</a>
-            <a href="/news">CULTURE & LIFESTYLE</a>
-            <a href="/news">PODCASTS</a>
+          <div className="drop-grid-div">
+            <div className="drop-drid-image">
+              <img src={drop1img2} alt="drop1img2" />
+            </div>
+            <div className="drop-grid-text">
+              <h4>COMICS</h4>
+              <p>July 24's New Marvel Comics: The Full List</p>
+            </div>
+          </div>
+          <div className="drop-grid-div">
+            <div className="drop-drid-image">
+              <img src={drop1img3} alt="drop1img3" />
+            </div>
+            <div className="drop-grid-text">
+              <h4>MOVIES</h4>
+              <p>Sam Wilson Takes Flight in First 'Captain America: Brave New World' Trailer</p>
+            </div>
+          </div>
+          <div className="drop-grid-div">
+            <div className="drop-drid-image">
+              <img src={drop1img4} alt="drop1img4" />
+            </div>
+            <div className="drop-grid-text">
+              <h4>TV SHOWS</h4>
+              <p>Kathryn Hahn’s Agatha Harkness Returns in 'Agatha All Along' Trailer</p>
+            </div>
           </div>
         </div>
+        <div className="drop-links-last">
+          <h3>SEARCH BY</h3>
+          <Link to="/news#movies">MOVIES</Link>
+          <Link to="/news#comics">COMICS</Link>
+          <Link to="/news#shows">TV SHOWS</Link>
+          <Link to="/news#games">GAMES</Link>
+          <Link to="/news#series">DIGITAL SERIES</Link>
+          <Link to="/news#culture">CULTURE & LIFESTYLE</Link>
+          <Link to="/news#podcasts">PODCASTS</Link>
+        </div>
       </div>
-    </>
-  )
+    </div>
+  );
 }
