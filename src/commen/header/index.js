@@ -96,7 +96,7 @@ export default function Header() {
               </li>
               <li>
                 <div className="ancer-link">
-                  <a href="/">COMICS</a>
+                  <a href="/comics">COMICS</a>
                 </div>
                 <Dropdown2 />
               </li>

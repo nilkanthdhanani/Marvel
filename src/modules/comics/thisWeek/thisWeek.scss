@@ -1,0 +1,63 @@
+@import "../../../styles/index.scss";
+
+.this-week {
+    h2 {
+        padding: 24px 0;
+        @include font28b;
+        font-weight: 600;
+        font-family: var(--font-family-condensed);
+
+        @include breakpoint("sm-max") {
+            font-size: 22px;
+        }
+    }
+
+    .this-week-grid {
+        @include grid5c;
+        gap: 30px 16px;
+
+        @include breakpoint("lg-max") {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include breakpoint("sm-max") {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        @media (max-width: 350px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .this-week-grid-box {
+            img {
+                width: 100%;
+                cursor: pointer;
+            }
+
+            h3 {
+                margin: 12px 0 4px 0;
+                @include font16;
+                line-height: 20px;
+                font-weight: 700;
+                text-transform: uppercase;
+                cursor: pointer;
+                font-family: var(--font-family-condensed);
+
+                &:hover {
+                    color: var(--font-color3);
+                }
+            }
+
+            span {
+                @include font12;
+                font-weight: 500;
+                color: var(--font-color6);
+                cursor: pointer;
+
+                &:hover {
+                    color: var(--font-color3);
+                }
+            }
+        }
+    }
+}

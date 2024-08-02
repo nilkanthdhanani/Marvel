@@ -9,12 +9,12 @@ export default function Dropdown2() {
       <div className="dropdown">
         <div className="container-dropdown">
           <div className="drop-links">
-            <Link to="/">RELEASE CALENDAR</Link>
-            <Link to="/">MARVEL UNLIMITED</Link>
-            <Link to="/">STROMBREAKERS</Link>
-            <Link to="/">READING GUIDES</Link>
-            <Link to="/">PRINT SUBSCRIPTIONS</Link>
-            <Link to="/">ALL COMICS</Link>
+            <Link to="/comics">RELEASE CALENDAR</Link>
+            <Link to="/comics">MARVEL UNLIMITED</Link>
+            <Link to="/comics">STROMBREAKERS</Link>
+            <Link to="/comics">READING GUIDES</Link>
+            <Link to="/comics">PRINT SUBSCRIPTIONS</Link>
+            <Link to="/comics">ALL COMICS</Link>
           </div>
           <h2>LATEST COMICS</h2>
           <div className="drop-grid2">
@@ -63,9 +63,9 @@ export default function Dropdown2() {
           </div>
           <div className="drop-links-last">
                 <h3>BROWSE BY</h3>
-                <Link to="/">SERIES</Link>
-                <Link to="/">CHARACTER</Link>
-                <Link to="/">CREATOR</Link>
+                <Link to="/comics">SERIES</Link>
+                <Link to="/comics">CHARACTER</Link>
+                <Link to="/comics">CREATOR</Link>
           </div>
         </div>
       </div>

@@ -1,0 +1,33 @@
+@import '../../../styles/index.scss';
+
+.add-div {
+    margin: 50px 0 20px 0;
+    @include flex-center;
+
+    img {
+        width: 100%;
+        margin: 0 auto;
+
+        &:nth-child(2) {
+            display: none;
+        }
+
+        @include breakpoint("sm-max") {
+            display: none;
+
+            &:nth-child(2) {
+                display: block;
+            }
+        }
+    }
+
+    span {
+        display: block;
+        margin-top: 12px;
+        @include font12;
+        letter-spacing: 2px;
+        line-height: 18px;
+        text-align: center;
+        color: var(--bgcolor2);
+    }
+}

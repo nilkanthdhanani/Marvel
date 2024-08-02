@@ -3,6 +3,7 @@ import Home from "../modules/home";
 import DefaultLayout from "./defaultLayout";
 import Error from "../error";
 import News from "../modules/news";
+import Comics from "../modules/comics";
 
 const router = createBrowserRouter([
     {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
             {
                 path: "/news",
                 element: <News />
+            },
+            {
+                path: "/comics",
+                element: <Comics />
             },
         ]
     },

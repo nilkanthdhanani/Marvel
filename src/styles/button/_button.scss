@@ -289,3 +289,58 @@
         }
     }
 }
+
+.comic-banner-button {
+    button {
+        padding: 14px 16px;
+        background-color: var(--font-color3);
+        transform: skewX(-20deg);
+        border: transparent;
+        cursor: pointer;
+
+        span {
+            display: block;
+            @include font16;
+            font-weight: 600;
+            font-family: var(--font-family-condensed);
+            transform: skewX(20deg);
+            color: var(--color-white);
+        }
+
+        &:hover {
+            background-color: var(--bgcolor6);
+            transition: 0.2s ease-in-out;
+        }
+    }
+}
+
+.load-more {
+    padding: 65px 0 32px 0;
+    @include flex-center;
+
+    @include breakpoint("sm-max") {
+        padding: 45px 0 15px 0;
+    }
+
+    button {
+        padding: 14px 56px;
+        background-color: var(--font-color3);
+        transform: skewX(-20deg);
+        border: transparent;
+        cursor: pointer;
+
+        span {
+            display: block;
+            @include font16;
+            font-weight: 600;
+            font-family: var(--font-family-condensed);
+            transform: skewX(20deg);
+            color: var(--color-white);
+        }
+
+        &:hover {
+            background-color: var(--bgcolor6);
+            transition: 0.2s ease-in-out;
+        }
+    }
+}

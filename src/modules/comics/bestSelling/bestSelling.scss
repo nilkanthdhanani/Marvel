@@ -1,0 +1,168 @@
+@import "../../../styles/index.scss";
+
+.best-sell {
+    h2 {
+        padding: 24px 0;
+        @include font28b;
+        font-weight: 600;
+        font-family: var(--font-family-condensed);
+
+        @include breakpoint("sm-max") {
+            font-size: 22px;
+        }
+    }
+
+    .promo-div {
+        margin-bottom: 64px;
+
+        .promo-main-div {
+            border-top: 1px solid var(--bgcolor4);
+            border-bottom: 1px solid var(--bgcolor4);
+            @include flex-between;
+
+            @include breakpoint("lg-max") {
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            img {
+                max-width: 280px;
+                min-height: 60px;
+                object-fit: cover;
+
+                @include breakpoint("lg-max") {
+                    max-width: 100%;
+                }
+            }
+
+            h3 {
+                @include font16;
+                font-family: var(--font-family-condensed);
+                font-weight: 600;
+                color: var(--font-color3);
+            }
+
+            p {
+                @include font16;
+                max-width: 420px;
+                font-weight: 600;
+
+                @include breakpoint("lg-max") {
+                    max-width: 100%;
+                    text-align: center;
+                }
+            }
+
+            a {
+                @include font16;
+                font-weight: 600;
+                color: var(--font-color3);
+                padding-right: 70px;
+
+                @include breakpoint("lg-max") {
+                    padding: 0 0 16px 0;
+                }
+            }
+        }
+
+        .promo-batch {
+            margin-top: 8px;
+            color: var(--bgcolor2);
+            @include font12;
+            letter-spacing: 2px;
+            line-height: 18px;
+            text-align: center;
+        }
+    }
+
+    .best-sell-grid {
+        margin-bottom: 50px;
+        @include grid5c;
+        gap: 30px 16px;
+        position: relative;
+        transition: 5s ease-in-out;
+
+        @include breakpoint("lg-max") {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include breakpoint("sm-max") {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        @media (max-width: 350px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &.animate {
+            transform: translateX(-1000%);
+        }
+
+        .best-sell-grid-box {
+            min-height: 460px;
+
+            img {
+                width: 100%;
+                cursor: pointer;
+            }
+
+            .best-sell-text {
+                display: flex;
+                justify-content: space-between;
+                gap: 16px;
+                margin-top: 12px;
+
+                h3 {
+                    margin-bottom: 4px;
+                    @include font16;
+                    line-height: 20px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    font-family: var(--font-family-condensed);
+
+                    &:hover {
+                        color: var(--font-color3);
+                    }
+                }
+
+                span {
+                    @include font12;
+                    font-weight: 500;
+                    color: var(--font-color6);
+                    cursor: pointer;
+
+                    &:hover {
+                        color: var(--font-color3);
+                    }
+                }
+            }
+        }
+
+        .left-button,
+        .right-button {
+            position: absolute;
+            top: 40%;
+            cursor: pointer;
+            background-color: var(--font-color3);
+
+            svg {
+                padding: 4px;
+                width: 32px;
+                fill: var(--color-white);
+            }
+
+            &:hover {
+                background-color: var(--bgcolor6);
+            }
+        }
+
+        .left-button {
+            left: -16px;
+        }
+
+        .right-button {
+            right: -16px;
+        }
+    }
+}

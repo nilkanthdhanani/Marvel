@@ -1,5 +1,4 @@
-/// Mixin to manage responsive breakpoints
-/// @param {String} $breakpoint - Breakpoint name
+/// @param {String} $breakpoint
 /// @require $breakpoints-min
 /// @require $breakpoints-max
 $breakpoints-min: (
@@ -15,20 +14,16 @@ $breakpoints-max: (
   "lg-max": 1024px
 ) !default;
 @mixin breakpoint($breakpoint) {
-  // If the key exists in the map
   @if map-has-key($breakpoints-max, $breakpoint) {
-    // Prints a media query based on the value
     @media (max-width: map-get($breakpoints-max, $breakpoint)) {
       @content;
     }
   } @else {
     @if map-has-key($breakpoints-min, $breakpoint) {
-      // Prints a media query based on the value
       @media (min-width: map-get($breakpoints-min, $breakpoint)) {
         @content;
       }
     }
-    // If the key doesn't exist in the map
     @else {
       @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
           + "Available breakpoints are: #{map-keys($breakpoints-min),map-keys($breakpoints-max)}.";

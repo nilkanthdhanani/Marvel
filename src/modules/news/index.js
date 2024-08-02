@@ -25,13 +25,13 @@ export default function News() {
   return (
     <>
       <NewsBanner />
-      <section id="movies"><MovieNews /></section>
-      <section id="comics"><ComicsNews /></section>
-      <section id="shows"><ShowsNews /></section>
-      <section id="games"><GamesNews /></section>
-      <section id="series"><SeriesNews /></section>
-      <section id="culture"><CultureNews /></section>
-      <section id="podcasts"><PodcastNews /></section>
+      <section id="moviesSec"><MovieNews /></section>
+      <section id="comicsSec"><ComicsNews /></section>
+      <section id="showsSec"><ShowsNews /></section>
+      <section id="gamesSec"><GamesNews /></section>
+      <section id="seriesSec"><SeriesNews /></section>
+      <section id="cultureSec"><CultureNews /></section>
+      <section id="podcastsSec"><PodcastNews /></section>
       <Redeem />
     </>
   );

@@ -20,17 +20,17 @@ export default function InnerSidebar({ isOpen, closeInnerSidebar, toggleSidebar,
             </div>
         </>,
         'COMICS': <>
-            <Link to="/" onClick={toggleSidebar}>RELEASE CALENDAR</Link>
-            <Link to="/" onClick={toggleSidebar}>MARVEL UNLIMITED</Link>
-            <Link to="/" onClick={toggleSidebar}>STROMBREAKERS</Link>
-            <Link to="/" onClick={toggleSidebar}>READING GUIDES</Link>
-            <Link to="/" onClick={toggleSidebar}>PRINT SUBSCRIPTIONS</Link>
-            <Link to="/" onClick={toggleSidebar}>ALL COMICS</Link>
+            <Link to="/comics" onClick={toggleSidebar}>RELEASE CALENDAR</Link>
+            <Link to="/comics" onClick={toggleSidebar}>MARVEL UNLIMITED</Link>
+            <Link to="/comics" onClick={toggleSidebar}>STROMBREAKERS</Link>
+            <Link to="/comics" onClick={toggleSidebar}>READING GUIDES</Link>
+            <Link to="/comics" onClick={toggleSidebar}>PRINT SUBSCRIPTIONS</Link>
+            <Link to="/comics" onClick={toggleSidebar}>ALL COMICS</Link>
             <div className="secondary">
                 <h2>BROWSE BY</h2>
-                <Link to="/" onClick={toggleSidebar}>SERIES</Link>
-                <Link to="/" onClick={toggleSidebar}>CHARACTER</Link>
-                <Link to="/" onClick={toggleSidebar}>CREATOR</Link>
+                <Link to="/comics" onClick={toggleSidebar}>SERIES</Link>
+                <Link to="/comics" onClick={toggleSidebar}>CHARACTER</Link>
+                <Link to="/comics" onClick={toggleSidebar}>CREATOR</Link>
             </div>
         </>,
         'CHARACTERS': <>
