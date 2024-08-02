@@ -1,0 +1,264 @@
+@import "../../../styles/index.scss";
+
+.featured {
+    padding-top: 10px;
+
+    h2 {
+        @include font26b;
+        font-weight: 600;
+        line-height: 0.9;
+        font-family: var(--font-family-condensed);
+        margin: 25px 0;
+        position: relative;
+
+        &::after {
+            @include fontline-top;
+            width: 20px;
+        }
+
+        &::before {
+            @include fontline-bottom;
+            width: 20px;
+        }
+    }
+
+    .character-comic {
+        margin-bottom: 30px;
+        @include grid4c;
+        gap: 10px;
+
+        @include breakpoint("lg-max") {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        @include breakpoint("md-max") {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include breakpoint("sm-max") {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 400px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .character-comic-box {
+            .character-comic-image {
+                position: relative;
+                cursor: pointer;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    background-color: rgba(255, 255, 255, 0.1);
+                    opacity: 0;
+                    transition: 0.3s ease-in-out;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .character-comic-text {
+                span {
+                    display: block;
+                    padding: 10px 0 8px 0;
+                    @include font14b;
+                    font-family: var(--font-family-condensed);
+                    color: var(--bgcolor2);
+                }
+
+                p {
+                    @include font15b;
+                    color: var(--bgcolor-sidebar);
+                    cursor: pointer;
+
+                    &:hover {
+                        color: var(--font-color3);
+                    }
+                }
+            }
+
+            &:hover {
+                .character-comic-image {
+                    &::after {
+                        opacity: 1;
+                        transition: 0.3s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+
+    .featured-main {
+        @include grid6c;
+        gap: 10px;
+
+        @include breakpoint("lg-max") {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        @include breakpoint("md-max") {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include breakpoint("sm-max") {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 400px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .featured-div {
+            cursor: pointer;
+
+            .featured-image {
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 210px;
+                    object-fit: cover;
+                    object-position: top;
+                    transition: 0.2s ease-in-out;
+                }
+            }
+
+            .featured-text {
+                padding: 16px 24px 17px 20px;
+                background-color: var(--bgcolor-sidebar);
+                min-height: 145px;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 4px;
+                    background-color: var(--font-color3);
+                    transition: 0.3s ease-in-out;
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 0;
+                    height: 0;
+                    z-index: 1;
+                    border-bottom: 12px solid var(--color-white);
+                    border-left: 12px solid transparent;
+                    transition: 0.3s ease-in-out;
+                }
+
+                h4 {
+                    z-index: 1;
+                    @include font16;
+                    font-weight: 700;
+                    letter-spacing: 0.5px;
+                    color: var(--color-white);
+                    margin-top: 5px;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    z-index: 1;
+                    text-transform: uppercase;
+                    @include font12;
+                    font-weight: 500;
+                    letter-spacing: 0.5px;
+                    color: var(--font-color5);
+                    transition: 0.2s ease-in-out;
+                }
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.05);
+                    transition: 0.2s ease-in-out;
+                }
+                .featured-text {
+                    &::after {
+                        height: 100%;
+                    }
+                    p {
+                        color: var(--color-white);
+                        transition: 0.2s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+
+    .news-numbering {
+        margin: 10px 0 20px 0;
+
+        ul {
+            @include flex-center;
+            flex-wrap: wrap;
+
+            li {
+                list-style: none;
+                margin: 4px 15px;
+                cursor: pointer;
+
+                &:first-child {
+                    span {
+                        font-weight: 800;
+                    }
+                }
+
+                span {
+                    @include font18;
+                    font-family: var(--font-family-condensed);
+                    color: var(--bgcolor-header);
+
+                    &:hover {
+                        color: var(--font-color3);
+                    }
+                }
+            }
+
+            .next-button {
+                position: relative;
+
+                span {
+                    font-size: 13px;
+                    font-family: var(--font-family-roboto);
+                    font-weight: 600;
+                }
+
+                &::after {
+                    display: inline-block;
+                    content: "";
+                    border-top: 5px solid transparent;
+                    border-bottom: 5px solid transparent;
+                    border-left: 6px solid #767676;
+                    margin-left: 10px;
+                }
+
+                &:hover {
+                    span {
+                        color: var(--font-color3);
+                    }
+                    &::after {
+                        border-left-color: var(--font-color3);
+                    }
+                }
+            }
+        }
+    }
+}

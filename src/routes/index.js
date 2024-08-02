@@ -4,6 +4,7 @@ import DefaultLayout from "./defaultLayout";
 import Error from "../error";
 import News from "../modules/news";
 import Comics from "../modules/comics";
+import Characters from "../modules/characters";
 
 const router = createBrowserRouter([
     {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
             {
                 path: "/comics",
                 element: <Comics />
+            },
+            {
+                path: "/characters",
+                element: <Characters />
             },
         ]
     },

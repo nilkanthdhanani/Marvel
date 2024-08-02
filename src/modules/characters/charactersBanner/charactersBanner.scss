@@ -1,0 +1,85 @@
+@import "../../../styles/index.scss";
+
+.insider2 {
+    background-color: var(--bgcolor-sidebar);
+    @include flex-center;
+
+    .insider2-div {
+        @include flex;
+        gap: 10px;
+
+        p {
+            @include font14;
+            color: var(--color-white);
+            letter-spacing: 0.5px;
+            font-family: var(--font-family-condensed);
+
+            &:nth-child(2) {
+                display: none;
+            }
+
+            @include breakpoint("sm-max") {
+                &:nth-child(1) {
+                    display: none;
+                }
+
+                &:nth-child(2) {
+                    display: block;
+                }
+            }
+        }
+
+        img {
+            width: 63px;
+        }
+    }
+}
+
+.charactersBanner {
+    background-image: url("../../../assets/images/jpg/charactersBanner.jpg");
+    min-height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    @include breakpoint("sm-max") {
+        min-height: 340px;
+    }
+
+    &::after {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        content: "";
+        z-index: 1;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.65) 0, rgba(0, 0, 0, 0.2));
+    }
+
+    .charactersBanner-head {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        color: var(--color-white);
+        @include flex-center;
+        flex-direction: column;
+        padding: 0 20px;
+
+        h1 {
+            @include font44;
+            font-family: var(--font-family-condensed);
+
+            @include breakpoint("sm-max") {
+                font-size: 26px;
+                text-align: center;
+            }
+        }
+
+        p {
+            margin-top: 5px;
+            letter-spacing: 0.5px;
+            text-align: center;
+        }
+    }
+}

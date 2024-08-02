@@ -1,0 +1,117 @@
+@import "../../../styles/index.scss";
+
+.charactersList {
+    h3 {
+        padding: 65px 0;
+        @include font26b;
+        font-weight: 600;
+        font-family: var(--font-family-condensed);
+    }
+
+    .charactersList-grid {
+        @include grid2c;
+        padding-bottom: 20px;
+
+        @include breakpoint("sm-max") {
+            &:first-of-type {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 5px;
+            }
+        }
+
+        .cc-grid1 {
+            position: relative;
+
+            input {
+                width: 100%;
+                padding: 2px 4px 9px 32px;
+                border: none;
+                @include font26b;
+                border-bottom: 2px solid;
+                font-weight: 600;
+                border-radius: 0;
+                font-family: var(--font-family-condensed);
+
+                &:focus {
+                    outline: 2px solid var(--font-color4);
+                    outline-offset: 2px;
+                }
+            }
+
+            svg {
+                position: absolute;
+                left: 3px;
+                top: 10px;
+                stroke: var(--color-black);
+                fill: transparent;
+                stroke-width: 2px;
+            }
+        }
+
+        .cc-grid2, .cc-grid4 {
+            border-bottom: 2px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            @include breakpoint("sm-max") {
+                border-bottom: none;
+            }
+
+            li {
+                list-style: none;
+                margin: 4px 0 4px 30px;
+                cursor: pointer;
+                @include font14;
+                font-weight: 600;
+                color: var(--bgcolor-header);
+                position: relative;
+
+                &::after {
+                    display: inline-block;
+                    content: "";
+                    border-left: 4px solid transparent;
+                    border-right: 4px solid transparent;
+                    border-top: 6px solid var(--color-black);
+                    margin: 0 0 1px 10px;
+                }
+
+                &:hover {
+                    color: var(--font-color3);
+                    &::after {
+                        border-top-color: var(--font-color3);
+                    }
+                }
+            }
+        }
+
+        .cc-grid3 {
+            h4 {
+                @include font13;
+                font-weight: 600;
+                letter-spacing: 1px;
+                color: var(--bgcolor2);
+            }
+        }
+        
+        .cc-grid4 {
+            border-bottom: none;
+
+            span {
+                @include font12;
+                font-weight: 600;
+                letter-spacing: 1px;
+                color: var(--bgcolor2);
+            }
+
+            li {
+                font-size: 12px;
+                color: var(--font-color3);
+
+                &::after {
+                    margin: 0 0 2px 15px;
+                }
+            }
+        }
+    }
+}

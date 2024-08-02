@@ -16,7 +16,7 @@ export default function Home() {
 
   useEffect(() => {
     if (topRef.current) {
-      window.scrollTo({ top: topRef.current.offsetTop - 100, behavior: 'smooth' });
+      window.scrollTo({ top: topRef.current.offsetTop - 100, behavior: 'auto' });
     }
   }, []);
 

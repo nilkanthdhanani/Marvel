@@ -9,9 +9,9 @@ export default function Dropdown3() {
       <div className="dropdown">
         <div className="container-dropdown">
           <div className="drop-links">
-            <Link to="/">ALL CHARACTERS</Link>
-            <Link to="/">TEAMS & GROUPS</Link>
-            <Link to="/">EXPLORE ALL</Link>
+            <Link to="/characters">ALL CHARACTERS</Link>
+            <Link to="/characters">TEAMS & GROUPS</Link>
+            <Link to="/characters">EXPLORE ALL</Link>
           </div>
           <h2>TRENDING IN THE UNIVERSE</h2>
           <div className="drop-grid3">

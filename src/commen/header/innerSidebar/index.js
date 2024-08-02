@@ -34,9 +34,9 @@ export default function InnerSidebar({ isOpen, closeInnerSidebar, toggleSidebar,
             </div>
         </>,
         'CHARACTERS': <>
-            <Link to="/" onClick={toggleSidebar}>ALL CHARACTERS</Link>
-            <Link to="/" onClick={toggleSidebar}>TEAMS & GROUPS</Link>
-            <Link to="/" onClick={toggleSidebar}>EXPLORE ALL</Link>
+            <Link to="/characters" onClick={toggleSidebar}>ALL CHARACTERS</Link>
+            <Link to="/characters" onClick={toggleSidebar}>TEAMS & GROUPS</Link>
+            <Link to="/characters" onClick={toggleSidebar}>EXPLORE ALL</Link>
         </>,
         'MOVIES': <>
             <Link to="/" onClick={toggleSidebar}>CAPTAIN AMERICA: BRAVE NEW WORLD</Link>

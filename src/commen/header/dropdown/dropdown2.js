@@ -62,10 +62,10 @@ export default function Dropdown2() {
             </div>
           </div>
           <div className="drop-links-last">
-                <h3>BROWSE BY</h3>
-                <Link to="/comics">SERIES</Link>
-                <Link to="/comics">CHARACTER</Link>
-                <Link to="/comics">CREATOR</Link>
+            <h3>BROWSE BY</h3>
+            <Link to="/comics">SERIES</Link>
+            <Link to="/comics">CHARACTER</Link>
+            <Link to="/comics">CREATOR</Link>
           </div>
         </div>
       </div>
