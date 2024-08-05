@@ -5,6 +5,15 @@ import { drop1img1, drop1img2, drop1img3, drop1img4, drop1img5, latest1, latest1
 import Insider from '../../../assets/images/svg/insider';
 import Watch from '../../../assets/images/svg/watch';
 
+
+const extraBoxItems = [
+    { img: drop1img1, title: 'MOVIES', description: '‘Deadpool & Wolverine’ Makes Its Worldwide Premiere in New York City' },
+    { img: drop1img3, title: 'MOVIES', description: 'Sam Wilson Takes Flight in First \'Captain America: Brave New World\' Trailer' },
+    { img: drop1img4, title: 'TV SHOWS', description: 'Kathryn Hahn’s Agatha Harkness Returns in \'Agatha All Along\' Trailer' },
+    { img: drop1img2, title: 'COMICS', description: 'July 24\'s New Marvel Comics: The Full List' },
+    { img: drop1img5, title: 'PODCASTS', description: 'See the X-Men Comics That Inspired ‘X-Men ‘97’' },
+];
+
 const items = [
     { img: latest1, title: 'LIVE EVENTS', description: 'SDCC 2024: All the News from Marvel Studios’ Hall H Panel', time: '' },
     { img: latest2, title: 'MARVEL LIVE', description: 'Every MCU Reveal at SDCC 2024: Fantastic Four, Avengers: Doomsday & More! | Official Recap', time: '3 HOURS AGO', videoTime: '17:10' },
@@ -91,51 +100,17 @@ export default function Latest() {
                             <p>Can’t-miss news and updates from across the Marvel Universe!</p>
                         </div>
                         <div className="extra-boxes">
-                            <div className="extra-box">
-                                <div className="extra-box-image">
-                                    <img src={drop1img1} alt="drop1img1" />
+                            {extraBoxItems.map((extra, index) => (
+                                <div className="extra-box" key={index}>
+                                    <div className="extra-box-image">
+                                        <img src={extra.img} alt={`extra-img-${index + 1}`} />
+                                    </div>
+                                    <div className="extra-box-text">
+                                        <h4>{extra.title}</h4>
+                                        <p>{extra.description}</p>
+                                    </div>
                                 </div>
-                                <div className="extra-box-text">
-                                    <h4>MOVIES</h4>
-                                    <p>‘Deadpool & Wolverine’ Makes Its Worldwide Premiere in New York City</p>
-                                </div>
-                            </div>
-                            <div className="extra-box">
-                                <div className="extra-box-image">
-                                    <img src={drop1img3} alt="drop1img3" />
-                                </div>
-                                <div className="extra-box-text">
-                                    <h4>MOVIES</h4>
-                                    <p>Sam Wilson Takes Flight in First 'Captain America: Brave New World' Trailer</p>
-                                </div>
-                            </div>
-                            <div className="extra-box">
-                                <div className="extra-box-image">
-                                    <img src={drop1img4} alt="drop1img4" />
-                                </div>
-                                <div className="extra-box-text">
-                                    <h4>TV SHOWS</h4>
-                                    <p>Kathryn Hahn’s Agatha Harkness Returns in 'Agatha All Along' Trailer</p>
-                                </div>
-                            </div>
-                            <div className="extra-box">
-                                <div className="extra-box-image">
-                                    <img src={drop1img2} alt="drop1img2" />
-                                </div>
-                                <div className="extra-box-text">
-                                    <h4>COMICS</h4>
-                                    <p>July 24's New Marvel Comics: The Full List</p>
-                                </div>
-                            </div>
-                            <div className="extra-box">
-                                <div className="extra-box-image">
-                                    <img src={drop1img5} alt="drop1img5" />
-                                </div>
-                                <div className="extra-box-text">
-                                    <h4>PODCASTS</h4>
-                                    <p>See the X-Men Comics That Inspired ‘X-Men ‘97’</p>
-                                </div>
-                            </div>
+                            ))}
                         </div>
                         <div className="border-bottom">
                             <BorderTop />

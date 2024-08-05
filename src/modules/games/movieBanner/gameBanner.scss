@@ -1,0 +1,56 @@
+@import "../../../styles/index.scss";
+
+.gameBanner {
+    background-image: url("../../../assets/images/jpg/gameBanner.jpg");
+    min-height: 400px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    clip-path: polygon(0 0, 0 98%, 100% 92%, 100% 0);
+
+    @include breakpoint("lg-max") {
+        background-position: right;
+    }
+
+    @include breakpoint("sm-max") {
+        min-height: 340px;
+        background-position: 85% 15%;
+    }
+
+    &::after {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        content: "";
+        z-index: 1;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.65) 0, rgba(0, 0, 0, 0.2));
+    }
+
+    .gameBanner-head {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        color: var(--color-white);
+        @include flex-center;
+        flex-direction: column;
+        padding: 0 20px;
+
+        h1 {
+            @include font44;
+            font-family: var(--font-family-condensed);
+
+            @include breakpoint("sm-max") {
+                font-size: 26px;
+                text-align: center;
+            }
+        }
+
+        p {
+            padding: 5px 0 20px 0;
+            letter-spacing: 0.5px;
+            text-align: center;
+        }
+    }
+}

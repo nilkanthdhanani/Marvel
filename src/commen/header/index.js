@@ -120,7 +120,7 @@ export default function Header() {
               </li>
               <li>
                 <div className="ancer-link">
-                  <a href="/">GAMES</a>
+                  <a href="/games">GAMES</a>
                 </div>
                 <Dropdown6 />
               </li>

@@ -9,11 +9,11 @@ export default function Dropdown6() {
       <div className="dropdown">
         <div className="container-dropdown">
           <div className="drop-links">
-            <Link to="/">MARVEL 1943: RISE OF HYDRA</Link>
-            <Link to="/">MARVEL VS. CAPCOM</Link>
-            <Link to="/">MARVEL'S SPIDER-MAN 2</Link>
-            <Link to="/">MARVEL SNAP</Link>
-            <Link to="/">SEE ALL GAMES</Link>
+            <Link to="/games">MARVEL 1943: RISE OF HYDRA</Link>
+            <Link to="/games">MARVEL VS. CAPCOM</Link>
+            <Link to="/games">MARVEL'S SPIDER-MAN 2</Link>
+            <Link to="/games">MARVEL SNAP</Link>
+            <Link to="/games">SEE ALL GAMES</Link>
           </div>
           <h2>GAMES</h2>
           <div className="drop-grid2">

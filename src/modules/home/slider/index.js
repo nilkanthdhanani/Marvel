@@ -5,6 +5,22 @@ import {
     slider7, slider8, slider9, slider10, slider11, slider12, slider13 
 } from '../../../assets/images/homeImg';
 
+const sliderItems = [
+    { src: slider1, text: "Avengers: Twilight (2024) #5", year: "2024" },
+    { src: slider2, text: "GIANT-SIZE HULK #1 (2024) #1", year: "2024" },
+    { src: slider3, text: "The Spectacular Spider-Men (2024) #2", year: "2024" },
+    { src: slider4, text: "Ultimate Black Panther (2024) #3", year: "2024" },
+    { src: slider5, text: "Black Widow & Hawkeye (2024) #2", year: "2024" },
+    { src: slider6, text: "Ghost Rider: Final Vengeance (2024) #2", year: "2024" },
+    { src: slider7, text: "Captain Marvel (2023) #7", year: "2024" },
+    { src: slider8, text: "Miles Morales: Spider-Man (2022) #19", year: "2024" },
+    { src: slider9, text: "Spider-Woman (2023) #6", year: "2024" },
+    { src: slider10, text: "Spider-Boy (2023) #6", year: "2024" },
+    { src: slider11, text: "What If…? Venom (2024) #3", year: "2024" },
+    { src: slider12, text: "Star Wars: Mace Windu (2024) #3", year: "2024" },
+    { src: slider13, text: "Beware the Planet of the Apes (2024) #4", year: "2024" }
+];
+
 export default function Slider() {
     const scrollTrackRef = useRef(null);
     const sliderMainRef = useRef(null);
@@ -67,21 +83,7 @@ export default function Slider() {
             <div className="container2">
                 <div className="slider-scroll">
                     <div className="slider-main" ref={sliderMainRef}>
-                        {[
-                            { src: slider1, text: "Avengers: Twilight (2024) #5", year: "2024" },
-                            { src: slider2, text: "GIANT-SIZE HULK #1 (2024) #1", year: "2024" },
-                            { src: slider3, text: "The Spectacular Spider-Men (2024) #2", year: "2024" },
-                            { src: slider4, text: "Ultimate Black Panther (2024) #3", year: "2024" },
-                            { src: slider5, text: "Black Widow & Hawkeye (2024) #2", year: "2024" },
-                            { src: slider6, text: "Ghost Rider: Final Vengeance (2024) #2", year: "2024" },
-                            { src: slider7, text: "Captain Marvel (2023) #7", year: "2024" },
-                            { src: slider8, text: "Miles Morales: Spider-Man (2022) #19", year: "2024" },
-                            { src: slider9, text: "Spider-Woman (2023) #6", year: "2024" },
-                            { src: slider10, text: "Spider-Boy (2023) #6", year: "2024" },
-                            { src: slider11, text: "What If…? Venom (2024) #3", year: "2024" },
-                            { src: slider12, text: "Star Wars: Mace Windu (2024) #3", year: "2024" },
-                            { src: slider13, text: "Beware the Planet of the Apes (2024) #4", year: "2024" }
-                        ].map((item, index) => (
+                        {sliderItems.map((item, index) => (
                             <div className="slider-main-div" key={index}>
                                 <img src={item.src} alt={`slider${index + 1}`} />
                                 <div className="slider-main-text">

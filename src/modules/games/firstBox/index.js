@@ -1,14 +1,14 @@
 import React from 'react';
 import './firsrBox.scss';
-import { drop5img1, drop5img2, drop5img3, drop5img4, drop5img5, drop5img6 } from '../../../assets/images/shows';
+import { drop6img1, drop6img2, drop6img3, drop6img4, drop6img5, drop6img6 } from '../../../assets/images/games';
 
 const movies = [
-    { imgSrc: drop5img1, title: 'Agatha All Along', releaseDate: 'SEP 18, 2024', },
-    { imgSrc: drop5img2, title: 'Marvel\'s Hit-Monkey Season 2', releaseDate: 'JUL 15, 2024', },
-    { imgSrc: drop5img3, title: 'X-Men \'97', releaseDate: '2024', },
-    { imgSrc: drop5img4, title: 'Echo', releaseDate: '2024', },
-    { imgSrc: drop5img5, title: 'What If...? | Season 2', releaseDate: '2023', },
-    { imgSrc: drop5img6, title: 'LEGO Marvel Avengers: Code Red', releaseDate: '2023', },
+    { imgSrc: drop6img1, title: 'Marvel Rivals', releaseDate: '', },
+    { imgSrc: drop6img2, title: 'Marvel\'s Blade', releaseDate: '', },
+    { imgSrc: drop6img3, title: 'Marvel 1943: Rise of Hydra', releaseDate: '2025', },
+    { imgSrc: drop6img4, title: 'MARVEL VS. CAPCOM Fighting Collection: Arcade Classics', releaseDate: '2024', },
+    { imgSrc: drop6img5, title: 'Marvel\'s Spider-Man 2', releaseDate: '2023', },
+    { imgSrc: drop6img6, title: 'MARVEL SNAP', releaseDate: '2022', },
 ];
 
 export default function FirstBox() {

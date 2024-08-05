@@ -1,0 +1,72 @@
+@import "../../../styles/index.scss";
+
+.first-box {
+    position: relative;
+
+    .first-box-main {
+        margin-top: -45px;
+        padding: 20px 20px 40px 20px;
+        background-color: var(--color-white);
+
+        .first-box-grid {
+            padding-top: 10px;
+            @include grid6c;
+            gap: 20px;
+
+            @include breakpoint("lg-max") {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            @include breakpoint("md-max") {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            @include breakpoint("sm-max") {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @include breakpoint("xs-max") {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .first-box-grid-div {
+                cursor: pointer;
+
+                img {
+                    width: 100%;
+                    box-shadow: 0 7px 17px -8px rgba(0, 0, 0, 0.8);
+                    transition: 0.2s ease-in-out;
+                }
+
+                .first-box-grid-text {
+                    padding: 13px 0 0 0;
+
+                    h4 {
+                        @include font12;
+                        font-weight: 700;
+                        color: var(--bgcolor2);
+                        margin-top: 5px;
+                    }
+
+                    p {
+                        @include font15b;
+                        letter-spacing: 0.5px;
+                        color: var(--bgcolor-sidebar);
+                    }
+                }
+
+                &:hover {
+                    img {
+                        transform: translateY(-5px);
+                        transition: 0.2s ease-in-out;
+                    }
+                    .first-box-grid-text {
+                        p {
+                            color: var(--font-color3);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -53,11 +53,11 @@ export default function InnerSidebar({ isOpen, closeInnerSidebar, toggleSidebar,
             <Link to="/tvshows" onClick={toggleSidebar}>DISNEY+</Link>
         </>,
         'GAMES': <>
-            <Link to="/" onClick={toggleSidebar}>MARVEL 1943: RISE OF HYDRA</Link>
-            <Link to="/" onClick={toggleSidebar}>MARVEL VS. CAPCOM</Link>
-            <Link to="/" onClick={toggleSidebar}>MARVEL'S SPIDER-MAN 2</Link>
-            <Link to="/" onClick={toggleSidebar}>MARVEL SNAP</Link>
-            <Link to="/" onClick={toggleSidebar}>SEE ALL GAMES</Link>
+            <Link to="/games" onClick={toggleSidebar}>MARVEL 1943: RISE OF HYDRA</Link>
+            <Link to="/games" onClick={toggleSidebar}>MARVEL VS. CAPCOM</Link>
+            <Link to="/games" onClick={toggleSidebar}>MARVEL'S SPIDER-MAN 2</Link>
+            <Link to="/games" onClick={toggleSidebar}>MARVEL SNAP</Link>
+            <Link to="/games" onClick={toggleSidebar}>SEE ALL GAMES</Link>
         </>,
         'VIDEOS': <>
             <Link to="/" onClick={toggleSidebar}>TRAILERS & EXTRAS</Link>
