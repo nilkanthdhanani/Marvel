@@ -22,27 +22,26 @@ export default function Header() {
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
-    if (!isSidebarOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'auto';
-    }
+    document.body.style.overflow = isSidebarOpen ? 'auto' : 'hidden';
+  };
+
+  const hideHeaderOnLinkClick = () => {
+    window.scrollTo(0, 0);
+    setIsScrollingUp(false);
   };
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
-        if (window.scrollY < lastScrollY) {
-          setIsScrollingUp(true);
-        } else {
-          setIsScrollingUp(false);
-        }
+      if (window.scrollY === 0 || window.scrollY < lastScrollY) {
+        setIsScrollingUp(true);
+      } else {
+        setIsScrollingUp(false);
       }
       setLastScrollY(window.scrollY);
     };
-  
+
     window.addEventListener('scroll', handleScroll);
-  
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -52,7 +51,7 @@ export default function Header() {
     <header className={isScrollingUp ? 'scroll-up' : 'scroll-down'}>
       <div className="header-first">
         <div className="logo">
-          <Link to={"/"}>
+          <Link to="/" onClick={hideHeaderOnLinkClick}>
             <img src={logo} alt="logo" />
           </Link>
         </div>
@@ -61,9 +60,9 @@ export default function Header() {
             <div className="header-main1">
               <div className="header-main1-div">
                 <Login />
-                <a href="/">LOG IN</a>
+                <a href="/" onClick={hideHeaderOnLinkClick}>LOG IN</a>
                 <span>|</span>
-                <a href="/">JOIN</a>
+                <a href="/" onClick={hideHeaderOnLinkClick}>JOIN</a>
               </div>
               <div onClick={toggleSidebar} className="header-main1-menu">
                 <Menu />
@@ -90,49 +89,49 @@ export default function Header() {
             <div className="header-second-hover">
               <li>
                 <div className="ancer-link">
-                  <a href="/news">NEWS</a>
+                  <a href="/news" onClick={hideHeaderOnLinkClick}>NEWS</a>
                 </div>
                 <Dropdown1 />
               </li>
               <li>
                 <div className="ancer-link">
-                  <a href="/comics">COMICS</a>
+                  <a href="/comics" onClick={hideHeaderOnLinkClick}>COMICS</a>
                 </div>
                 <Dropdown2 />
               </li>
               <li>
                 <div className="ancer-link">
-                  <a href="/characters">CHARACTERS</a>
+                  <a href="/characters" onClick={hideHeaderOnLinkClick}>CHARACTERS</a>
                 </div>
                 <Dropdown3 />
               </li>
               <li>
                 <div className="ancer-link">
-                  <a href="/movies">MOVIES</a>
+                  <a href="/movies" onClick={hideHeaderOnLinkClick}>MOVIES</a>
                 </div>
                 <Dropdown4 />
               </li>
               <li>
                 <div className="ancer-link">
-                  <a href="/tvshows">TV SHOWS</a>
+                  <a href="/tvshows" onClick={hideHeaderOnLinkClick}>TV SHOWS</a>
                 </div>
                 <Dropdown5 />
               </li>
               <li>
                 <div className="ancer-link">
-                  <a href="/games">GAMES</a>
+                  <a href="/games" onClick={hideHeaderOnLinkClick}>GAMES</a>
                 </div>
                 <Dropdown6 />
               </li>
               <li>
                 <div className="ancer-link">
-                  <a href="/">VIDEOS</a>
+                  <a href="/" onClick={hideHeaderOnLinkClick}>VIDEOS</a>
                 </div>
                 <Dropdown7 />
               </li>
               <li>
                 <div className="ancer-link">
-                  <a href="/">MORE</a>
+                  <a href="/" onClick={hideHeaderOnLinkClick}>MORE</a>
                 </div>
                 <Dropdown8 />
               </li>

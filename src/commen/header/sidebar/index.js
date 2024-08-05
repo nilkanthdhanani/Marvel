@@ -28,6 +28,13 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
         setInnerSidebarOpen(false);
     };
 
+    const handleToggleSidebar = () => {
+        // Close inner sidebar and reset content key when closing main sidebar
+        setInnerSidebarOpen(false);
+        setCurrentContentKey('');
+        toggleSidebar();
+    };
+
     useEffect(() => {
         if (innerSidebarOpen && sidebarRef.current) {
             sidebarRef.current.scrollTop = 0;
@@ -36,10 +43,10 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
 
     return (
         <>
-            {isOpen && <div className="overlay" onClick={toggleSidebar}></div>}
+            {isOpen && <div className="overlay" onClick={handleToggleSidebar}></div>}
             <div className={`sidebar ${isOpen ? 'open' : 'closed'} ${innerSidebarOpen ? 'no-scroll' : ''}`} ref={sidebarRef}>
                 <div className="sidebar-content">
-                    <div className="close-button" onClick={toggleSidebar}>
+                    <div className="close-button" onClick={handleToggleSidebar}>
                         <Close />
                     </div>
                     <div className="content">
@@ -93,7 +100,7 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
                             </div>
                         </a>
                     </div>
-                    <InnerSidebar isOpen={innerSidebarOpen} closeInnerSidebar={closeInnerSidebar} toggleSidebar={toggleSidebar} contentKey={currentContentKey} />
+                    <InnerSidebar isOpen={innerSidebarOpen} closeInnerSidebar={closeInnerSidebar} toggleSidebar={handleToggleSidebar} contentKey={currentContentKey} />
                 </div>
             </div>
         </>

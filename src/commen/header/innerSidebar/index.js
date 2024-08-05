@@ -10,13 +10,13 @@ export default function InnerSidebar({ isOpen, closeInnerSidebar, toggleSidebar,
             <Link to="/news" onClick={toggleSidebar}>ALL NEWS</Link>
             <div className="secondary">
                 <h2>SEARCH BY</h2>
-                <Link to="/news#moviesSec" onClick={toggleSidebar}>MOVIES</Link>
-                <Link to="/news#comicsSec" onClick={toggleSidebar}>COMICS</Link>
-                <Link to="/news#showsSec" onClick={toggleSidebar}>TV SHOWS</Link>
-                <Link to="/news#gamesSec" onClick={toggleSidebar}>GAMES</Link>
-                <Link to="/news#seriesSec" onClick={toggleSidebar}>DIGITAL SERIES</Link>
-                <Link to="/news#cultureSec" onClick={toggleSidebar}>CULTURE & LIFESTYLE</Link>
-                <Link to="/news#podcastsSec" onClick={toggleSidebar}>PODCASTS</Link>
+                <Link to="/news#news-1" onClick={toggleSidebar}>MOVIES</Link>
+                <Link to="/news#news-2" onClick={toggleSidebar}>COMICS</Link>
+                <Link to="/news#news-3" onClick={toggleSidebar}>TV SHOWS</Link>
+                <Link to="/news#news-4" onClick={toggleSidebar}>GAMES</Link>
+                <Link to="/news#news-5" onClick={toggleSidebar}>DIGITAL SERIES</Link>
+                <Link to="/news#news-6" onClick={toggleSidebar}>CULTURE & LIFESTYLE</Link>
+                <Link to="/news#news-7" onClick={toggleSidebar}>PODCASTS</Link>
             </div>
         </>,
         'COMICS': <>

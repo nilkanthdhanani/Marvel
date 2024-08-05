@@ -12,12 +12,22 @@ import Redeem from './redeem/indeex';
 
 export default function News() {
   const location = useLocation();
+  const headerHeight = 10;
 
   useEffect(() => {
     if (location.hash) {
-      const element = document.getElementById(location.hash.slice(1));
+      const elementId = location.hash.slice(1);
+      const element = document.getElementById(elementId);
       if (element) {
-        element.scrollIntoView({ behavior: 'auto' });
+        setTimeout(() => {
+          const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+          const offsetPosition = elementPosition - headerHeight;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'auto',
+          });
+        }, 200);
       }
     }
   }, [location]);
@@ -25,13 +35,13 @@ export default function News() {
   return (
     <>
       <NewsBanner />
-      <section id="moviesSec"><MovieNews /></section>
-      <section id="comicsSec"><ComicsNews /></section>
-      <section id="showsSec"><ShowsNews /></section>
-      <section id="gamesSec"><GamesNews /></section>
-      <section id="seriesSec"><SeriesNews /></section>
-      <section id="cultureSec"><CultureNews /></section>
-      <section id="podcastsSec"><PodcastNews /></section>
+      <section id="news-1"><MovieNews /></section>
+      <section id="news-2"><ComicsNews /></section>
+      <section id="news-3"><ShowsNews /></section>
+      <section id="news-4"><GamesNews /></section>
+      <section id="news-5"><SeriesNews /></section>
+      <section id="news-6"><CultureNews /></section>
+      <section id="news-7"><PodcastNews /></section>
       <Redeem />
     </>
   );

@@ -52,13 +52,13 @@ export default function Dropdown1() {
         </div>
         <div className="drop-links-last">
           <h3>SEARCH BY</h3>
-          <Link to="/news#moviesSec">MOVIES</Link>
-          <Link to="/news#comicsSec">COMICS</Link>
-          <Link to="/news#showsSec">TV SHOWS</Link>
-          <Link to="/news#gamesSec">GAMES</Link>
-          <Link to="/news#seriesSec">DIGITAL SERIES</Link>
-          <Link to="/news#cultureSec">CULTURE & LIFESTYLE</Link>
-          <Link to="/news#podcastsSec">PODCASTS</Link>
+          <Link to="/news#news-1">MOVIES</Link>
+          <Link to="/news#news-2">COMICS</Link>
+          <Link to="/news#news-3">TV SHOWS</Link>
+          <Link to="/news#news-4">GAMES</Link>
+          <Link to="/news#news-5">DIGITAL SERIES</Link>
+          <Link to="/news#news-6">CULTURE & LIFESTYLE</Link>
+          <Link to="/news#news-7">PODCASTS</Link>
         </div>
       </div>
     </div>
