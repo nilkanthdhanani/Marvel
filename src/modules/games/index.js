@@ -3,6 +3,7 @@ import GameBanner from './movieBanner'
 import FirstBox from './firstBox'
 import NewsSection from './newsSection'
 import ListSection from './listSection'
+import Redeem from '../home/redeem/indeex'
 
 export default function Games() {
     return (
@@ -11,6 +12,7 @@ export default function Games() {
             <FirstBox />
             <NewsSection />
             <ListSection />
+            <Redeem />
         </>
     )
 }

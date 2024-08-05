@@ -4,6 +4,7 @@ import Featured from './featured/featured';
 import Featured2 from './featured/featured2';
 import Featured3 from './featured/featured3';
 import CharactersList from './charactersList';
+import Redeem from '../home/redeem/indeex';
 
 export default function Characters() {
     return (
@@ -13,6 +14,7 @@ export default function Characters() {
             <Featured2 />
             <CharactersList />
             <Featured3 />
+            <Redeem/>
         </>
     )
 }

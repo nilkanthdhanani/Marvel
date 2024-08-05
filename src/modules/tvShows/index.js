@@ -8,6 +8,7 @@ import NonFiction from './listSection/nonFiction'
 import OnDisney from './listSection/onDisney'
 import Hulu from './listSection/hulu'
 import Animation from './listSection/animation'
+import Redeem from '../home/redeem/indeex'
 
 export default function TvShows() {
     return (
@@ -21,6 +22,7 @@ export default function TvShows() {
             <OnDisney />
             <Hulu />
             <Animation />
+            <Redeem />
         </>
     )
 }

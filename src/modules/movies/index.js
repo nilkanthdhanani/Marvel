@@ -5,6 +5,7 @@ import Poster from './poster'
 import NewsSection from './newsSection'
 import ListSection from './listSection'
 import OtherMovies from './listSection/otherMovies'
+import Redeem from '../home/redeem/indeex'
 
 export default function Movies() {
     return (
@@ -15,6 +16,7 @@ export default function Movies() {
             <NewsSection />
             <ListSection />
             <OtherMovies />
+            <Redeem />
         </>
     )
 }
