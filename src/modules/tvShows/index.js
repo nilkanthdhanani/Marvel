@@ -8,7 +8,7 @@ import NonFiction from './listSection/nonFiction'
 import OnDisney from './listSection/onDisney'
 import Hulu from './listSection/hulu'
 import Animation from './listSection/animation'
-import Redeem from '../home/redeem/indeex'
+import Redeem from '../home/redeem/index'
 
 export default function TvShows() {
     return (

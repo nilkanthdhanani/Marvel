@@ -8,7 +8,7 @@ import GamesNews from './newsList/gamesNews';
 import SeriesNews from './newsList/seriesNews';
 import CultureNews from './newsList/cultureNews';
 import PodcastNews from './newsList/podcastNews';
-import Redeem from './redeem/indeex';
+import Redeem from './redeem/index';
 
 export default function News() {
   const location = useLocation();
