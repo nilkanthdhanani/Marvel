@@ -114,7 +114,7 @@ export default function Header() {
               </li>
               <li>
                 <div className="ancer-link">
-                  <a href="/">TV SHOWS</a>
+                  <a href="/tvshows">TV SHOWS</a>
                 </div>
                 <Dropdown5 />
               </li>

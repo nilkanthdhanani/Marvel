@@ -9,11 +9,11 @@ export default function Dropdown5() {
       <div className="dropdown">
         <div className="container-dropdown">
           <div className="drop-links">
-            <Link to="/">X-MEN '97</Link>
-            <Link to="/">ECHO</Link>
-            <Link to="/">WHAT IF...?</Link>
-            <Link to="/">SEE ALL TV SHOWS</Link>
-            <Link to="/">DISNE+</Link>
+            <Link to="/tvshows">X-MEN '97</Link>
+            <Link to="/tvshows">ECHO</Link>
+            <Link to="/tvshows">WHAT IF...?</Link>
+            <Link to="/tvshows">SEE ALL TV SHOWS</Link>
+            <Link to="/tvshows">DISNE+</Link>
           </div>
           <h2>TV SHOWS</h2>
           <div className="drop-grid2">

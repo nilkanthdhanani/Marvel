@@ -29,7 +29,7 @@
         .list-section-grid {
             padding: 10px 0 20px 0;
             @include grid6c;
-            gap: 20px;
+            gap: 10px;
 
             @include breakpoint("lg-max") {
                 grid-template-columns: repeat(4, 1fr);

@@ -27,8 +27,8 @@
     }
 }
 
-.movieBanner {
-    background-image: url("../../../assets/images/jpg/movieBanner.jpg");
+.tvshowBanner {
+    background-image: url("../../../assets/images/jpg/tvshowBanner.jpg");
     min-height: 400px;
     width: 100%;
     background-size: cover;
@@ -54,7 +54,7 @@
         background: linear-gradient(90deg, rgba(0, 0, 0, 0.65) 0, rgba(0, 0, 0, 0.2));
     }
 
-    .movieBanner-head {
+    .tvshowBanner-head {
         position: absolute;
         height: 100%;
         width: 100%;

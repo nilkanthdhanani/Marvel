@@ -1,20 +1,20 @@
 import React from 'react'
 import './newsSection.scss';
-import { movieNews1, movieNews2, movieNews3, movieNews4 } from '../../../assets/images/movies';
+import { showNews1, showNews2, showNews3, showNews4 } from '../../../assets/images/shows';
 
 export default function NewsSection() {
     const charactersComic = [
-        { imgSrc: movieNews1, name: 'Gear', description: 'Suit Up as Green Goblin with Realistic Roleplay Helmet and Electronic Pumpkins' },
-        { imgSrc: movieNews2, name: 'Live Events', description: 'The Biggest Marvel News from San Diego Comic-Con 2024' },
-        { imgSrc: movieNews3, name: 'Live Events', description: 'SDCC 2024: All the News from Marvel Studios’ Hall H Panel' },
-        { imgSrc: movieNews4, name: 'Live Events', description: 'SDCC 2024: Robert Downey Jr. to Play Doom in the Russo Brothers’ ‘Avengers: Doomsday’' },
+        { imgSrc: showNews1, name: 'CULTURE & LIFESTYLE', description: 'Be the Hero of Your Exercise Adventure with the ‘Marvel Fitness Deck’' },
+        { imgSrc: showNews2, name: 'TV SHOWS', description: "Kathryn Hahn’s Agatha Harkness Returns in 'Agatha All Along' Trailer" },
+        { imgSrc: showNews3, name: 'MOVIES', description: 'The Avengers Assemble to Dub 2012 Film in the Lakota Language' },
+        { imgSrc: showNews4, name: 'MOVIES', description: 'Go Behind the Scenes of Marvel Studios’ Signature Sound' },
     ];
 
     return (
         <>
             <div className="news-section">
                 <div className="containerH">
-                    <h2>Latest Movies News</h2>
+                    <h2>Latest Tv News</h2>
                     <div className="character-comic">
                         {charactersComic.map((charactersComic, index) => (
                             <div className="character-comic-box" key={index}>
@@ -36,7 +36,7 @@ export default function NewsSection() {
                             <li><span href="/">4</span></li>
                             <li><span href="/">5</span></li>
                             <li><span href="/">...</span></li>
-                            <li><span href="/">295</span></li>
+                            <li><span href="/">451</span></li>
                             <li className='next-button'><span href="/">NEXT</span></li>
                         </ul>
                     </div>

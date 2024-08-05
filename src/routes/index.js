@@ -6,6 +6,7 @@ import News from "../modules/news";
 import Comics from "../modules/comics";
 import Characters from "../modules/characters";
 import Movies from "../modules/movies";
+import TvShows from "../modules/tvShows";
 
 const router = createBrowserRouter([
     {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
             {
                 path: "/movies",
                 element: <Movies />
+            },
+            {
+                path: "/tvshows",
+                element: <TvShows />
             },
         ]
     },

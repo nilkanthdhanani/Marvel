@@ -46,11 +46,11 @@ export default function InnerSidebar({ isOpen, closeInnerSidebar, toggleSidebar,
             <Link to="/movies" onClick={toggleSidebar}>DISNEY+</Link>
         </>,
         'TV SHOWS': <>
-            <Link to="/" onClick={toggleSidebar}>X-MEN '97</Link>
-            <Link to="/" onClick={toggleSidebar}>ECHO</Link>
-            <Link to="/" onClick={toggleSidebar}>WHAT IF...?</Link>
-            <Link to="/" onClick={toggleSidebar}>SEE ALL TV SHOWS</Link>
-            <Link to="/" onClick={toggleSidebar}>DISNEY+</Link>
+            <Link to="/tvshows" onClick={toggleSidebar}>X-MEN '97</Link>
+            <Link to="/tvshows" onClick={toggleSidebar}>ECHO</Link>
+            <Link to="/tvshows" onClick={toggleSidebar}>WHAT IF...?</Link>
+            <Link to="/tvshows" onClick={toggleSidebar}>SEE ALL TV SHOWS</Link>
+            <Link to="/tvshows" onClick={toggleSidebar}>DISNEY+</Link>
         </>,
         'GAMES': <>
             <Link to="/" onClick={toggleSidebar}>MARVEL 1943: RISE OF HYDRA</Link>
