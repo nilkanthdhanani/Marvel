@@ -9,11 +9,11 @@ export default function Dropdown4() {
       <div className="dropdown">
         <div className="container-dropdown">
           <div className="drop-links">
-            <Link to="/">CAPTAIN AMERICA: BRAVE NEW WORLD</Link>
-            <Link to="/">DEADPOOL & WOLVERINE</Link>
-            <Link to="/">THE MARVELS</Link>
-            <Link to="/">SEE ALL MOVIES</Link>
-            <Link to="/">DISNEY+</Link>
+            <Link to="/movies">CAPTAIN AMERICA: BRAVE NEW WORLD</Link>
+            <Link to="/movies">DEADPOOL & WOLVERINE</Link>
+            <Link to="/movies">THE MARVELS</Link>
+            <Link to="/movies">SEE ALL MOVIES</Link>
+            <Link to="/movies">DISNEY+</Link>
           </div>
           <h2>MOVIES</h2>
           <div className="drop-grid2">

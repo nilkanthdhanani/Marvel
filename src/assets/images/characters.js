@@ -1,4 +1,10 @@
 
+import drop3img4 from './jpg/drop3img4.jpg';
+import drop3img1 from './png/drop3img1.png';
+import drop3img2 from './png/drop3img2.png';
+import drop3img3 from './png/drop3img3.png';
+import drop3img5 from './png/drop3img5.png';
+import drop3img6 from './png/drop3img6.png';
 import characterComic1 from './jpg/characterComic1.jpg';
 import characterComic2 from './jpg/characterComic2.jpg';
 import characterComic3 from './jpg/characterComic3.jpg';
@@ -41,8 +47,6 @@ import character40 from './jpg/character40.jpg';
 import character41 from './jpg/character41.jpg';
 import character42 from './jpg/character42.jpg';
 
-
-// png image
 import insider from './png/insider.png';
 import character1 from './png/character1.png';
 import character4 from './png/character4.png';
@@ -52,7 +56,7 @@ import character17 from './png/character17.png';
 
 export {
     characterComic1, characterComic2, characterComic3, character2, character3, character4, character5, character6, character7, character8, character9, character11, character12, character13, character14, character16, character18, character19, character20,
-    character21, character22, character23, character24, character25, character26, character27, character28, character29, character30, character31, character32, character33, character34, character35, character36, character37, character38, character39, character40, character41, character42,
+    character21, character22, character23, character24, character25, character26, character27, character28, character29, character30, character31, character32, character33, character34, character35, character36, character37, character38, character39, character40, character41, character42, drop3img4,
 
-    characterComic4, character1, insider, character10, character15, character17
+    characterComic4, character1, insider, character10, character15, character17, drop3img1, drop3img2,drop3img3,drop3img5,drop3img6
 }

@@ -5,6 +5,7 @@ import Error from "../error";
 import News from "../modules/news";
 import Comics from "../modules/comics";
 import Characters from "../modules/characters";
+import Movies from "../modules/movies";
 
 const router = createBrowserRouter([
     {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
             {
                 path: "/characters",
                 element: <Characters />
+            },
+            {
+                path: "/movies",
+                element: <Movies />
             },
         ]
     },

@@ -101,7 +101,6 @@ import videoImg9 from './jpg/videoImg9.jpg';
 import videoImg10 from './jpg/videoImg10.jpg';
 import promo from './jpg/promo.jpg';
 
-// png image
 import logo from './png/logo.png';
 import unlimited from './png/unlimited.png';
 import disney from './png/disney.png';

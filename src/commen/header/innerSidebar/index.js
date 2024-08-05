@@ -39,11 +39,11 @@ export default function InnerSidebar({ isOpen, closeInnerSidebar, toggleSidebar,
             <Link to="/characters" onClick={toggleSidebar}>EXPLORE ALL</Link>
         </>,
         'MOVIES': <>
-            <Link to="/" onClick={toggleSidebar}>CAPTAIN AMERICA: BRAVE NEW WORLD</Link>
-            <Link to="/" onClick={toggleSidebar}>DEADPOOL & WOLVERINE</Link>
-            <Link to="/" onClick={toggleSidebar}>THE MARVELS</Link>
-            <Link to="/" onClick={toggleSidebar}>SEE ALL MOVIES</Link>
-            <Link to="/" onClick={toggleSidebar}>DISNEY+</Link>
+            <Link to="/movies" onClick={toggleSidebar}>CAPTAIN AMERICA: BRAVE NEW WORLD</Link>
+            <Link to="/movies" onClick={toggleSidebar}>DEADPOOL & WOLVERINE</Link>
+            <Link to="/movies" onClick={toggleSidebar}>THE MARVELS</Link>
+            <Link to="/movies" onClick={toggleSidebar}>SEE ALL MOVIES</Link>
+            <Link to="/movies" onClick={toggleSidebar}>DISNEY+</Link>
         </>,
         'TV SHOWS': <>
             <Link to="/" onClick={toggleSidebar}>X-MEN '97</Link>
