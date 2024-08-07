@@ -1,6 +1,6 @@
 import React from 'react'
 import './movieBanner.scss';
-import { disney } from '../../../assets/images/movies';
+import { disney } from '../../../assets/images/imageJS/moviesImg';
 
 export default function MovieBanner() {
     return (

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './slider.scss';
-import { drop2img1, drop2img2, drop2img5, drop2img4, drop2img3, drop2img6, drop2img7, drop2img8, drop2img9, drop2img10, drop2img11, drop2img12, drop2img13, drop2img14 } from '../../../assets/images/homeImg';
+import { drop2img1, drop2img2, drop2img5, drop2img4, drop2img3, drop2img6, drop2img7, drop2img8, drop2img9, drop2img10, drop2img11, drop2img12, drop2img13, drop2img14 } from '../../../assets/images/imageJS/homeImg';
 
 const sliderItems = [
     { src: drop2img2, text: "Deadpool & Wolverine: Wwiii (2024) #3", year: "2024" },

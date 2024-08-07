@@ -1,6 +1,6 @@
 import React from 'react'
 import './featured.scss';
-import { character1, character2, character3, character4, character5, character6, characterComic1, characterComic2, characterComic3, characterComic4 } from '../../../assets/images/characters';
+import { character1, character2, character3, character4, character5, character6, characterComic1, characterComic2, characterComic3, characterComic4 } from '../../../assets/images/imageJS/charactersImg';
 
 const charactersComic = [
     { imgSrc: characterComic1, name: 'COMICS', description: 'Blade\'s Powers, Explained' },

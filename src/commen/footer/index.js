@@ -1,7 +1,7 @@
 import React from 'react'
 import './footer.scss';
 import FooterLogo from '../../assets/images/svg/footerLogo';
-import { footerInsider, footerMu } from '../../assets/images/homeImg';
+import { footerInsider, footerMu } from '../../assets/images/imageJS/homeImg';
 import Facebook from '../../assets/images/svg/sidebarIcon/facebook';
 import Twitter from '../../assets/images/svg/sidebarIcon/twitter';
 import Instagram from '../../assets/images/svg/sidebarIcon/instagram';

@@ -1,6 +1,6 @@
 import React from 'react'
 import './dropdown.scss';
-import { drop7img1, drop7img2, drop7img3, drop7img4 } from '../../../assets/images/homeImg';
+import { drop7img1, drop7img2, drop7img3, drop7img4 } from '../../../assets/images/imageJS/homeImg';
 import Watch from '../../../assets/images/svg/watch';
 import { Link } from 'react-router-dom';
 

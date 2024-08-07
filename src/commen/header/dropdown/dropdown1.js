@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './dropdown.scss';
-import { drop1img1, drop1img2, drop1img3, drop1img4 } from '../../../assets/images/homeImg';
+import { drop1img1, drop1img2, drop1img3, drop1img4 } from '../../../assets/images/imageJS/homeImg';
 
 export default function Dropdown1() {
   return (

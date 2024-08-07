@@ -369,3 +369,28 @@
         }
     }
 }
+
+.uh-first {
+
+    button {
+        padding: 12px 13px;
+        background-color: var(--bgcolor-header);
+        border: 2px solid var(--color-white);
+        transform: skewX(-11deg);
+        cursor: pointer;
+
+        span {
+            display: block;
+            @include font14;
+            font-weight: 600;
+            font-family: var(--font-family-roboto);
+            transform: skewX(11deg);
+            color: var(--color-white);
+        }
+
+        &:hover {
+            background-color: var(--color-black);
+            transition: 0.2s ease-in-out;
+        }
+    }
+}

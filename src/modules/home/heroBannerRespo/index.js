@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import './heroBannerRespo.scss';
-import { heroR1, heroR2, heroR3, heroR4, heroR5, herobanner5logo } from '../../../assets/images/homeImg';
+import { heroR1, heroR2, heroR3, heroR4, heroR5, herobanner5logo } from '../../../assets/images/imageJS/homeImg';
 import Facebook from '../../../assets/images/svg/sidebarIcon/facebook';
 import Twitter from '../../../assets/images/svg/sidebarIcon/twitter';
 import Instagram from '../../../assets/images/svg/sidebarIcon/instagram';

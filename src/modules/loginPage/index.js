@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './login.scss';
-import { logo } from '../../assets/images/homeImg';
+import { logo } from '../../assets/images/imageJS/homeImg';
 import MyDisney from '../../assets/images/svg/myDisney';
 import Disney from '../../assets/images/svg/loginIcon/disney';
 import Abc from '../../assets/images/svg/loginIcon/abc';

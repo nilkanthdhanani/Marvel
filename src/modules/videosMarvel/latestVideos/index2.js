@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './latestVideos.scss';
 import Watch from '../../../assets/images/svg/watch';
-import { movieNews1, latest12, latest21, latest18, latest31, latestGames3, latestVideo9, latestVideo10, latestVideo11, latestVideo12, latestVideo13, latestVideo14 } from '../../../assets/images/videos';
+import { movieNews1, latest12, latest21, latest18, latest31, latestGames3, latestVideo9, latestVideo10, latestVideo11, latestVideo12, latestVideo13, latestVideo14 } from '../../../assets/images/imageJS/videosImg';
 import RightArrow2 from '../../../assets/images/svg/rightArrow2';
 import LeftArrow2 from '../../../assets/images/svg/leftArrow2';
 

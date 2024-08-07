@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './header.scss';
-import { logo, unlimited } from '../../assets/images/homeImg';
+import { logo, unlimited } from '../../assets/images/imageJS/homeImg';
 import Login from '../../assets/images/svg/login';
 import Search from '../../assets/images/svg/search';
 import Menu from '../../assets/images/svg/menu';
@@ -69,13 +69,15 @@ export default function Header() {
               </div>
             </div>
             <div className="header-main2">
-              <div className="header-main2-div1">
-                <img src={unlimited} alt="unlimited" />
-                <div className="unlimited-text">
-                  <p>MARVEL UNLIMITED</p>
-                  <span>SUBSCRIBE</span>
+              <Link to={"/unlimited"}>
+                <div className="header-main2-div1">
+                  <img src={unlimited} alt="unlimited" />
+                  <div className="unlimited-text">
+                    <p>MARVEL UNLIMITED</p>
+                    <span>SUBSCRIBE</span>
+                  </div>
                 </div>
-              </div>
+              </Link>
               <div className="header-main2-div2">
                 <Search />
               </div>

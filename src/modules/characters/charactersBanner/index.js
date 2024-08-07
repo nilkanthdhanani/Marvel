@@ -1,6 +1,6 @@
 import React from 'react';
 import './charactersBanner.scss';
-import { insider } from '../../../assets/images/characters';
+import { insider } from '../../../assets/images/imageJS/charactersImg';
 
 export default function CharactersBanner() {
     return (

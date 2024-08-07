@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './bestSelling.scss';
-import { newComic1, newComic2, newComic3, newComic4, newComic5, newComic6, newComic7, newComic8, newComic9, newComic10, promoImg } from '../../../assets/images/comicImg';
+import { newComic1, newComic2, newComic3, newComic4, newComic5, newComic6, newComic7, newComic8, newComic9, newComic10, promoImg } from '../../../assets/images//imageJS/comicImg';
 import LeftArrow from '../../../assets/images/svg/leftArrow';
 import RightArrow from '../../../assets/images/svg/rightArrow';
 import Mulogo from '../../../assets/images/svg/mulogo';

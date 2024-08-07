@@ -1,6 +1,6 @@
 import React from 'react';
 import './firstBox.scss';
-import { videoImg1, videoImg2, videoImg3, videoImg5, videoImg6, videoImg8 } from '../../../assets/images/videos';
+import { videoImg1, videoImg2, videoImg3, videoImg5, videoImg6, videoImg8 } from '../../../assets/images/imageJS/videosImg';
 import Watch from '../../../assets/images/svg/watch';
 
 const videoData = [

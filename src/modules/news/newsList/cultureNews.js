@@ -1,6 +1,6 @@
 import React from 'react'
 import './newsList.scss';
-import { cultureNews, latestCulture, latestCulture1, latestCulture2, latestCulture3 } from '../../../assets/images/newsImg';
+import { cultureNews, latestCulture, latestCulture1, latestCulture2, latestCulture3 } from '../../../assets/images//imageJS/newsImg';
 import { Link } from 'react-router-dom';
 
 export default function CultureNews() {

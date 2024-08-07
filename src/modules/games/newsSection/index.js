@@ -1,6 +1,6 @@
 import React from 'react'
 import './newsSection.scss';
-import { gameNews, latest27, latestGames, latestGames3 } from '../../../assets/images/games';
+import { gameNews, latest27, latestGames, latestGames3 } from '../../../assets/images/imageJS/gamesImg';
 
 export default function NewsSection() {
     const charactersComic = [
@@ -14,7 +14,7 @@ export default function NewsSection() {
         <>
             <div className="news-section">
                 <div className="containerH">
-                    <h2>Latest Movies News</h2>
+                    <h2>Latest Game News</h2>
                     <div className="character-comic">
                         {charactersComic.map((charactersComic, index) => (
                             <div className="character-comic-box" key={index}>

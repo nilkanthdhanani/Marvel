@@ -1,6 +1,6 @@
 import React from 'react'
 import './newsList.scss';
-import { podcastsNews, latestPodcast, latestPodcast1, latestPodcast2, latestPodcast3 } from '../../../assets/images/newsImg';
+import { podcastsNews, latestPodcast, latestPodcast1, latestPodcast2, latestPodcast3 } from '../../../assets/images//imageJS/newsImg';
 import { Link } from 'react-router-dom';
 
 export default function PodcastNews() {

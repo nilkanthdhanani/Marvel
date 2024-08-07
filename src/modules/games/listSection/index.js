@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './listSection.scss';
-import { drop6img1, drop6img2, drop6img3, drop6img4, drop6img5, drop6img6, games1, games10, games11, games12, games13, games14, games15, games16, games17, games18, games19, games2, games3, games4, games5, games6, games7, games8, games9 } from '../../../assets/images/games';
+import { drop6img1, drop6img2, drop6img3, drop6img4, drop6img5, drop6img6, games1, games10, games11, games12, games13, games14, games15, games16, games17, games18, games19, games2, games3, games4, games5, games6, games7, games8, games9 } from '../../../assets/images/imageJS/gamesImg';
 
 const movies = [
   { imgSrc: games1, title: 'Marvel\'s Wolverine', releaseDate: '', },

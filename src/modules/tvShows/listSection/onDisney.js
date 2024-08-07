@@ -1,6 +1,6 @@
 import React from 'react';
 import './listSection.scss';
-import { tvShow27, tvShow28, tvShow29, tvShow30, tvShow31, tvShow32, tvShow33, tvShow34, tvShow35 } from '../../../assets/images/shows';
+import { tvShow27, tvShow28, tvShow29, tvShow30, tvShow31, tvShow32, tvShow33, tvShow34, tvShow35 } from '../../../assets/images/imageJS/showsImg';
 
 const movies = [
   { imgSrc: tvShow27, title: 'Marvel\'s Daredevil', releaseDate: '2018', },

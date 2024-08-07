@@ -1,6 +1,6 @@
 import React from 'react';
 import './listSection.scss';
-import { tvShow1, tvShow2, tvShow3, tvShow4, tvShow5, tvShow6, tvShow7, tvShow8, tvShow9, tvShow10, tvShow11, tvShow12, tvShow13, tvShow14, tvShow15, tvShow16, tvShow17, tvShow18, tvShow19, drop5img1, drop5img3, drop5img4, drop5img5 } from '../../../assets/images/shows';
+import { tvShow1, tvShow2, tvShow3, tvShow4, tvShow5, tvShow6, tvShow7, tvShow8, tvShow9, tvShow10, tvShow11, tvShow12, tvShow13, tvShow14, tvShow15, tvShow16, tvShow17, tvShow18, tvShow19, drop5img1, drop5img3, drop5img4, drop5img5 } from '../../../assets/images/imageJS/showsImg';
 
 const movies = [
   { imgSrc: tvShow1, title: 'Marvel Zombies', releaseDate: '', },

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './thisWeek.scss';
-import { comicBook1, comicBook2, comicBook3, comicBook4, comicBook5, comicBook6, comicBook7, comicBook8, comicBook9, comicBook10, comicBook11, comicBook12, comicBook13, comicBook14, comicBook15, comicBook16, comicBook17, comicBook18, comicBook19, comicBook20, comicBook21, comicBook22, comicBook23, comicBook24, comicBook25, comicBook26, comicBook27, comicBook28, comicBook29, comicBook30 } from '../../../assets/images/comicImg';
+import { comicBook1, comicBook2, comicBook3, comicBook4, comicBook5, comicBook6, comicBook7, comicBook8, comicBook9, comicBook10, comicBook11, comicBook12, comicBook13, comicBook14, comicBook15, comicBook16, comicBook17, comicBook18, comicBook19, comicBook20, comicBook21, comicBook22, comicBook23, comicBook24, comicBook25, comicBook26, comicBook27, comicBook28, comicBook29, comicBook30 } from '../../../assets/images//imageJS/comicImg';
 
 const comics = [
     { src: comicBook1, title: "X-Force (2024) #1", authors: ["Thorne", "to", "Segovia"] },

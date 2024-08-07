@@ -1,6 +1,6 @@
 import React from 'react'
 import './featured.scss';
-import { character7, character8, character9, character10, character11, character12, character13, character14, character15, character16, character17, character18, character19, character20, character21, character22, character23, character24, character25, character26, character27, character28, character29, character30, character31, character32, character33, character34, character35, character36, character37, character38, character39, character40, character41, character42 } from '../../../assets/images/characters';
+import { character7, character8, character9, character10, character11, character12, character13, character14, character15, character16, character17, character18, character19, character20, character21, character22, character23, character24, character25, character26, character27, character28, character29, character30, character31, character32, character33, character34, character35, character36, character37, character38, character39, character40, character41, character42 } from '../../../assets/images/imageJS/charactersImg';
 
 const featuredCharacters = [
     { imgSrc: character7, name: '3-D Man', description: 'Charles Chandler & Hal Chandler' },

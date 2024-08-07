@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './videoSlider.scss';
-import { videoSlide2, videoSlide3, videoSlide5, videoSlide6, videoSlide7, videoSlide9, videoSlide10, videoSlide11, videoSlide12, videoSlide13, videoSlide14, videoSlide19, videoSlide21, videoSlide22, videoSlide23, videoSlide24, videoSlide25, videoSlide26, videoSlide27, videoSlide28, videoSlide29, videoSlide30, videoSlide31, videoSlide32, videoSlide35, videoSlide1, videoSlide4, videoSlide8, videoSlide15, videoSlide16, videoSlide17, videoSlide18, videoSlide20, videoSlide33, videoSlide34 } from '../../../assets/images/videos';
+import { videoSlide2, videoSlide3, videoSlide5, videoSlide6, videoSlide7, videoSlide9, videoSlide10, videoSlide11, videoSlide12, videoSlide13, videoSlide14, videoSlide19, videoSlide21, videoSlide22, videoSlide23, videoSlide24, videoSlide25, videoSlide26, videoSlide27, videoSlide28, videoSlide29, videoSlide30, videoSlide31, videoSlide32, videoSlide35, videoSlide1, videoSlide4, videoSlide8, videoSlide15, videoSlide16, videoSlide17, videoSlide18, videoSlide20, videoSlide33, videoSlide34 } from '../../../assets/images/imageJS/videosImg';
 
 const sliderItems = [
     { src: videoSlide1, text: "Ask Marvel", episode: "50 EPISODES", backtext: "Watch the talent from across the Marvel Universe take on your tough questions in Ask Marvel." },

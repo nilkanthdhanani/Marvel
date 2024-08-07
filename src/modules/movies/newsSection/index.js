@@ -1,6 +1,6 @@
 import React from 'react'
 import './newsSection.scss';
-import { movieNews1, movieNews2, movieNews3, movieNews4 } from '../../../assets/images/movies';
+import { movieNews1, movieNews2, movieNews3, movieNews4 } from '../../../assets/images/imageJS/moviesImg';
 
 export default function NewsSection() {
     const charactersComic = [

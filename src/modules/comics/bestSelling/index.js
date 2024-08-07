@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './bestSelling.scss';
-import { bestComic1, bestComic2, bestComic3, bestComic4, bestComic5, bestComic6, bestComic7, bestComic8, bestComic9, bestComic10, bestComic11, bestComic12, bestComic13, bestComic14, bestComic15 } from '../../../assets/images/comicImg';
+import { bestComic1, bestComic2, bestComic3, bestComic4, bestComic5, bestComic6, bestComic7, bestComic8, bestComic9, bestComic10, bestComic11, bestComic12, bestComic13, bestComic14, bestComic15 } from '../../../assets/images//imageJS/comicImg';
 import LeftArrow from '../../../assets/images/svg/leftArrow';
 import RightArrow from '../../../assets/images/svg/rightArrow';
 import Mulogo from '../../../assets/images/svg/mulogo';

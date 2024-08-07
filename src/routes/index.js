@@ -10,6 +10,7 @@ import TvShows from "../modules/tvShows";
 import Games from "../modules/games";
 import Videos from "../modules/videosMarvel";
 import LogIn from "../modules/loginPage";
+import Unlimited from "../modules/unlimited";
 
 const router = createBrowserRouter([
     {
@@ -54,6 +55,11 @@ const router = createBrowserRouter([
     {
         path: "/login",
         element: <LogIn />
+    },
+
+    {
+        path: "/unlimited",
+        element: <Unlimited />
     },
 
     {

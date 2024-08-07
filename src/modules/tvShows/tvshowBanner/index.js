@@ -1,6 +1,6 @@
 import React from 'react'
 import './tvshowBanner.scss';
-import { disney } from '../../../assets/images/shows';
+import { disney } from '../../../assets/images/imageJS/showsImg';
 
 export default function TvShowBanner() {
     return (

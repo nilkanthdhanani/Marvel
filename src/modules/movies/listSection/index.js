@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './listSection.scss';
-import { drop4img1, drop4img2, drop4img3, drop4img4, drop4img5, drop4img6, movie1, movie10, movie11, movie12, movie13, movie14, movie15, movie16, movie17, movie18, movie19, movie2, movie20, movie21, movie22, movie23, movie24, movie25, movie26, movie27, movie28, movie29, movie3, movie30, movie31, movie32, movie33, movie34, movie4, movie5, movie6, movie7, movie8, movie9 } from '../../../assets/images/movies';
+import { drop4img1, drop4img2, drop4img3, drop4img4, drop4img5, drop4img6, movie1, movie10, movie11, movie12, movie13, movie14, movie15, movie16, movie17, movie18, movie19, movie2, movie20, movie21, movie22, movie23, movie24, movie25, movie26, movie27, movie28, movie29, movie3, movie30, movie31, movie32, movie33, movie34, movie4, movie5, movie6, movie7, movie8, movie9 } from '../../../assets/images/imageJS/moviesImg';
 
 const movies = [
   {imgSrc: movie1,title: 'Avengers: Secret Wars',releaseDate: 'MAY 7, 2027',},

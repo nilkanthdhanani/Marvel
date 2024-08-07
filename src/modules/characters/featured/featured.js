@@ -1,6 +1,6 @@
 import React from 'react'
 import './featured.scss';
-import { drop3img1, drop3img2, drop3img3, drop3img4, drop3img5, drop3img6 } from '../../../assets/images/characters';
+import { drop3img1, drop3img2, drop3img3, drop3img4, drop3img5, drop3img6 } from '../../../assets/images/imageJS/charactersImg';
 
 const featuredCharacters = [
     { imgSrc: drop3img1, name: 'Magneto', description: 'Max Eisenhardt' },

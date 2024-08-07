@@ -1,6 +1,6 @@
 import React from 'react';
 import './poster.scss';
-import { disneyplus } from '../../../assets/images/movies';
+import { disneyplus } from '../../../assets/images/imageJS/showsImg';
 import Facebook from '../../../assets/images/svg/sidebarIcon/facebook';
 import Twitter from '../../../assets/images/svg/sidebarIcon/twitter';
 import Instagram from '../../../assets/images/svg/sidebarIcon/instagram';

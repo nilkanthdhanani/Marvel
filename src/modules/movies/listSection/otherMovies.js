@@ -1,6 +1,6 @@
 import React from 'react';
 import './listSection.scss';
-import { movieOther1, movieOther2, movieOther3, movieOther4, movieOther5, movieOther6, movieOther7, movieOther8, movieOther9, movieOther10, movieOther11 } from '../../../assets/images/movies';
+import { movieOther1, movieOther2, movieOther3, movieOther4, movieOther5, movieOther6, movieOther7, movieOther8, movieOther9, movieOther10, movieOther11 } from '../../../assets/images/imageJS/moviesImg';
 
 const movies = [
   { imgSrc: movieOther1, title: 'X-Men: Dark Phoenix', releaseDate: '2019', },

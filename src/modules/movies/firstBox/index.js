@@ -1,6 +1,6 @@
 import React from 'react';
 import './firstBox.scss';
-import { drop4img1, drop4img2, drop4img3, drop4img4, drop4img5, drop4img6 } from '../../../assets/images/movies';
+import { drop4img1, drop4img2, drop4img3, drop4img4, drop4img5, drop4img6 } from '../../../assets/images/imageJS/moviesImg';
 
 const movies = [
     { imgSrc: drop4img1, title: 'Captain America: Brave New World', releaseDate: 'FEB 14, 2025', },

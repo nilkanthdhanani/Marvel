@@ -1,6 +1,6 @@
 import React from 'react';
 import './listSection.scss';
-import { drop5img6, tvShow47, tvShow48, tvShow49, tvShow50, tvShow51, tvShow52 } from '../../../assets/images/shows';
+import { drop5img6, tvShow47, tvShow48, tvShow49, tvShow50, tvShow51, tvShow52 } from '../../../assets/images/imageJS/showsImg';
 
 const movies = [
   { imgSrc: drop5img6, title: 'LEGO Marvel Avengers: Code Red', releaseDate: '2023', },

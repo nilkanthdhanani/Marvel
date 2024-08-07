@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './home.scss';
-import { disney } from '../../assets/images/homeImg';
+import { disney } from '../../assets/images/imageJS/homeImg';
 import HeroBanner from './heroBanner';
 import HeroBannerRespo from './heroBannerRespo';
 import NewOn from './newOn';

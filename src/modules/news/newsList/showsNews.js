@@ -1,6 +1,6 @@
 import React from 'react'
 import './newsList.scss';
-import { latestShows, latestShows1, latestShows2, latestShows3, showsNews } from '../../../assets/images/newsImg';
+import { latestShows, latestShows1, latestShows2, latestShows3, showsNews } from '../../../assets/images//imageJS/newsImg';
 import { Link } from 'react-router-dom';
 import Insider from '../../../assets/images/svg/insider';
 

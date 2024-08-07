@@ -1,6 +1,6 @@
 import React from 'react';
 import './listSection.scss';
-import { tvShow20, tvShow21, tvShow22, tvShow23, tvShow24, tvShow25, tvShow26 } from '../../../assets/images/shows';
+import { tvShow20, tvShow21, tvShow22, tvShow23, tvShow24, tvShow25, tvShow26 } from '../../../assets/images/imageJS/showsImg';
 
 const movies = [
   { imgSrc: tvShow20, title: 'Stan Lee', releaseDate: '2023', },

@@ -1,6 +1,6 @@
 import React from 'react';
 import './listSection.scss';
-import { drop5img2, tvShow36, tvShow37, tvShow38, tvShow39, tvShow40, tvShow41, tvShow42, tvShow43, tvShow44, tvShow45, tvShow46 } from '../../../assets/images/shows';
+import { drop5img2, tvShow36, tvShow37, tvShow38, tvShow39, tvShow40, tvShow41, tvShow42, tvShow43, tvShow44, tvShow45, tvShow46 } from '../../../assets/images/imageJS/showsImg';
 
 const movies = [
   { imgSrc: drop5img2, title: 'Marvel\'s Hit-Monkey Season 2', releaseDate: 'JUL 15, 2024', },

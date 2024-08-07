@@ -1,6 +1,6 @@
 import React from 'react'
 import './advertisement.scss';
-import { advertise2, advertise4 } from '../../../assets/images/comicImg';
+import { advertise2, advertise4 } from '../../../assets/images//imageJS/comicImg';
 
 export default function Add2() {
   return (

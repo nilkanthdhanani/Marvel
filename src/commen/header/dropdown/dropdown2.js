@@ -1,6 +1,6 @@
 import React from 'react'
 import './dropdown.scss';
-import { drop2img1, drop2img2, drop2img3, drop2img4, drop2img5, drop2img6 } from '../../../assets/images/homeImg';
+import { drop2img1, drop2img2, drop2img3, drop2img4, drop2img5, drop2img6 } from '../../../assets/images/imageJS/homeImg';
 import { Link } from 'react-router-dom';
 
 export default function Dropdown2() {

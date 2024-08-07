@@ -12,7 +12,7 @@ import Snapchat from '../../../assets/images/svg/sidebarIcon/snapchat';
 import Pinterest from '../../../assets/images/svg/sidebarIcon/pinterest';
 import Twitch from '../../../assets/images/svg/sidebarIcon/twitch';
 import Tiktok from '../../../assets/images/svg/sidebarIcon/tiktok';
-import { insiderLogo, muLogo } from '../../../assets/images/homeImg';
+import { insiderLogo, muLogo } from '../../../assets/images/imageJS/homeImg';
 
 export default function Sidebar({ isOpen, toggleSidebar }) {
     const [innerSidebarOpen, setInnerSidebarOpen] = useState(false);

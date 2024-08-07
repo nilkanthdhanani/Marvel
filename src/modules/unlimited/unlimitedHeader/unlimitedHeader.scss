@@ -1,0 +1,24 @@
+@import "../../../styles/index.scss";
+
+.unlimited-Header {
+    .uh-first {
+        position: fixed;
+        top: 50px;
+        right: 30px;
+        opacity: 0;
+    }
+
+    .uh-main {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 75px;
+        background-color: var(--bgcolor-header);
+        @include flex-between;
+    }
+
+    .uh-main-logo {
+        
+    }
+}

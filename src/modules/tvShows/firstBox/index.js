@@ -1,6 +1,6 @@
 import React from 'react';
 import './firstBox.scss';
-import { drop5img1, drop5img2, drop5img3, drop5img4, drop5img5, drop5img6 } from '../../../assets/images/shows';
+import { drop5img1, drop5img2, drop5img3, drop5img4, drop5img5, drop5img6 } from '../../../assets/images/imageJS/showsImg';
 
 const movies = [
     { imgSrc: drop5img1, title: 'Agatha All Along', releaseDate: 'SEP 18, 2024', },
