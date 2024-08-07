@@ -347,3 +347,25 @@
         }
     }
 }
+
+.continue-button {
+    button {
+        width: 100%;
+        min-height: 52px;
+        padding: 14px 24px;
+        border: none;
+        background-color: var(--font-color3);
+        border-radius: 28px;
+        @include font14;
+        font-weight: 700;
+        font-family: var(--font-family-noto);
+        color: var(--color-white);
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+            background-color: var(--bgcolor6);
+            transition: 0.2s ease-in-out;
+        }
+    }
+}

@@ -63,8 +63,8 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
                     </div>
                     <div className="login">
                         <div className="login-title">MARVEL INSIDER</div>
-                        <a href="/">LOG IN</a>
-                        <a href="/">JOIN</a>
+                        <a href="/login">LOG IN</a>
+                        <a href="/login">JOIN</a>
                     </div>
                     <div className="links">
                         <div className="links-icons">

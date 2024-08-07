@@ -1,0 +1,145 @@
+@import "../../styles/index.scss";
+
+.login {
+    .login-background {
+        position: fixed;
+        background-image: url("../../assets/images/png/loginBackground.webp");
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+    }
+
+    .login-box {
+        position: relative;
+        padding: 50px 0 80px 0;
+
+        .login-logo {
+            @include flex-center;
+            margin-bottom: 25px;
+
+            img {
+                width: 140px;
+            }
+        }
+
+        .login-box-main {
+            padding: 56px 72px;
+            background-color: var(--color-white);
+            border-radius: 25px;
+            font-family: var(--font-family-noto);
+
+            svg {
+                max-width: 87px;
+            }
+
+            h2 {
+                margin: 8px 0;
+                @include font25;
+                font-weight: 700;
+                line-height: 40px;
+                color: var(--font-color7);
+            }
+
+            p {
+                @include font14;
+                line-height: 24px;
+                color: var(--font-color7);
+            }
+
+            .login-box-input {
+                margin: 24px 0;
+
+                input {
+                    padding: 17px;
+                    width: 100%;
+                    background-color: var(--bgcolor8);
+                    border: none;
+                    border-bottom: 2px solid transparent;
+                    border-radius: 4px;
+                    @include font14;
+                    line-height: 24px;
+                    color: var(--bgcolor9);
+
+                    &:hover {
+                        border-bottom: 2px solid var(--border-color3);
+                    }
+
+                    &:focus {
+                        outline: none;
+                        border-bottom: 2px solid;
+                    }
+                }
+
+                span {
+                    display: block;
+                    padding-top: 4px;
+                    @include font12;
+                    color: var(--font-color3);
+                }
+            }
+
+            .error {
+                input {
+                    border-bottom: 2px solid var(--font-color3);
+
+                    &:hover {
+                        border-bottom: 2px solid var(--font-color3);
+                    }
+                }
+            }
+
+            .login-discription {
+                margin: 24px 0;
+                border-top: 1px solid var(--bgcolor8);
+                font-family: var(--font-family-noto);
+
+                h3 {
+                    padding: 24px 0 4px 0;
+                    @include font14;
+                    font-weight: 700;
+                    color: var(--bgcolor9);
+                }
+
+                p {
+                    @include font12;
+                    color: var(--bgcolor9);
+                    line-height: 20px;
+
+                    a {
+                        color: var(--font-color8);
+
+                        &:hover {
+                            text-decoration-line: underline;
+                        }
+                    }
+                }
+            }
+
+            .login-icons {
+                @include flex-between;
+                flex-wrap: wrap;
+
+                svg {
+                    fill: var(--bgcolor11);
+                }
+            }
+        }
+
+        .login-close {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            cursor: pointer;
+
+            .login-close-main {
+                padding: 4px 4px 0 4px;
+                border-radius: 50%;
+                background-color: var(--bgcolor8);
+
+                &:hover {
+                    background-color: var(--bgcolor10);
+                }
+            }
+        }
+    }
+}

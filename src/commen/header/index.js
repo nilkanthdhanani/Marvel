@@ -60,9 +60,9 @@ export default function Header() {
             <div className="header-main1">
               <div className="header-main1-div">
                 <Login />
-                <a href="/" onClick={hideHeaderOnLinkClick}>LOG IN</a>
+                <a href="/login" onClick={hideHeaderOnLinkClick}>LOG IN</a>
                 <span>|</span>
-                <a href="/" onClick={hideHeaderOnLinkClick}>JOIN</a>
+                <a href="/login" onClick={hideHeaderOnLinkClick}>JOIN</a>
               </div>
               <div onClick={toggleSidebar} className="header-main1-menu">
                 <Menu />

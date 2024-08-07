@@ -54,6 +54,11 @@
     line-height: 1.3;
 }
 
+@mixin font25 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
 @mixin font26b {
     font-size: 26px;
     font-weight: 800;

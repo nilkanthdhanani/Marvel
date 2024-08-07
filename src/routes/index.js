@@ -9,6 +9,7 @@ import Movies from "../modules/movies";
 import TvShows from "../modules/tvShows";
 import Games from "../modules/games";
 import Videos from "../modules/videosMarvel";
+import LogIn from "../modules/loginPage";
 
 const router = createBrowserRouter([
     {
@@ -51,9 +52,14 @@ const router = createBrowserRouter([
     },
 
     {
+        path: "/login",
+        element: <LogIn />
+    },
+
+    {
         path: "*",
         element: <Error />
-    }
+    },
 ]
 )
 
