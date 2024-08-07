@@ -29,7 +29,6 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
     };
 
     const handleToggleSidebar = () => {
-        // Close inner sidebar and reset content key when closing main sidebar
         setInnerSidebarOpen(false);
         setCurrentContentKey('');
         toggleSidebar();

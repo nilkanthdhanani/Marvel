@@ -1,5 +1,5 @@
 import React from 'react';
-import './firsrBox.scss';
+import './firstBox.scss';
 import { drop4img1, drop4img2, drop4img3, drop4img4, drop4img5, drop4img6 } from '../../../assets/images/movies';
 
 const movies = [

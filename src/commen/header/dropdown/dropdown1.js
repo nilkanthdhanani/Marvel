@@ -14,7 +14,7 @@ export default function Dropdown1() {
         <h2>TRENDING NEWS</h2>
         <div className="drop-grid">
           <div className="drop-grid-div">
-            <div className="drop-drid-image">
+            <div className="drop-grid-image">
               <img src={drop1img1} alt="drop1img1" />
             </div>
             <div className="drop-grid-text">
@@ -23,7 +23,7 @@ export default function Dropdown1() {
             </div>
           </div>
           <div className="drop-grid-div">
-            <div className="drop-drid-image">
+            <div className="drop-grid-image">
               <img src={drop1img2} alt="drop1img2" />
             </div>
             <div className="drop-grid-text">
@@ -32,7 +32,7 @@ export default function Dropdown1() {
             </div>
           </div>
           <div className="drop-grid-div">
-            <div className="drop-drid-image">
+            <div className="drop-grid-image">
               <img src={drop1img3} alt="drop1img3" />
             </div>
             <div className="drop-grid-text">
@@ -41,7 +41,7 @@ export default function Dropdown1() {
             </div>
           </div>
           <div className="drop-grid-div">
-            <div className="drop-drid-image">
+            <div className="drop-grid-image">
               <img src={drop1img4} alt="drop1img4" />
             </div>
             <div className="drop-grid-text">

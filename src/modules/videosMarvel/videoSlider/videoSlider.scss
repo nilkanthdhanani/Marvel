@@ -1,0 +1,224 @@
+@import "../../../styles/index.scss";
+
+.videoslid {
+    position: relative;
+    padding-top: 20px;
+
+    @include breakpoint("md-max") {
+        .container2 {
+            padding: 0;
+        }
+    }
+
+    ::-webkit-scrollbar {
+        height: 5px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        padding: 0 20px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #c1c1c1;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #a8a8a8;
+    }
+
+    @include breakpoint("md-max") {
+        ::-webkit-scrollbar {
+            height: 0;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            padding: 0 20px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #c1c1c1;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a8a8a8;
+        }
+    }
+
+    h2 {
+        @include font26b;
+        font-weight: 600;
+        line-height: 0.9;
+        font-family: var(--font-family-condensed);
+        text-transform: uppercase;
+        margin: 25px 0;
+        position: relative;
+
+        &::after {
+            @include fontline-top;
+            width: 20px;
+        }
+
+        &::before {
+            @include fontline-bottom;
+            width: 20px;
+        }
+    }
+
+    .videoslid-scroll {
+        padding: 10px 0 50px 0;
+        background-color: var(--color-white);
+
+        @include breakpoint("md-max") {
+            margin-top: 0;
+            padding: 20px 0;
+        }
+
+        .videoslid-main {
+            padding-top: 10px;
+            display: flex;
+            overflow-x: auto;
+            margin-bottom: 20px;
+
+            .videoslid-main-div {
+                min-width: 180px;
+                cursor: pointer;
+                margin: 0 20px 30px 0;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                @include breakpoint("md-max") {
+                    margin: 0 20px 10px 0;
+                    &:first-child {
+                        margin: 0 20px 10px 30px;
+                    }
+                    &:last-child {
+                        margin: 0 30px 10px 0;
+                    }
+                }
+
+                .videoslid-main-flip {
+                    position: relative;
+                    height: 270px;
+                    perspective: 1000px;
+                    transform-style: preserve-3d;
+
+                    .flip-top,
+                    .flip-bottom {
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        backface-visibility: hidden;
+                    }
+
+                    .flip-top {
+                        transform: perspective(600px) rotateY(0deg);
+                        transition: 0.5s;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            box-shadow: 0 7px 17px -8px rgba(0, 0, 0, 0.8);
+                        }
+                    }
+
+                    .flip-bottom {
+                        transform: perspective(600px) rotateY(180deg);
+                        transition: 0.3s;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        .flip-bottom-pera {
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            top: 0;
+                            padding: 10px;
+                            background-color: var(--bgcolor7);
+                            @include flex;
+
+                            p {
+                                color: var(--color-white);
+                                @include font16;
+                                font-weight: 600;
+                                line-height: 22px;
+                                text-align: center;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        .flip-top {
+                            transform: perspective(600px) rotateY(180deg);
+                            transition: 0.5s ease-in-out;
+                        }
+                        .flip-bottom {
+                            transform: perspective(600px) rotateY(360deg);
+                            transition: 0.5s ease-in-out;
+                        }
+                    }
+                }
+
+                .videoslid-main-text {
+                    padding: 13px 0 0 0;
+
+                    h3 {
+                        @include font15b;
+                        letter-spacing: 0.5px;
+                        color: var(--bgcolor-sidebar);
+                    }
+
+                    h4 {
+                        @include font12;
+                        font-weight: 700;
+                        color: var(--bgcolor2);
+                        margin-top: 5px;
+                    }
+                }
+
+                &:hover {
+                    .videoslid-main-text {
+                        h3 {
+                            color: var(--font-color3);
+                        }
+                    }
+                }
+            }
+        }
+
+        .videoslid-scroll-main {
+            position: relative;
+            width: 100%;
+            padding: 10px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+            &::after {
+                position: absolute;
+                content: "";
+                left: 0;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 2px;
+                width: 100%;
+                background-color: #f2f2f2;
+                z-index: 1;
+            }
+
+            .videoslid-scroll-track {
+                position: absolute;
+                top: calc(50% - 2px);
+                left: 0;
+                width: 35px;
+                padding: 2px;
+                z-index: 2;
+                background-color: #e62429;
+                cursor: pointer;
+                background-clip: padding-box;
+            }
+        }
+    }
+}

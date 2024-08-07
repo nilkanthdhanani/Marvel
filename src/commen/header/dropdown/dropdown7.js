@@ -10,14 +10,14 @@ export default function Dropdown7() {
       <div className="dropdown">
         <div className="container-dropdown">
           <div className="drop-links">
-            <Link to="/">TRAILERS & EXTRAS</Link>
-            <Link to="/">DIGITAL SERIES</Link>
-            <Link to="/">ALL VIDEO</Link>
+            <Link to="/videos">TRAILERS & EXTRAS</Link>
+            <Link to="/videos">DIGITAL SERIES</Link>
+            <Link to="/videos">ALL VIDEO</Link>
           </div>
           <h2>TRENDING VIDEO</h2>
           <div className="drop-grid">
             <div className="drop-grid-div">
-              <div className="drop-drid-image">
+              <div className="drop-grid-image">
                 <div className="watch-svg">
                   <Watch />
                 </div>
@@ -32,7 +32,7 @@ export default function Dropdown7() {
               </div>
             </div>
             <div className="drop-grid-div">
-              <div className="drop-drid-image">
+              <div className="drop-grid-image">
                 <div className="watch-svg">
                   <Watch />
                 </div>
@@ -47,7 +47,7 @@ export default function Dropdown7() {
               </div>
             </div>
             <div className="drop-grid-div">
-              <div className="drop-drid-image">
+              <div className="drop-grid-image">
                 <div className="watch-svg">
                   <Watch />
                 </div>
@@ -62,7 +62,7 @@ export default function Dropdown7() {
               </div>
             </div>
             <div className="drop-grid-div">
-              <div className="drop-drid-image">
+              <div className="drop-grid-image">
                 <div className="watch-svg">
                   <Watch />
                 </div>
@@ -79,9 +79,9 @@ export default function Dropdown7() {
           </div>
           <div className="drop-links-last">
             <h3>OUR SHOWS</h3>
-            <Link to="/">EARTH'S MIGHTIEST SHOW</Link>
-            <Link to="/">THIS WEEK IN MARVEL</Link>
-            <Link to="/">WOMEN OF MARVEL</Link>
+            <Link to="/videos">EARTH'S MIGHTIEST SHOW</Link>
+            <Link to="/videos">THIS WEEK IN MARVEL</Link>
+            <Link to="/videos">WOMEN OF MARVEL</Link>
           </div>
         </div>
       </div>

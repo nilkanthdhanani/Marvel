@@ -60,14 +60,14 @@ export default function InnerSidebar({ isOpen, closeInnerSidebar, toggleSidebar,
             <Link to="/games" onClick={toggleSidebar}>SEE ALL GAMES</Link>
         </>,
         'VIDEOS': <>
-            <Link to="/" onClick={toggleSidebar}>TRAILERS & EXTRAS</Link>
-            <Link to="/" onClick={toggleSidebar}>DIGITAL SERIES</Link>
-            <Link to="/" onClick={toggleSidebar}>ALL VIDEO</Link>
+            <Link to="/videos" onClick={toggleSidebar}>TRAILERS & EXTRAS</Link>
+            <Link to="/videos" onClick={toggleSidebar}>DIGITAL SERIES</Link>
+            <Link to="/videos" onClick={toggleSidebar}>ALL VIDEO</Link>
             <div className="secondary">
                 <h2>OUR SHOWS</h2>
-                <Link to="/" onClick={toggleSidebar}>EARTH'S MIGHTIEST SHOW</Link>
-                <Link to="/" onClick={toggleSidebar}>THIS WEEK IN MARVEL</Link>
-                <Link to="/" onClick={toggleSidebar}>WOMEN OF MARVEL</Link>
+                <Link to="/videos" onClick={toggleSidebar}>EARTH'S MIGHTIEST SHOW</Link>
+                <Link to="/videos" onClick={toggleSidebar}>THIS WEEK IN MARVEL</Link>
+                <Link to="/videos" onClick={toggleSidebar}>WOMEN OF MARVEL</Link>
             </div>
         </>,
     };

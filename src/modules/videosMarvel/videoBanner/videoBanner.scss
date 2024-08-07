@@ -1,0 +1,87 @@
+@import "../../../styles/index.scss";
+
+.videoBanner {
+    background-image: url("../../../assets/images/jpg/videoBanner.jpg");
+    min-height: 490px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    clip-path: polygon(0 0, 0 98%, 100% 92%, 100% 0);
+    display: flex;
+    justify-content: center;
+
+    @include breakpoint("lg-max") {
+        background-position: right;
+    }
+
+    @include breakpoint("sm-max") {
+        min-height: 340px;
+        background-position: 85% 15%;
+    }
+
+    &::after {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        content: "";
+        z-index: 1;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0.2));
+        opacity: 0;
+
+        @include breakpoint("lg-max") {
+            opacity: 1;
+        }
+    }
+
+    .videoBanner-head {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        max-width: 1200px;
+        color: var(--color-black);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 20px;
+
+        h1 {
+            @include font44;
+            font-family: var(--font-family-condensed);
+
+            @include breakpoint("sm-max") {
+                font-size: 26px;
+            }
+        }
+
+        p {
+            padding: 15px 0 20px 0;
+            letter-spacing: 0.5px;
+        }
+
+        .watch-svg {
+            background-color: rgba(255, 255, 255, 0.7);
+            width: 60px;
+            aspect-ratio: 1/ 1;
+            cursor: pointer;
+            @include flex-center;
+            transition: 0.3s ease-in-out;
+
+            svg {
+                width: 17px;
+                fill: var(--font-color3);
+            }
+
+            &:hover {
+                background-color: var(--font-color3);
+                transition: 0.3s ease-in-out;
+
+                svg {
+                    fill: var(--color-white);
+                }
+            }
+        }
+
+    }
+}

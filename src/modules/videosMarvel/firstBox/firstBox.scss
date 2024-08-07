@@ -1,0 +1,75 @@
+@import "../../../styles/index.scss";
+
+.first-box2 {
+    position: relative;
+
+    .first-box-main {
+        margin-top: -90px;
+        padding: 20px 20px 10px 20px;
+        background-color: var(--color-white);
+
+        @include breakpoint("lg-max") {
+            margin-top: -45px;
+        }
+
+        .drop-grid {
+            @include grid6c;
+            gap: 20px;
+
+            @include breakpoint("lg-max") {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            @include breakpoint("md-max") {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            @include breakpoint("sm-max") {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @include breakpoint("xs-max") {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .drop-grid-div {
+                cursor: pointer;
+
+                .drop-grid-image {
+                    position: relative;
+
+                    .watch-svg {
+                        position: absolute;
+                        top: calc(50% - 15px);
+                        left: calc(50% - 15px);
+                        background-color: rgba(255, 255, 255, 0.7);
+                        width: 30px;
+                        aspect-ratio: 1/ 1;
+                        @include flex-center;
+                    }
+
+                    &:hover {
+                        .watch-svg {
+                            background-color: var(--color-white);
+                        }
+                    }
+
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .drop-grid-text {
+                    padding: 8px 0;
+
+                    p {
+                        @include font12;
+                        font-weight: 500;
+                        color: var(--bgcolor-sidebar);
+                    }
+                }
+            }
+        }
+    }
+}

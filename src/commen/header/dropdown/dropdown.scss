@@ -59,7 +59,7 @@
             margin: 0 10px;
             cursor: pointer;
 
-            .drop-drid-image {
+            .drop-grid-image {
                 position: relative;
 
                 .watch-svg {
@@ -132,7 +132,7 @@
             }
 
             &:hover {
-                .drop-drid-image {
+                .drop-grid-image {
                     &::after {
                         opacity: 1;
                     }

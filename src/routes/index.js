@@ -8,6 +8,7 @@ import Characters from "../modules/characters";
 import Movies from "../modules/movies";
 import TvShows from "../modules/tvShows";
 import Games from "../modules/games";
+import Videos from "../modules/videosMarvel";
 
 const router = createBrowserRouter([
     {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
             {
                 path: "/games",
                 element: <Games />
+            },
+            {
+                path: "/videos",
+                element: <Videos />
             },
         ]
     },

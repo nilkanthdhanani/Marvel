@@ -15,6 +15,7 @@
         color: var(--color-white);
         @include font14;
         font-weight: 600;
+        font-family: var(--font-family-roboto);
         cursor: pointer;
         position: relative;
 
@@ -143,6 +144,7 @@
             line-height: 16px;
             @include font14;
             font-weight: 600;
+            font-family: var(--font-family-roboto);
 
             &:after {
                 content: "";
@@ -239,6 +241,7 @@
             line-height: 16px;
             @include font14;
             font-weight: 600;
+            font-family: var(--font-family-roboto);
 
             &:after {
                 content: "";
