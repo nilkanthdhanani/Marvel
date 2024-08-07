@@ -125,7 +125,7 @@
             }
 
             .login-icons {
-                @include flex-between;
+                @include flex;
                 flex-wrap: wrap;
 
                 svg {
