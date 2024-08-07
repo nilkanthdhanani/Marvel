@@ -28,6 +28,10 @@
             border-radius: 25px;
             font-family: var(--font-family-noto);
 
+            @include breakpoint("sm-max") {
+                padding: 32px 24px;
+            }
+
             svg {
                 max-width: 87px;
             }
@@ -38,6 +42,11 @@
                 font-weight: 700;
                 line-height: 40px;
                 color: var(--font-color7);
+
+                @include breakpoint("sm-max") {
+                    font-size: 22px;
+                    line-height: 25px;
+                }
             }
 
             p {
