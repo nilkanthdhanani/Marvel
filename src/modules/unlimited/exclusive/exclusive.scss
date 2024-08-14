@@ -1,0 +1,92 @@
+@import '../../../styles/index.scss';
+
+.exclusive {
+    width: 100%;
+    background-image: url('../../../assets/images/jpg/exclusiveBacckground.jpg');
+    background-size: cover;
+    background-position: bottom;
+    padding: 45px 0 20px 0;
+    margin: -1px 0;
+
+    .exclusive-title {
+        padding-bottom: 25px;
+        margin-bottom: 15px;
+        text-align: center;
+        color: var(--color-white);
+        border-bottom: 1px solid var(--bgcolor2);
+
+        h2 {
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            @include font25;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        p {
+            @include font20;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .exclusive-list {
+        margin: 30px 0;
+
+        h3 {
+            margin-bottom: 30px;
+            @include font20;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: var(--color-white);
+            text-align: center;
+
+            sup {
+                font-size: 11px;
+                margin-left: 3px;
+            }
+        }
+
+        .exclusive-list-main {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            border-bottom: 1px solid var(--bgcolor2);
+
+            @include breakpoint("sm-max") {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 0;
+            }
+
+            ul {
+                li {
+                    color: var(--color-white);
+                    list-style: none;
+                    margin-bottom: 30px;
+                    padding-left: 35px;
+                    position: relative;
+                    @include font16;
+                    letter-spacing: 0.5px;
+
+                    sup {
+                        font-size: 11px;
+                        margin-left: 3px;
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 20px;
+                        height: 15px;
+                        background: url('../../../assets/images/svg/checkmarkRed..svg') no-repeat center;
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+    }
+}

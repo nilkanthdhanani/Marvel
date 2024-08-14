@@ -11,6 +11,7 @@ import Snapchat from '../../assets/images/svg/sidebarIcon/snapchat';
 import Pinterest from '../../assets/images/svg/sidebarIcon/pinterest';
 import Twitch from '../../assets/images/svg/sidebarIcon/twitch';
 import Tiktok from '../../assets/images/svg/sidebarIcon/tiktok';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -19,7 +20,9 @@ export default function Footer() {
         <div className="footer-div">
           <div className="footer-div1">
             <div className="footer-logo">
-              <FooterLogo />
+              <Link to={"/"}>
+                <FooterLogo />
+              </Link>
             </div>
             <div className="footer-list">
               <ul>

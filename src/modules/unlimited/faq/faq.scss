@@ -1,0 +1,94 @@
+@import "../../../styles/index.scss";
+
+.faq {
+    background-color: var(--color-black);
+    padding-top: 48px;
+
+    h2 {
+        color: var(--color-white);
+        margin-bottom: 32px;
+        @include font26b;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1;
+    }
+
+    .faq-main {
+        .faq-main-list {
+            position: relative;
+            cursor: pointer;
+
+            h3 {
+                @include font16;
+                font-weight: 700;
+                letter-spacing: 0.5px;
+                padding: 20px 30px 20px 20px;
+                background-color: var(--bgcolor14);
+                border-bottom: 1px solid var(--border-color2);
+
+                &:hover {
+                    background-color: var(--border-color2);
+                }
+            }
+
+            .plus-icon, .minus-icon {
+                position: absolute;
+                top: 15px;
+                right: 20px;
+                font-size: 25px;
+                font-weight: 600;
+            }
+
+            .plus-icon.hidden {
+                display: none;
+            }
+
+            .minus-icon {
+                top: 0;
+                font-size: 30px;
+                display: none;
+
+                &.visible {
+                    display: block;
+                }
+            }
+
+            .faq-main-list-pera {
+                display: none;
+                padding: 20px;
+                background-color: var(--color-white);
+                cursor: auto;
+
+                &.open {
+                    display: block;
+                }
+
+                p {
+                    padding-bottom: 30px;
+                    @include font16;
+                    color: var(--color-black);
+                    letter-spacing: 0.5px;
+
+                    a {
+                        color: var(--font-color3);
+                        text-decoration-line: underline;
+                        word-break: break-all;
+                    }
+
+                    &:last-child {
+                        padding-bottom: 0;
+                    }
+
+                    ul {
+                        margin-top: 15px;
+
+                        li {
+                            margin-left: 20px;
+                            padding-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,6 +1,7 @@
 @import "../breakpoints/_breakpoint.scss";
 
-.banner-content-button, .banner-content-button2 {
+.banner-content-button,
+.banner-content-button2 {
     @include flex;
     gap: 20px;
 
@@ -186,10 +187,22 @@
                 border-left: 1px solid var(--border-color-dull);
                 border-right: 1px solid var(--border-color-dull);
                 &::after {
-                    background-image: repeating-linear-gradient(-45deg, rgb(255, 255, 255, 0.4), rgb(255, 255, 255, 0.4) 1px, transparent 0, transparent 16px);
+                    background-image: repeating-linear-gradient(
+                        -45deg,
+                        rgb(255, 255, 255, 0.4),
+                        rgb(255, 255, 255, 0.4) 1px,
+                        transparent 0,
+                        transparent 16px
+                    );
                 }
                 &::before {
-                    background-image: repeating-linear-gradient(-45deg, rgb(255, 255, 255, 0.4), rgb(255, 255, 255, 0.4) 1px, transparent 0, transparent 16px);
+                    background-image: repeating-linear-gradient(
+                        -45deg,
+                        rgb(255, 255, 255, 0.4),
+                        rgb(255, 255, 255, 0.4) 1px,
+                        transparent 0,
+                        transparent 16px
+                    );
                 }
             }
         }
@@ -199,7 +212,7 @@
 .latest-div1-button {
     @include flex-center;
     padding: 15px 0;
-    
+
     button {
         padding: 16px 0;
         border: none;
@@ -251,7 +264,13 @@
                 height: 0;
                 width: 0;
                 background-size: 16px calc(16px + 16px / 2);
-                background-image: repeating-linear-gradient(-45deg, #151515, #151515 1px, transparent 0, transparent 16px);
+                background-image: repeating-linear-gradient(
+                    -45deg,
+                    #151515,
+                    #151515 1px,
+                    transparent 0,
+                    transparent 16px
+                );
                 border-color: transparent;
                 border-style: solid;
                 border-width: 0 0 16px 16px;
@@ -265,7 +284,13 @@
                 height: 0;
                 width: 0;
                 background-size: 16px calc(16px + 16px / 2);
-                background-image: repeating-linear-gradient(-45deg, #151515, #151515 1px, transparent 0, transparent 16px);
+                background-image: repeating-linear-gradient(
+                    -45deg,
+                    #151515,
+                    #151515 1px,
+                    transparent 0,
+                    transparent 16px
+                );
                 border-color: transparent;
                 border-style: solid;
                 border-width: 0 0 16px 16px;
@@ -283,10 +308,22 @@
                 border-left: 1px solid var(--border-color-dull2);
                 border-right: 1px solid var(--border-color-dull2);
                 &::after {
-                    background-image: repeating-linear-gradient(-45deg, rgb(21, 21, 21, 0.4), rgb(21, 21, 21, 0.4) 1px, transparent 0, transparent 16px);
+                    background-image: repeating-linear-gradient(
+                        -45deg,
+                        rgb(21, 21, 21, 0.4),
+                        rgb(21, 21, 21, 0.4) 1px,
+                        transparent 0,
+                        transparent 16px
+                    );
                 }
                 &::before {
-                    background-image: repeating-linear-gradient(-45deg, rgb(21, 21, 21, 0.4), rgb(21, 21, 21, 0.4) 1px, transparent 0, transparent 16px);
+                    background-image: repeating-linear-gradient(
+                        -45deg,
+                        rgb(21, 21, 21, 0.4),
+                        rgb(21, 21, 21, 0.4) 1px,
+                        transparent 0,
+                        transparent 16px
+                    );
                 }
             }
         }
@@ -371,9 +408,9 @@
 }
 
 .uh-first {
-
     button {
-        padding: 12px 13px;
+        padding: 13px 15px;
+        max-height: 47px;
         background-color: var(--bgcolor-header);
         border: 2px solid var(--color-white);
         transform: skewX(-11deg);
@@ -383,6 +420,7 @@
             display: block;
             @include font14;
             font-weight: 600;
+            line-height: 19px;
             font-family: var(--font-family-roboto);
             transform: skewX(11deg);
             color: var(--color-white);
@@ -391,6 +429,345 @@
         &:hover {
             background-color: var(--color-black);
             transition: 0.2s ease-in-out;
+        }
+    }
+}
+
+.uh-main-button {
+    @include flex;
+    gap: 20px;
+    margin-right: 5px;
+
+    button {
+        padding: 12px 13px;
+        background-color: var(--color-black);
+        border: 2px solid var(--color-white);
+        transform: skewX(-11deg);
+        cursor: pointer;
+
+        span {
+            display: block;
+            @include font14;
+            font-weight: 600;
+            line-height: 19px;
+            font-family: var(--font-family-roboto);
+            transform: skewX(11deg);
+            color: var(--color-white);
+        }
+
+        &:first-child {
+            border: none;
+            background-color: var(--font-color3);
+
+            &:hover {
+                background-color: var(--bgcolor3);
+                transition: 0.2s ease-in-out;
+            }
+        }
+    }
+}
+
+.banner-content-button3 {
+    margin: 15px auto;
+
+    button {
+        padding: 16px 0;
+        border: none;
+        background-color: transparent;
+        color: var(--bgcolor-sidebar);
+        @include font14;
+        font-weight: 600;
+        font-family: var(--font-family-roboto);
+        cursor: pointer;
+        position: relative;
+
+        span {
+            display: block;
+            padding: 0 35px 1px 35px;
+            background-color: var(--color-white);
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: calc(100% - 16px);
+            padding: 8.5px 0;
+            top: 0;
+            left: 0;
+            margin-left: 16px;
+            background-color: var(--color-white);
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: calc(100% - 16px);
+            padding: 8.5px 0;
+            bottom: 0;
+            left: 0;
+            margin-right: 16px;
+            background-color: var(--color-white);
+        }
+
+        .inner-cut {
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 0;
+                width: 0;
+                border-bottom: 17px solid var(--color-white);
+                border-left: 17px solid transparent;
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                height: 0;
+                width: 0;
+                border-top: 17px solid var(--color-white);
+                border-right: 17px solid transparent;
+            }
+        }
+
+        &:hover {
+            &::after {
+                background-color: var(--border-color2);
+            }
+            &::before {
+                background-color: var(--border-color2);
+            }
+            span {
+                background-color: var(--border-color2);
+            }
+            .inner-cut {
+                &::after {
+                    border-bottom: 17px solid var(--border-color2);
+                }
+                &::before {
+                    border-top: 17px solid var(--border-color2);
+                }
+            }
+        }
+
+        @include breakpoint("sm-max") {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.plan-box-button {
+    @include flex-center;
+
+    button {
+        width: 170px;
+        padding: 16px 0;
+        border: none;
+        background-color: transparent;
+        color: var(--color-white);
+        cursor: pointer;
+        position: relative;
+
+        span {
+            display: block;
+            padding: 0 35px;
+            @include font14;
+            font-weight: 600;
+            line-height: 14px;
+            font-family: var(--font-family-roboto);
+            background-color: var(--font-color3);
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: calc(100% - 16px);
+            padding: 8.5px 0;
+            top: 0;
+            left: 0;
+            margin-left: 16px;
+            background-color: var(--font-color3);
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: calc(100% - 16px);
+            padding: 8.5px 0;
+            bottom: 0;
+            left: 0;
+            margin-right: 16px;
+            background-color: var(--font-color3);
+        }
+
+        .inner-cut {
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 0;
+                width: 0;
+                border-bottom: 17px solid var(--font-color3);
+                border-left: 17px solid transparent;
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                height: 0;
+                width: 0;
+                border-top: 17px solid var(--font-color3);
+                border-right: 17px solid transparent;
+            }
+        }
+
+        &:hover {
+            &::after {
+                background-color: var(--bgcolor3);
+            }
+            &::before {
+                background-color: var(--bgcolor3);
+            }
+            span {
+                background-color: var(--bgcolor3);
+            }
+            .inner-cut {
+                &::after {
+                    border-bottom: 17px solid var(--bgcolor3);
+                }
+                &::before {
+                    border-top: 17px solid var(--bgcolor3);
+                }
+            }
+        }
+
+        @include breakpoint("sm-max") {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.plan-box-button2 {
+    @include flex-center;
+
+    button {
+        width: 170px;
+        padding: 16px 0;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 16px;
+            max-width: calc(100% - 16px);
+            top: 0;
+            right: 0;
+            border-style: solid;
+            border-color: var(--bgcolor-sidebar);
+            border-width: 1px 1px 0 0;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 16px;
+            max-width: calc(100% - 16px);
+            bottom: 0;
+            left: 0;
+            border-style: solid;
+            border-color: var(--bgcolor-sidebar);
+            border-width: 0 0 1px 1px;
+        }
+
+        .inner-cut {
+            padding: 0 35px;
+            border-left: 1px solid var(--bgcolor-sidebar);
+            border-right: 1px solid var(--bgcolor-sidebar);
+            color: var(--bgcolor-sidebar);
+            line-height: 14px;
+            @include font14;
+            font-weight: 600;
+            font-family: var(--font-family-roboto);
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 0;
+                width: 0;
+                background-size: 16px calc(16px + 16px / 2);
+                background-image: repeating-linear-gradient(
+                    -45deg,
+                    #151515,
+                    #151515 1px,
+                    transparent 0,
+                    transparent 16px
+                );
+                border-color: transparent;
+                border-style: solid;
+                border-width: 0 0 16px 16px;
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                height: 0;
+                width: 0;
+                background-size: 16px calc(16px + 16px / 2);
+                background-image: repeating-linear-gradient(
+                    -45deg,
+                    #151515,
+                    #151515 1px,
+                    transparent 0,
+                    transparent 16px
+                );
+                border-color: transparent;
+                border-style: solid;
+                border-width: 0 0 16px 16px;
+            }
+        }
+
+        &:hover {
+            &::after {
+                background-color: var(--font-color3);
+                border-color: transparent;
+            }
+
+            &::before {
+                background-color: var(--font-color3);
+                border-color: transparent;
+            }
+
+            .inner-cut {
+                background-color: var(--font-color3);
+                border-color: transparent;
+                color: var(--color-white);
+
+                &:after {
+                    border-bottom: 17px solid var(--font-color3);
+                    border-left: 17px solid transparent;
+                }
+
+                &:before {
+                    border-top: 17px solid var(--font-color3);
+                    border-right: 17px solid transparent;
+                    border-width: 17px 17px 0 0;
+                }
+            }
         }
     }
 }

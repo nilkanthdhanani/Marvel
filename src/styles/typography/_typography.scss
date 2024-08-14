@@ -104,6 +104,11 @@
     line-height: 40px;
 }
 
+@mixin font50 {
+    font-size: 50px;
+    font-weight: 400;
+}
+
 @mixin font160 {
     font-size: 160px;
     font-weight: 700;

@@ -1,0 +1,100 @@
+@import "../../../styles/index.scss";
+
+.seven-days {
+    background-color: var(--color-black);
+    margin: -1px 0;
+
+    .seven-days-div {
+        padding: 15px 0;
+        position: relative;
+
+        img {
+            width: 100%;
+
+            &:nth-child(2) {
+                display: none;
+            }
+
+            @include breakpoint("md-max") {
+                display: none;
+
+                &:nth-child(2) {
+                    display: block;
+                }
+            }
+        }
+
+        .seven-days-text {
+            position: absolute;
+            margin: 15px auto;
+            max-width: 50%;
+            top: 45%;
+
+            @include breakpoint("lg-max") {
+                position: relative;
+            }
+
+            @include breakpoint("sm-max") {
+                max-width: 100%;
+            }
+
+            p {
+                max-width: 400px;
+                @include font16;
+                letter-spacing: 0.5px;
+                color: var(--color-white);
+
+                @include breakpoint("sm-max") {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .poster1 {
+            left: 51.5%;
+
+            @include breakpoint("lg-max") {
+                left: 0;
+                text-align: center;
+            }
+        }
+
+        .poster2 {
+            right: 44%;
+            text-align: right;
+
+            @include breakpoint("lg-max") {
+                right: 0;
+                text-align: center;
+            }
+        }
+
+        .poster3 {
+            left: 50.5%;
+
+            @include breakpoint("lg-max") {
+                left: 0;
+                text-align: center;
+            }
+        }
+
+        .poster4 {
+            right: 44%;
+            text-align: right;
+
+            @include breakpoint("lg-max") {
+                right: 0;
+                text-align: center;
+            }
+        }
+
+        .poster5 {
+            left: 44.75%;
+
+            @include breakpoint("lg-max") {
+                left: 0;
+                text-align: center;
+            }
+        }
+    }
+}
