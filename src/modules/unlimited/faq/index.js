@@ -43,33 +43,33 @@ const faqData = [
 ];
 
 export default function Faq() {
-    const [openIndex, setOpenIndex] = useState(null);
+    const [openIndices, setOpenIndices] = useState([]);
 
     const toggleFaq = (index) => {
-        setOpenIndex(openIndex === index ? null : index);
+        if (openIndices.includes(index)) {
+            setOpenIndices(openIndices.filter(i => i !== index));
+        } else {
+            setOpenIndices([...openIndices, index]);
+        }
     };
 
     return (
-        <>
-            <div className="faq">
-                <div className="container-faq">
-                    <h2>Frequently Asked Questions</h2>
-                    <div className="faq-main">
-                        {faqData.map((faq, index) => (
-                            <div
-                                key={index}
-                                className="faq-main-list">
-                                <h3 onClick={() => toggleFaq(index)}>{faq.question}</h3>
-                                <div className={`plus-icon ${openIndex === index ? 'hidden' : ''}`}>+</div>
-                                <div className={`minus-icon ${openIndex === index ? 'visible' : ''}`}>_</div>
-                                <div className={`faq-main-list-pera ${openIndex === index ? 'open' : ''}`}>
-                                    {faq.answer}
-                                </div>
+        <div className="faq">
+            <div className="container-faq">
+                <h2>Frequently Asked Questions</h2>
+                <div className="faq-main">
+                    {faqData.map((faq, index) => (
+                        <div key={index} className="faq-main-list">
+                            <h3 onClick={() => toggleFaq(index)}>{faq.question}</h3>
+                            <div className={`plus-icon ${openIndices.includes(index) ? 'hidden' : ''}`}>+</div>
+                            <div className={`minus-icon ${openIndices.includes(index) ? 'visible' : ''}`}>_</div>
+                            <div className={`faq-main-list-pera ${openIndices.includes(index) ? 'open' : ''}`}>
+                                {faq.answer}
                             </div>
-                        ))}
-                    </div>
+                        </div>
+                    ))}
                 </div>
             </div>
-        </>
+        </div>
     );
 }
