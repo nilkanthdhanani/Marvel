@@ -11,6 +11,7 @@ import Games from "../modules/games";
 import Videos from "../modules/videosMarvel";
 import LogIn from "../modules/loginPage";
 import Unlimited from "../modules/unlimited";
+import Agreement from "../modules/agreement";
 
 const router = createBrowserRouter([
     {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
             {
                 path: "/videos",
                 element: <Videos />
+            },
+            {
+                path: "/agreement",
+                element: <Agreement />
             },
         ]
     },

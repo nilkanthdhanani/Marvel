@@ -44,7 +44,7 @@
                 letter-spacing: 0.5px;
                 color: var(--color-white);
 
-                @include breakpoint("sm-max") {
+                @include breakpoint("lg-max") {
                     max-width: 100%;
                 }
             }
