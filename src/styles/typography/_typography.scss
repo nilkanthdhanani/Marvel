@@ -64,6 +64,12 @@
     font-weight: 400;
 }
 
+@mixin font24b {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
 @mixin font26b {
     font-size: 26px;
     font-weight: 800;
