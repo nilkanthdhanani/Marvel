@@ -1,10 +1,10 @@
 @import "../../../styles/index.scss";
 
-.insider2 {
+.cb-insider {
     background-color: var(--bgcolor-sidebar);
     @include flex-center;
 
-    .insider2-div {
+    .cb-insider-div {
         @include flex;
         gap: 10px;
 

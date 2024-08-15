@@ -31,7 +31,7 @@ const faqData = [
                         <li>Reach out to Marvel Customer Support at <a href="https://help.marvel.com/hc/en-us" target='blank'>help.marvel.com</a> to request a cancellation.</li>
                     </ul>
                 </p>
-                <p>If you purchased your membership through iTunes or Google Play, please follow the respective links below for more information on how to cancel your membership:
+                <p>If you purchased your membershi p through iTunes or Google Play, please follow the respective links below for more information on how to cancel your membership:
                     <ul>
                         <li><a href="https://apps.apple.com/us/app/marvel-unlimited/id607205403" target='blank'>iTunes</a><sup>®</sup></li>
                         <li><a href="https://play.google.com/store/apps/details?id=com.marvel.unlimited&hl=en_US" target='blank'>Google Play</a></li>
@@ -52,7 +52,7 @@ export default function Faq() {
             setOpenIndices([...openIndices, index]);
         }
     };
-
+  
     return (
         <div className="faq">
             <div className="container-faq">

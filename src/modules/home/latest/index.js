@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import './latest.scss';
 import BorderTop from '../../../assets/images/svg/borderTop';
 import { drop1img1, drop1img2, drop1img3, drop1img4, drop1img5, latest1, latest10, latest11, latest12, latest13, latest14, latest15, latest16, latest17, latest18, latest19, latest2, latest20, latest21, latest22, latest23, latest24, latest25, latest26, latest27, latest28, latest29, latest3, latest30, latest31, latest32, latest4, latest5, latest6, latest7, latest8, latest9 } from '../../../assets/images/imageJS/homeImg';
-import Insider from '../../../assets/images/svg/insider';
 import Watch from '../../../assets/images/svg/watch';
+import InsiderIcon from '../../../assets/images/svg/insiderIcon';
 
 
 const extraBoxItems = [
@@ -77,7 +77,7 @@ export default function Latest() {
                                     </div>
                                     {index === 1 || index === 11 || index === 13 || index === 17 || index === 21 || index === 26 || index === 29 || index === 30 ? (
                                         <div className="ldcb-insider">
-                                            <Insider />
+                                            <InsiderIcon />
                                             <span>Earn Points, Get Rewards</span>
                                             <a href="/">Join NOW!</a>
                                         </div>

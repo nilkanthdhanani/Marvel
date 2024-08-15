@@ -79,20 +79,20 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
                             <a href="https://www.tiktok.com/@marvel" target='blank'><Tiktok /></a>
                         </div>
                     </div>
-                    <div className="insider">
+                    <div className="ul-insider">
                         <a href="/">
-                            <div className="insider-links">
-                                <img src={insiderLogo} alt="insiderLogo" />
-                                <div className="insider-links-text">
+                            <div className="ul-insider-links">
+                                <img src={insiderLogo} alt="ul-insiderLogo" />
+                                <div className="ul-insider-links-text">
                                     <h2>MARVEL INSIDER</h2>
                                     <p>GET REWARDED FOR BEING A MARVEL FAN</p>
                                 </div>
                             </div>
                         </a>
                         <a href="/">
-                            <div className="insider-links">
+                            <div className="ul-insider-links">
                                 <img src={muLogo} alt="muLogo" />
-                                <div className="insider-links-text">
+                                <div className="ul-insider-links-text">
                                     <h2>MARVEL UNLIMITED</h2>
                                     <p>ACCESS OVER 30,000+ DIGITAL COMICS</p>
                                 </div>

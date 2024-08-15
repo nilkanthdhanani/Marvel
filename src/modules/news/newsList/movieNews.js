@@ -2,7 +2,7 @@ import React from 'react'
 import './newsList.scss';
 import { latest25, latest26, latest29, latestMovies, moviesNews } from '../../../assets/images//imageJS/newsImg';
 import { Link } from 'react-router-dom';
-import Insider from '../../../assets/images/svg/insider';
+import InsiderIcon from '../../../assets/images/svg/insiderIcon';
 
 export default function MovieNews() {
   return (
@@ -30,7 +30,7 @@ export default function MovieNews() {
                 <h4>MOVIES</h4>
                 <p>How Dogpool Went From ‘Britain’s Ugliest Dog’ to ‘Deadpool & Wolverine’ Star</p>
                 <div className="ldcb-insider">
-                  <Insider />
+                  <InsiderIcon />
                   <span>Earn Points, Get Rewards</span>
                   <a href="/">Join NOW!</a>
                 </div>

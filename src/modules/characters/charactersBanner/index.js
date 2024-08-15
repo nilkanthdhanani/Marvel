@@ -5,8 +5,8 @@ import { insider } from '../../../assets/images/imageJS/charactersImg';
 export default function CharactersBanner() {
     return (
         <>
-            <div className="insider2">
-                <div className="insider2-div">
+            <div className="cb-insider">
+                <div className="cb-insider-div">
                     <p href="/">REWARD YOUR MARVEL FANDOM WITH</p>
                     <p>JOIN NOW</p>
                     <img src={insider} alt="insider" />

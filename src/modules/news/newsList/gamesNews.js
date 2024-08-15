@@ -2,7 +2,7 @@ import React from 'react'
 import './newsList.scss';
 import { gamesNews, latestGames, latestGames1, latestGames2, latestGames3 } from '../../../assets/images//imageJS/newsImg';
 import { Link } from 'react-router-dom';
-import Insider from '../../../assets/images/svg/insider';
+import InsiderIcon from '../../../assets/images/svg/insiderIcon';
 
 export default function GamesNews() {
   return (
@@ -30,7 +30,7 @@ export default function GamesNews() {
                 <h4>GAMES</h4>
                 <p>Join the POOL Party in 'MARVEL Strike Force'</p>
                 <div className="ldcb-insider">
-                  <Insider />
+                  <InsiderIcon />
                   <span>Earn Points, Get Rewards</span>
                   <a href="/">Join NOW!</a>
                 </div>

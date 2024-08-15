@@ -151,7 +151,7 @@
 
             img {
                 width: 100%;
-                box-shadow: 0 7px 17px -8px rgba(0, 0, 0, .8);
+                box-shadow: 0 7px 17px -8px rgba(0, 0, 0, 0.8);
                 transition: 0.2s ease-in-out;
             }
 
@@ -340,6 +340,90 @@
 
             &:hover {
                 color: var(--font-color3);
+            }
+        }
+    }
+}
+
+.join {
+    position: absolute;
+    width: 500px;
+    top: 100%;
+    left: 0;
+    padding: 30px 60px;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 1px;
+    z-index: 99;
+    background-color: black;
+    box-shadow: -10px 10px 10px -5px rgba(187, 187, 187, 0.15);
+    color: var(--color-white);
+    transition: opacity 0.3s ease-in-out;
+  
+    &.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    h2 {
+        @include font25;
+        letter-spacing: 0.5px;
+        text-align: center;
+        font-family: var(--font-family-condensed);
+    }
+
+    .join-logo {
+        @include flex-center;
+
+        img {
+            max-width: 200px;
+            margin: 25px 0 40px 0;
+        }
+    }
+
+    ul {
+        padding-bottom: 20px;
+
+        li {
+            list-style: square;
+            @include font18;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+            line-height: 1.57;
+
+            a {
+                text-decoration-line: underline;
+                font-size: 18px !important;
+                font-weight: 400 !important;
+                letter-spacing: 0.5px !important;
+                line-height: 1.57 !important;
+            }
+
+            span {
+                font-size: 13px !important;
+                font-weight: 400 !important;
+                letter-spacing: 1px !important;
+                line-height: 1.57 !important;
+            }
+        }
+    }
+
+    .login-call {
+        margin-top: 25px;
+
+        p {
+            text-align: center;
+            list-style: square;
+            @include font18;
+            letter-spacing: 1px;
+            line-height: 1.57;
+
+            a {
+                text-decoration-line: underline;
+                font-size: 18px !important;
+                font-weight: 400 !important;
+                letter-spacing: 1px !important;
+                line-height: 1.57 !important;
             }
         }
     }

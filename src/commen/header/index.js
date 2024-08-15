@@ -14,6 +14,7 @@ import Dropdown6 from './dropdown/dropdown6';
 import Dropdown7 from './dropdown/dropdown7';
 import Dropdown8 from './dropdown/dropdown8';
 import { Link } from 'react-router-dom';
+import Join from './dropdown/join';
 
 export default function Header() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -62,7 +63,7 @@ export default function Header() {
                 <Login />
                 <a href="/login" onClick={hideHeaderOnLinkClick}>LOG IN</a>
                 <span>|</span>
-                <a href="/login" onClick={hideHeaderOnLinkClick}>JOIN</a>
+                <Join />  
               </div>
               <div onClick={toggleSidebar} className="header-main1-menu">
                 <Menu />

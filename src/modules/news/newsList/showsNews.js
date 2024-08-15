@@ -2,7 +2,7 @@ import React from 'react'
 import './newsList.scss';
 import { latestShows, latestShows1, latestShows2, latestShows3, showsNews } from '../../../assets/images//imageJS/newsImg';
 import { Link } from 'react-router-dom';
-import Insider from '../../../assets/images/svg/insider';
+import InsiderIcon from '../../../assets/images/svg/insiderIcon';
 
 export default function ShowsNews() {
   return (
@@ -30,7 +30,7 @@ export default function ShowsNews() {
                 <h4>TV SHOWS</h4>
                 <p>Kathryn Hahn’s Agatha Harkness Returns in 'Agatha All Along' Trailer</p>
                 <div className="ldcb-insider">
-                  <Insider />
+                  <InsiderIcon />
                   <span>Earn Points, Get Rewards</span>
                   <a href="/">Join NOW!</a>
                 </div>
