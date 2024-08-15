@@ -80,7 +80,7 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
                         </div>
                     </div>
                     <div className="ul-insider">
-                        <a href="/">
+                        <a href="/insider">
                             <div className="ul-insider-links">
                                 <img src={insiderLogo} alt="ul-insiderLogo" />
                                 <div className="ul-insider-links-text">
@@ -89,7 +89,7 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
                                 </div>
                             </div>
                         </a>
-                        <a href="/">
+                        <a href="/unlimited">
                             <div className="ul-insider-links">
                                 <img src={muLogo} alt="muLogo" />
                                 <div className="ul-insider-links-text">
