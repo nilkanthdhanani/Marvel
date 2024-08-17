@@ -54,7 +54,7 @@ export default function Dropdown8() {
               </div>
             </div>
             <div className="drop-grid8-box2">
-              <a href="/">
+              <a href="/insider">
                 <div className="insider-links">
                   <img src={insiderLogo} alt="insiderLogo" />
                   <div className="insider-links-text">
@@ -64,7 +64,7 @@ export default function Dropdown8() {
                 </div>
               </a></div>
             <div className="drop-grid8-box2">
-              <a href="/">
+              <a href="/unlimited">
                 <div className="insider-links">
                   <img src={muLogo} alt="muLogo" />
                   <div className="insider-links-text">

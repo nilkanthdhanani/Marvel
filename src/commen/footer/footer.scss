@@ -31,7 +31,6 @@ footer {
             }
 
             .footer-logo {
-
                 @include breakpoint("lg-max") {
                     @include flex-center;
                     margin-bottom: 30px;
@@ -120,36 +119,44 @@ footer {
                 gap: 60px;
             }
 
-            .footer-div2-logo {
-                display: flex;
-                gap: 30px;
-
-                @include breakpoint("lg-max") {
-                    order: 1;
-
-                    &:last-child {
-                        padding: 0;
+            a {
+                &:last-child {
+                    .footer-div2-logo {
+                        padding-top: 30px;
                     }
                 }
 
-                img {
-                    width: 100%;
-                    max-width: 55px;
-                    max-height: 25px;
-                }
+                .footer-div2-logo {
+                    display: flex;
+                    gap: 30px;
 
-                .footer-div2-text {
-                    h2 {
-                        font-family: var(--font-family-condensed);
-                        @include font14b;
-                        color: var(--color-white);
-                        letter-spacing: 2px;
+                    @include breakpoint("lg-max") {
+                        order: 1;
+
+                        &:last-child {
+                            padding: 0;
+                        }
                     }
 
-                    p {
-                        @include font14;
-                        letter-spacing: 0.5px;
-                        color: var(--bgcolor2);
+                    img {
+                        width: 100%;
+                        max-width: 55px;
+                        max-height: 25px;
+                    }
+
+                    .footer-div2-text {
+                        h2 {
+                            font-family: var(--font-family-condensed);
+                            @include font14b;
+                            color: var(--color-white);
+                            letter-spacing: 2px;
+                        }
+
+                        p {
+                            @include font14;
+                            letter-spacing: 0.5px;
+                            color: var(--bgcolor2);
+                        }
                     }
                 }
             }

@@ -33,7 +33,7 @@ export default function Footer() {
               </ul>
               <ul className="lighter">
                 <li><a href="/">Advertising</a></li>
-                <li><a href="/">Disney+</a></li>
+                <li><a href="https://www.hotstar.com/in/home?ref=%2Fin%3Fcid%3DDTCI-Synergy-Marvel-Site-Acquisition-Originals-US-Marvel-XMEN97-EN-NavPipe-Marvel_NavPipe_XMEN97-NA">Disney+</a></li>
                 <li><a href="/">Marvelhq.com</a></li>
                 <li><a href="/">Redeem Digital Comics</a></li>
               </ul>

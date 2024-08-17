@@ -134,7 +134,7 @@ export default function Header() {
               </li>
               <li>
                 <div className="ancer-link">
-                  <a href="/videos" onClick={hideHeaderOnLinkClick}>MORE</a>
+                  <a href="/" onClick={hideHeaderOnLinkClick}>MORE</a>
                 </div>
                 <Dropdown8 />
               </li>

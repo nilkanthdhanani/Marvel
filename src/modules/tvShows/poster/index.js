@@ -17,10 +17,12 @@ export default function Poster() {
                 <h2>A Universe of Super Heroes</h2>
                 <p>All Your Favorite Stories and More. Start Streaming Now.</p>
                 <div className="banner-content-button">
-                  <button>
-                    <span>STREAM NOW</span>
-                    <div className="inner-cut"></div>
-                  </button>
+                  <a href="https://www.hotstar.com/in/home?ref=%2Fin%3Fcid%3DDTCI-Synergy-Marvel-Site-Acquisition-Originals-US-Marvel-XMEN97-EN-NavPipe-Marvel_NavPipe_XMEN97-NA">
+                    <button>
+                      <span>STREAM NOW</span>
+                      <div className="inner-cut"></div>
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>

@@ -70,7 +70,7 @@ export default function NewinMarvel() {
                         <img src={promoImg} alt="promoImg" />
                         <h3>MARVEL UNLIMITED</h3>
                         <p>Want to read all these digital comics? Get instant access to all these and more!</p>
-                        <a href="/comics">Join Now</a>
+                        <a href="/unlimited">Join Now</a>
                     </div>
                     <div className="promo-batch">Restrictions Apply.</div>
                 </div>

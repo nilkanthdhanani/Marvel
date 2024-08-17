@@ -6,10 +6,10 @@ export default function TvShowBanner() {
     return (
         <>
             <div className="disney">
-                <div className="disney-div">
-                    <p href="/">STREAM X-MEN '97 <span>EXCLUSIVELY</span> ON </p>
+                <a href="https://www.hotstar.com/in/home?ref=%2Fin%3Fcid%3DDTCI-Synergy-Marvel-Site-Acquisition-Originals-US-Marvel-XMEN97-EN-NavPipe-Marvel_NavPipe_XMEN97-NA" className="disney-div">
+                    <p>STREAM X-MEN '97 <span>EXCLUSIVELY</span> ON </p>
                     <img src={disney} alt="disney" />
-                </div>
+                </a>
             </div>
             <div className="tvshowBanner">
                 <div className="tvshowBanner-head">

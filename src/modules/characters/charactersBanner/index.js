@@ -6,11 +6,11 @@ export default function CharactersBanner() {
     return (
         <>
             <div className="cb-insider">
-                <div className="cb-insider-div">
-                    <p href="/">REWARD YOUR MARVEL FANDOM WITH</p>
+                <a href="/insider" className="cb-insider-div">
+                    <p>REWARD YOUR MARVEL FANDOM WITH</p>
                     <p>JOIN NOW</p>
                     <img src={insider} alt="insider" />
-                </div>
+                </a>
             </div>
             <div className="charactersBanner">
                 <div className="charactersBanner-head">

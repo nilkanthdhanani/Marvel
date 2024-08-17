@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import UnlimitedHeader from './unlimitedHeader';
 import UnlimitedHB from './unlimitedHB';
 import SevenDays from './sevenDays';
@@ -32,10 +32,18 @@ export default function Unlimited() {
         };
     }, []);
 
+    const topRef = useRef(null);
+  
+    useEffect(() => {
+      if (topRef.current) {
+        window.scrollTo({ top: topRef.current.offsetTop - 100, behavior: 'auto' });
+      }
+    }, []);
+
     return (
         <>
             <UnlimitedHeader showMainHeader={showMainHeader} />
-            <div className="unlimitedHD-section">
+            <div className="unlimitedHD-section" ref={topRef}>
                 <UnlimitedHB />
             </div>
             <div className="sevenDays-section">

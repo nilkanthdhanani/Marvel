@@ -16,10 +16,12 @@ export default function Redeem() {
                             <h2>Unlock the Universe</h2>
                             <p>Get instant access to 30,000+ digital comics on the web & mobile devices, exclusive deals, and more member-only benefits with Marvel Unlimited!</p>
                             <div class="banner-content-button2">
-                                <button>
-                                    <span>JOIN NOW</span>
-                                    <div class="inner-cut"></div>
-                                </button>
+                                <a href="/unlimited">
+                                    <button>
+                                        <span>JOIN NOW</span>
+                                        <div class="inner-cut"></div>
+                                    </button>
+                                </a>
                             </div>
                             <div className="promo-div">
                                 <span>Auto-renewal and other terms apply. See marvel.com/unlimited for additional details.</span>

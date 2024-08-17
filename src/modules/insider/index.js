@@ -6,6 +6,7 @@ import Believer from './believer'
 import InsiderFaq from './insiderFaq'
 
 export default function Insider() {
+
     return (
         <>
             <InsiderHB />

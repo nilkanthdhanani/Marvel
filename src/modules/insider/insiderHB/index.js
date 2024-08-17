@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './insiderHB.scss';
 import { insiderLogoWhite } from '../../../assets/images/imageJS/insiderImg';
 import arrowInsider from '../../../assets/images/svg/arrowInsider.svg';
 
 export default function InsiderHB() {
+  const topRef = useRef(null);
+
+  useEffect(() => {
+    if (topRef.current) {
+      window.scrollTo({ top: topRef.current.offsetTop - 100, behavior: 'auto' });
+    }
+  }, []);
+
   return (
     <>
-      <div className="insider-banner">
+      <div className="insider-banner" ref={topRef}>
         <div className="containerH">
             <div className="insider-banner-box">
                 <img src={insiderLogoWhite} alt="insiderLogoWhite" />
