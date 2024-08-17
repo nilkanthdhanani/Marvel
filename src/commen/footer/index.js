@@ -40,20 +40,24 @@ export default function Footer() {
             </div>
           </div>
           <div className="footer-div2">
-            <div className="footer-div2-logo">
-              <img src={footerInsider} alt="footerInsider" />
-              <div className="footer-div2-text">
-                <h2>MARVEL INSIDER</h2>
-                <p>Get Rewarded for Being a Marvel Fan</p>
+            <Link to={"/insider"}>
+              <div className="footer-div2-logo">
+                <img src={footerInsider} alt="footerInsider" />
+                <div className="footer-div2-text">
+                  <h2>MARVEL INSIDER</h2>
+                  <p>Get Rewarded for Being a Marvel Fan</p>
+                </div>
               </div>
-            </div>
-            <div className="footer-div2-logo">
-              <img src={footerMu} alt="footerMu" />
-              <div className="footer-div2-text">
-                <h2>MARVEL UNLIMITED</h2>
-                <p>Access Over 30,000+ Digital Comics</p>
+            </Link>
+            <Link to={"/unlimited"}>
+              <div className="footer-div2-logo">
+                <img src={footerMu} alt="footerMu" />
+                <div className="footer-div2-text">
+                  <h2>MARVEL UNLIMITED</h2>
+                  <p>Access Over 30,000+ Digital Comics</p>
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
           <div className="footer-div3">
             <h2>FOLLOW MARVEL</h2><div className="footer-div3-box1">

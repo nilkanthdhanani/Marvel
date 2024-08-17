@@ -104,7 +104,7 @@ footer {
         }
 
         .footer-div2 {
-            padding: 0 40px;
+            padding: 0;
 
             @include breakpoint("lg-max") {
                 padding: 40px 0 25px 0;
@@ -123,10 +123,6 @@ footer {
             .footer-div2-logo {
                 display: flex;
                 gap: 30px;
-
-                &:last-child {
-                    padding-top: 30px;
-                }
 
                 @include breakpoint("lg-max") {
                     order: 1;
