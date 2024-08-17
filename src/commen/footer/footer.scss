@@ -104,7 +104,7 @@ footer {
         }
 
         .footer-div2 {
-            padding: 0;
+            padding: 0 40px;
 
             @include breakpoint("lg-max") {
                 padding: 40px 0 25px 0;
