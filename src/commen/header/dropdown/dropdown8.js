@@ -17,7 +17,7 @@ export default function Dropdown8() {
       <div className="dropdown">
         <div className="container-dropdown2">
           <div className="drop-links2">
-            <a href="/">LIFESTYLE</a>
+            <a href="/lifestyle">LIFESTYLE</a>
             <a href="/">ROLE-PLAYING GAME</a>
             <a href="/">BOOKS</a>
             <a href="/">PODCASTS</a>

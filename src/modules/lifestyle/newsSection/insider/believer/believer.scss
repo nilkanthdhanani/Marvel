@@ -1,0 +1,143 @@
+@import "../../../styles/index.scss";
+
+.believer {
+    padding: 50px 0;
+    background-color: var(--bgcolor-header);
+    color: var(--color-white);
+
+    h2 {
+        text-transform: uppercase;
+        @include font34;
+        letter-spacing: 1px;
+        line-height: 1;
+        font-family: var(--font-family-condensed);
+        text-align: center;
+    }
+
+    h3 {
+        margin: 30px 0 50px 0;
+        text-transform: uppercase;
+        @include font16;
+        letter-spacing: 1;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+
+        @include breakpoint("md-max") {
+            display: none;
+        }
+
+        thead {
+            tr {
+                th {
+                    width: 17.5%;
+                    padding-bottom: 20px;
+                    border-bottom: 3px solid var(--border-color);
+
+                    h4 {
+                        @include font24b;
+                        margin-bottom: 10px;
+                        color: var(--font-color2);
+                    }
+
+                    span {
+                        @include font14;
+                        font-weight: 600;
+                        letter-spacing: 0.5px;
+                        line-height: 1.2;
+                    }
+                }
+
+                .first-column {
+                    width: 30%;
+                    text-align: left;
+
+                    h4 {
+                        color: var(--color-white);
+                    }
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    width: 17.5%;
+                    border-top: 1px solid var(--border-color);
+                    padding: 20px 0;
+
+                    img {
+                        width: 25px;
+                        margin: 0 auto;
+                    }
+                }
+
+                .first-column {
+                    width: 30%;
+                    text-align: left;
+                    @include font16;
+                    letter-spacing: 0.5px;
+                }
+            }
+        }
+    }
+
+    .responsive-table {
+        display: none;
+
+        @include breakpoint("md-max") {
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+        }
+
+        .responsive-table-div {
+            .table-head {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 20px;
+                border-bottom: 3px solid var(--border-color);
+
+                h4 {
+                    @include font24b;
+                    margin-bottom: 10px;
+                    color: var(--font-color2);
+                }
+
+                span {
+                    @include font14;
+                    font-weight: 600;
+                    letter-spacing: 0.5px;
+                    line-height: 1.2;
+                    text-align: right;
+                }
+            }
+
+            .table-body {
+                border-top: 1px solid var(--border-color);
+                padding: 20px 0;
+                @include font16;
+                letter-spacing: 0.5px;
+            }
+        }
+    }
+
+    p {
+        margin: 50px auto 0 auto;
+        max-width: 700px;
+        text-align: center;
+        @include font16;
+        color: var(--font-color5);
+        letter-spacing: 0.5px;
+        line-height: 1.3;
+
+        a {
+            color: var(--font-color5);
+            text-decoration-line: underline;
+        }
+    }
+}

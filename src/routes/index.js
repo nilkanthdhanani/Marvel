@@ -13,6 +13,7 @@ import LogIn from "../modules/loginPage";
 import Unlimited from "../modules/unlimited";
 import Agreement from "../modules/agreement";
 import Insider from "../modules/insider";
+import LifeStyle from "../modules/lifestyle";
 
 const router = createBrowserRouter([
     {
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
             {
                 path: "/insider",
                 element: <Insider />
+            },
+            {
+                path: "/lifestyle",
+                element: <LifeStyle />
             },
         ]
     },

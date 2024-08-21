@@ -1,0 +1,104 @@
+@import "../../../styles/index.scss";
+
+.insider-banner {
+    background-image: url("../../../assets/images/jpg/insiderHB.jpg");
+    background-position: top;
+    position: relative;
+    padding: 30px 0 50px 0;
+
+    @include breakpoint("sm-max") {
+        background-size: cover;
+        background-position: top right;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .insider-banner-box {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: var(--color-white);
+
+        img {
+            max-width: 280px;
+
+            @include breakpoint("sm-max") {
+                max-width: 200px;
+            }
+        }
+
+        h1 {
+            @include font44;
+            line-height: 44px;
+            font-family: var(--font-family-condensed);
+            margin-top: 50px;
+            text-align: center;
+            text-transform: uppercase;
+
+            @include breakpoint("sm-max") {
+                font-size: 36px;
+            }
+        }
+
+        h2 {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 44px 0 30px 0;
+            @include font32;
+            font-family: var(--font-family-condensed);
+            text-transform: uppercase;
+
+            @include breakpoint("sm-max") {
+                flex-direction: column;
+            }
+
+            img {
+                width: 10px;
+                margin: 0 19px 4px 19px;
+
+                @include breakpoint("sm-max") {
+                    rotate: 90deg;
+                }
+            }
+        }
+
+        .login-pera {
+            margin: 40px 0;
+            @include font16;
+
+            a {
+                color: var(--font-color3);
+                text-decoration: underline;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        } 
+
+        .legal-pera {
+            text-align: center;
+            @include font16;
+            color: var(--font-color5);
+            max-width: 960px;
+            letter-spacing: 0.5px;
+            line-height: 1.3;
+
+            a {
+                color: var(--font-color5);
+                text-decoration-line: underline;
+            }
+        }
+    }
+}

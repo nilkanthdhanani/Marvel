@@ -32,7 +32,7 @@ export default function ShowsNews() {
                 <div className="ldcb-insider">
                   <InsiderIcon />
                   <span>Earn Points, Get Rewards</span>
-                  <a href="/">Join NOW!</a>
+                  <a href="/insider">Join NOW!</a>
                 </div>
               </div>
             </div>

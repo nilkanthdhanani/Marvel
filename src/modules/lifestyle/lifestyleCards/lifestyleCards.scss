@@ -1,0 +1,41 @@
+@import '../../../styles/index.scss';
+
+.lifestyle-cards {
+    position: relative;
+
+    .lifestyle-cards-div {
+        margin-top: -45px;
+        padding: 20px 20px 37px 20px;
+        background-color: var(--color-white);
+        @include grid6c;
+        gap: 20px;
+
+        @include breakpoint("md-max") {
+            margin-top: 0;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 0 0 30px 0;
+        }
+
+        @media (max-width: 400px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        img {
+            margin: 10px 0 20px 0;
+            width: 100%;
+            box-shadow: 0 7px 17px -8px rgba(0, 0, 0, .8);
+            cursor: pointer;
+            transition: 0.2s ease-in-out;
+
+            @include breakpoint("md-max") {
+                margin: 10px 0 0 0;
+            }
+
+            &:hover {
+                transform: translateY(-5px);
+                transition: 0.2s ease-in-out;
+            }
+        }
+    }
+}

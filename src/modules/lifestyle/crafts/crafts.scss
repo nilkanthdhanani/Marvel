@@ -1,0 +1,189 @@
+@import "../../../styles/index.scss";
+
+.adventure {
+    padding-top: 20px;
+
+    .adventure-div {
+        padding-bottom: 20px;
+
+        h2 {
+            margin: 30px 0;
+            @include font26b;
+            font-weight: 600;
+            font-family: var(--font-family-condensed);
+            color: var(--bgcolor-header);
+            position: relative;
+
+            &::after {
+                @include fontline-top;
+                width: 20px;
+            }
+
+            &::before {
+                @include fontline-bottom;
+                width: 20px;
+            }
+        }
+
+        .adventure-grid {
+            @include grid2c;
+
+            @include breakpoint("sm-max") {
+                grid-template-columns: 1fr;
+            }
+
+            .adventure-grid-img {
+                position: relative;
+                cursor: pointer;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(255, 255, 255, 0.1);
+                    opacity: 0;
+                    transition: 0.3s ease-in-out;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .adventure-grid-div {
+                padding: 0 30px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                position: relative;
+
+                @include breakpoint("sm-max") {
+                    padding: 10px 0 0 0;
+                }
+
+                h4 {
+                    @include font14b;
+                    font-family: var(--font-family-condensed);
+                    color: var(--bgcolor2);
+                }
+
+                p {
+                    margin-top: 8px;
+                    @include font26b;
+                    font-weight: 600;
+                    cursor: pointer;
+                    color: var(--bgcolor-sidebar);
+
+                    &:hover {
+                        color: var(--font-color3);
+                    }
+                }
+
+                .ldcb-insider {
+                    position: absolute;
+                    bottom: 0;
+                    @include flex;
+
+                    @include breakpoint("md-max") {
+                        position: relative;
+                        margin-top: 20px;
+                    }
+
+                    svg {
+                        width: 25px;
+                    }
+
+                    span {
+                        margin: 0 5px 0 2px;
+                        @include font14;
+                        color: var(--font-color);
+                    }
+
+                    a {
+                        @include font14;
+                        text-decoration-line: underline;
+                        color: var(--font-color3);
+                    }
+                }
+            }
+
+            &:hover {
+                .adventure-grid-img {
+                    &::after {
+                        opacity: 1;
+                        transition: 0.3s ease-in-out;
+                    }
+                }
+            }
+        }
+
+        .adventure-slider {
+            @include grid3c;
+            margin: 25px 0 15px 0;
+            gap: 20px 10px;
+
+            @include breakpoint("sm-max") {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @include breakpoint("xs-max") {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .adventure-slider-box {
+                .adventure-slider-image {
+                    position: relative;
+                    cursor: pointer;
+
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(255, 255, 255, 0.1);
+                        opacity: 0;
+                        transition: 0.3s ease-in-out;
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                h4 {
+                    @include font14b;
+                    font-family: var(--font-family-condensed);
+                    color: var(--bgcolor2);
+                    margin: 10px 0 8px 0;
+                }
+
+                p {
+                    @include font15b;
+                    font-weight: 600;
+                    cursor: pointer;
+                    color: var(--bgcolor-sidebar);
+
+                    @include breakpoint("sm-max") {
+                        font-size: 14px;
+                    }
+
+                    &:hover {
+                        color: var(--font-color3);
+                    }
+                }
+
+                &:hover {
+                    .adventure-slider-image {
+                        &::after {
+                            opacity: 1;
+                            transition: 0.3s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
