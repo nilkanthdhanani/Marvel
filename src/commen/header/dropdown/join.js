@@ -26,7 +26,7 @@ export default function Join() {
     return (
         <>
             <div className="header-main1-div">
-                <a href="/" onClick={(e) => { 
+                <a href="/" onClick={(e) => {
                     e.preventDefault();
                     toggleJoinDropdown();
                 }}> JOIN </a>
@@ -37,15 +37,12 @@ export default function Join() {
                     <img src={marvelInsiderLogo} alt="marvelInsiderLogo" />
                 </div>
                 <ul>
-                    <li>
-                        Earn points for what you already do as a Marvel fan and redeem for cool rewards as a <a href="/insider">Marvel Insider</a>. <br />
+                    <li>Earn points for what you already do as a Marvel fan and redeem for cool rewards as a <a href="/insider">Marvel Insider</a>. <br />
                         <span>(Points/Rewards program available to U.S. residents only.)</span>
                     </li>
-                    <li>
-                        Unlock the world of Marvel Digital Comics! Your key for reading <a href="/unlimited">Marvel Unlimited</a> and Digital Comic purchases across multiple devices.
+                    <li>Unlock the world of Marvel Digital Comics! Your key for reading <a href="/unlimited">Marvel Unlimited</a> and Digital Comic purchases across multiple devices.
                     </li>
-                    <li>
-                        Get the latest news, original content, and special offers from Marvel.
+                    <li>Get the latest news, original content, and special offers from Marvel.
                     </li>
                 </ul>
                 <div className="banner-content-button2">

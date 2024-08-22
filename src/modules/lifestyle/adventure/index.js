@@ -49,14 +49,14 @@ export default function Adventure() {
             </div>
             <div className="adventure-numbering">
               <ul>
-                <li><span href="/">1</span></li>
-                <li><span href="/">2</span></li>
-                <li><span href="/">3</span></li>
-                <li><span href="/">4</span></li>
-                <li><span href="/">5</span></li>
-                <li><span href="/">...</span></li>
-                <li><span href="/">60</span></li>
-                <li className='next-button'><span href="/">NEXT</span></li>
+                <li><span>1</span></li>
+                <li><span>2</span></li>
+                <li><span>3</span></li>
+                <li><span>4</span></li>
+                <li><span>5</span></li>
+                <li><span>...</span></li>
+                <li><span>60</span></li>
+                <li className='next-button'><span>NEXT</span></li>
               </ul>
             </div>
           </div>
