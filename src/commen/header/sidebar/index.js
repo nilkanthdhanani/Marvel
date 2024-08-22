@@ -55,8 +55,8 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
                                 <More />
                             </div>
                         ))}
-                        <a href="/">LIFESTYLE</a>
-                        <a href="/">ROLE-PLAYING GAME</a>
+                        <a href="/lifestyle">LIFESTYLE</a>
+                        <a href="/roleplaying">ROLE-PLAYING GAME</a>
                         <a href="/">BOOKS</a>
                         <a href="/">PODCASTS</a>
                         <a href="/">SHOP</a>
