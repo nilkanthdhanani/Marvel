@@ -38,6 +38,7 @@
 
             h3 {
                 @include font16;
+                font-weight: 600;
                 font-family: var(--font-family-condensed);
                 color: var(--font-color3);
                 letter-spacing: 3px;

@@ -1,0 +1,109 @@
+@import "../../../styles/index.scss";
+
+.role-banner-main {
+    position: relative;
+    background-color: var(--color-white);
+
+    @include breakpoint("lg-max") {
+        display: none;
+    }
+
+    .role-banner {
+        width: 100%;
+        height: 65vh;
+        background-image: url("../../../assets/images/jpg/roleplayingBanner.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        clip-path: polygon(0 0, 0 100%, 100% 92%, 100% 0);
+        position: relative;
+
+        &::after {
+            position: absolute;
+            z-index: 1;
+            content: "";
+            top: 0;
+            width: 60%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.65) 0, transparent);
+        }
+
+        @media (max-width: 1280px) {
+            height: 70vh;
+        }
+
+        .containerH {
+            height: 100%;
+
+            .banner-content {
+                position: relative;
+                z-index: 2;
+                display: flex;
+                align-items: center;
+                height: 100%;
+                color: var(--color-white);
+                padding-bottom: 20px;
+
+                .banner-content-div {
+                    h1 {
+                        @include font44;
+                        color: var(--color-white);
+                        max-width: 680px;
+                        margin: 20px 0;
+                        text-transform: uppercase;
+                    }
+
+                    p {
+                        margin-bottom: 20px;
+                        @include font16;
+                        letter-spacing: 0.5px;
+                        line-height: 1.3;
+                        max-width: 650px;
+                        color: var(--color-white);
+                    }
+
+                    .sale-div {
+                        position: relative;
+                        @include font16;
+                        font-weight: 600;
+                        margin: 35px 0 40px 0;
+
+                        &::after {
+                            @include fontline-top;
+                        }
+
+                        &::before {
+                            @include fontline-bottom;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .role-banner-batch {
+        position: relative;
+        margin-top: -50px;
+
+        .batch-main {
+            display: flex;
+            justify-content: flex-end;
+
+            .social-links {
+                padding: 30px 10px 10px 10px;
+                @include flex-between;
+                gap: 15px;
+
+                svg {
+                    fill: var(--bgcolor2);
+                    cursor: pointer;
+
+                    &:hover {
+                        fill: var(--color-black);
+                        transition: 0.3s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}

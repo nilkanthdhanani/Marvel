@@ -14,6 +14,7 @@ import Unlimited from "../modules/unlimited";
 import Agreement from "../modules/agreement";
 import Insider from "../modules/insider";
 import LifeStyle from "../modules/lifestyle";
+import Roleplaying from "../modules/roleplaying";
 
 const router = createBrowserRouter([
     {
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
             {
                 path: "/lifestyle",
                 element: <LifeStyle />
+            },
+            {
+                path: "/roleplaying",
+                element: <Roleplaying />
             },
         ]
     },

@@ -1,0 +1,44 @@
+@import "../../../styles/index.scss";
+
+.role-simple {
+    background-image: url("../../../assets/images/jpg/rolePoster2.jpg");
+    width: 100%;
+    min-height: 400px;
+    background-position: center;
+    padding: 20px;
+    @include flex-center;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.65) 0, rgba(0, 0, 0, 0.2));
+    }
+
+    .role-simple-text {
+        position: relative;
+        z-index: 2;
+        color: var(--color-white);
+        text-align: center;
+
+        h2 {
+            text-transform: uppercase;
+            @include font44;
+            letter-spacing: 0.5px;
+            font-family: var(--font-family-condensed);
+
+            @include breakpoint("sm-max") {
+                font-size: 26px
+            }
+        }
+
+        p {
+            @include font16;
+            line-height: 1.3;
+            letter-spacing: 0.5px;
+            margin-top: 5px;
+        }
+    }
+}

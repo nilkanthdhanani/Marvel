@@ -1,0 +1,134 @@
+@import "../../../styles/index.scss";
+
+.role-poster {
+    background-color: var(--bgcolor-sidebar);
+    clip-path: polygon(0 0, 0 100%, 100% 92%, 100% 0);
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 44.9%;
+        width: 160px;
+        height: 100%;
+        z-index: 2;
+        background-color: var(--bgcolor-sidebar);
+        clip-path: polygon(0 0, 0% 100%, 100% 100%);
+
+        @include breakpoint("md-max") {
+            display: none;
+        }
+    }
+
+    .role-poster-two {
+        position: absolute;
+        background-image: url("../../../assets/images/jpg/rolePoster1.jpg");
+        width: 55%;
+        height: 100%;
+        right: 0;
+        z-index: 1;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        @include breakpoint("md-max") {
+            position: relative;
+            width: 100%;
+            min-height: 440px;
+        }
+
+        @include breakpoint("sm-max") {
+            min-height: 300px;
+        }
+    }
+
+    #second {
+        background-image: url("../../../assets/images/jpg/rolePoster3.jpg");
+    }
+
+    #third {
+        background-image: url("../../../assets/images/jpg/rolePoster4.jpg");
+    }
+
+    #forth {
+        background-image: url("../../../assets/images/jpg/rolePoster5.jpg");
+    }
+
+    #fifth {
+        background-image: url("../../../assets/images/jpg/rolePoster6.jpg");
+    }
+
+    #sixth {
+        background-image: url("../../../assets/images/jpg/rolePoster7.jpg");
+    }
+
+    .role-poster-one {
+        padding: 180px 0;
+        position: relative;
+        z-index: 3;
+
+        @include breakpoint("md-max") {
+            padding: 60px 30px 80px 30px;
+
+            .container {
+                padding: 0;
+            }
+        }
+        
+        .role-poster-one-div {
+            padding-left: 50px;
+            max-width: 40%;
+            color: var(--color-white);
+            font-family: var(--font-family-condensed);
+
+            @include breakpoint("md-max") {
+                padding: 0 0 20px 0;
+                max-width: 100%;
+            }
+
+            h3 {
+                position: relative;
+                @include font18;
+                font-weight: 600;
+                letter-spacing: 4px;
+                margin: 35px 0;
+
+                @include breakpoint("sm-max") {
+                    font-size: 14px;
+                }
+
+                &::after {
+                    @include fontline-top;
+                }
+
+                &::before {
+                    @include fontline-bottom;
+                }
+            }
+
+            h2 {
+                @include font40;
+
+                @include breakpoint("sm-max") {
+                    @include font26b;
+                }
+            }
+
+            p {
+                @include font16;
+                letter-spacing: 0.5px;
+                margin: 10px 0 25px 0;
+            }
+        }
+    }
+
+    #newComic {
+        padding: 150px 0;
+
+        @include breakpoint("md-max") {
+            padding: 60px 30px 80px 30px;
+        }
+    }
+
+}
