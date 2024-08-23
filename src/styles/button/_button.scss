@@ -454,14 +454,18 @@
             transform: skewX(11deg);
             color: var(--color-white);
         }
+    }
 
+    a {
         &:first-child {
-            border: none;
-            background-color: var(--font-color3);
+            button {
+                border: none;
+                background-color: var(--font-color3);
 
-            &:hover {
-                background-color: var(--bgcolor3);
-                transition: 0.2s ease-in-out;
+                &:hover {
+                    background-color: var(--bgcolor3);
+                    transition: 0.2s ease-in-out;
+                }
             }
         }
     }
