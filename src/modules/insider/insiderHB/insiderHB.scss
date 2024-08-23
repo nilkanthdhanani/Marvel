@@ -90,13 +90,13 @@
         .legal-pera {
             text-align: center;
             @include font16;
-            color: var(--font-color5);
+            color: var(--border-color2);
             max-width: 960px;
             letter-spacing: 0.5px;
             line-height: 1.3;
 
             a {
-                color: var(--font-color5);
+                color: var(--border-color2);
                 text-decoration-line: underline;
             }
         }

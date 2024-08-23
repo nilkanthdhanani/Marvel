@@ -16,6 +16,7 @@ import Insider from "../modules/insider";
 import LifeStyle from "../modules/lifestyle";
 import Roleplaying from "../modules/roleplaying";
 import Books from "../modules/books";
+import Help from "../modules/help";
 
 const router = createBrowserRouter([
     {
@@ -85,6 +86,11 @@ const router = createBrowserRouter([
     {
         path: "/unlimited",
         element: <Unlimited />
+    },
+
+    {
+        path: "/help",
+        element: <Help />
     },
 
     {

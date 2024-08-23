@@ -7,15 +7,21 @@ export default function UnlimitedHeader({ showMainHeader }) {
         <>
             <div className="unlimited-Header">
                 <div className={`uh-first ${showMainHeader ? 'hidden' : ''}`}>
-                    <button><span>LOG IN</span></button>
+                    <a href="/login">
+                        <button><span>LOG IN</span></button>
+                    </a>
                 </div>
                 <div className={`uh-main ${showMainHeader ? '' : 'hidden'}`}>
                     <div className="uh-main-logo">
                         <img src={muLogoFull} alt="muLogoFull" />
                     </div>
                     <div className="uh-main-button">
-                        <button><span>SIGN UP NOW</span></button>
-                        <button><span>LOG IN</span></button>
+                        <a href="/login">
+                            <button><span>SIGN UP NOW</span></button>
+                        </a>
+                        <a href="/login">
+                            <button><span>LOG IN</span></button>
+                        </a>
                     </div>
                 </div>
             </div>

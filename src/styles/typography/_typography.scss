@@ -27,6 +27,11 @@
     letter-spacing: 1px;
 }
 
+@mixin font15 {
+    font-size: 15px;
+    font-weight: 400;
+}
+
 @mixin font15b {
     font-size: 15px;
     font-weight: 700;

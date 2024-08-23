@@ -1,0 +1,91 @@
+@import "../../../styles/index.scss";
+
+.help-footer {
+    padding: 30px 0;
+    border-top: 1px solid var(--border-color5);
+
+    .help-footer-first,
+    .help-footer-second {
+        padding: 10px 0;
+        @include flex-center;
+        flex-wrap: wrap;
+        gap: 5px 0;
+
+        a {
+            display: block;
+            @include font15;
+            color: var(--font-color5);
+            font-family: var(--font-family-condensed);
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        span {
+            margin: 0 10px;
+            color: var(--font-color5);
+        }
+    }
+
+    .help-footer-second {
+        a {
+            color: var(--font-color11);
+        }
+    }
+
+    .help-footer-drop-main {
+        @include flex-center;
+
+        .help-footer-drop {
+            position: relative;
+
+            button {
+                background-color: transparent;
+                padding-right: 5px;
+                border: none;
+                @include font15;
+                color: var(--font-color5);
+                font-family: var(--font-family-condensed);
+                @include flex;
+                gap: 10px;
+                cursor: pointer;
+
+                &.active {
+                    text-decoration: underline;
+                }
+            }
+
+            .help-footer-drop-div {
+                position: absolute;
+                bottom: 20px;
+                right: 10px;
+                background-color: var(--color-white);
+                border: 1px solid var(--border-color6);
+                border-radius: 3px;
+                box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+                min-width: 185px;
+                padding: 10px 0;
+                z-index: 9;
+                display: none;
+
+                &.visible {
+                    display: block;
+                }
+
+                a {
+                    padding: 7px 40px 7px 20px;
+                    display: block;
+                    @include font14;
+                    line-height: 1.5;
+                    color: var(--font-color11);
+                    font-family: var(--font-family-condensed);
+
+                    &:hover {
+                        background-color: var(--bgcolor1);
+                    }
+                }
+            }
+        }
+    }
+}

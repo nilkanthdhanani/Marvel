@@ -1,0 +1,33 @@
+@import "../../../styles/index.scss";
+
+.help-header {
+    padding: 17px 0;
+
+    .help-header-div {
+        @include flex-between;
+        gap: 10px;
+
+        a {
+            img {
+                max-width: 92px;
+            }
+        }
+    }
+
+    .help-header-div-link {
+        a {
+            padding-right: 20px;
+            @include font14;
+            color: var(--font-color10);
+            font-family: var(--font-family-condensed);
+
+            @include breakpoint("sm-max") {
+                padding-right: 10px;
+                
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}

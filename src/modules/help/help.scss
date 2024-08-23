@@ -1,0 +1,134 @@
+@import "../../styles/index.scss";
+
+.help-banner {
+    margin-bottom: 60px;
+    min-height: 300px;
+    width: 100%;
+    background-image: url("../../assets/images/png/helpHB.png");
+    background-size: cover;
+    background-position: center;
+    @include flex-center;
+
+    h1 {
+        text-align: center;
+        @include font32;
+        font-weight: 400;
+        color: var(--color-white);
+        font-family: var(--font-family-condensed);
+
+        @include breakpoint("md-max") {
+            font-size: 26px;
+        }
+    }
+}
+
+.help-cards {
+    padding: 0 40px;
+    @include grid3c;
+    gap: 20px 0;
+
+    @include breakpoint("lg-max") {
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    @include breakpoint("md-max") {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint("sm-max") {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .help-cards-div {
+        @include flex;
+        justify-content: space-evenly;
+
+        img {
+            cursor: pointer;
+            max-width: 250px;
+            width: 100%;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            border: 2px solid var(--color-white);
+            transition: 0.3s ease;
+
+            &:hover {
+                transition: 0.3s ease;
+                box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+                transform: translateY(-7px);
+            }
+        }
+    }
+}
+
+.topics {
+    padding: 50px 0;
+
+    h2 {
+        margin-bottom: 22px;
+        text-align: center;
+        @include font32;
+        font-weight: 400;
+        color: var(--font-color11);
+        font-family: var(--font-family-condensed);
+    }
+
+    ul {
+        max-width: 495px;
+        margin: 0 auto 20px auto;
+
+        li {
+            border-bottom: 1px solid var(--border-color2);
+            text-align: center;
+            list-style: none;
+
+            a {
+                display: block;
+                padding: 15px 0;
+                @include font15;
+                line-height: 1.5em;
+                color: var(--font-color11);
+                font-family: var(--font-family-condensed);
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .help-button {
+        @include flex-center;
+
+        img {
+            max-width: 250px;
+            cursor: pointer;
+            transition: 0.3s ease;
+
+            &:hover {
+                transition: 0.3s ease;
+                transform: translateY(-7px);
+            }
+        }
+    }
+}
+
+.business-hours {
+    margin-bottom: 60px;
+    padding: 21px;
+    background: var(--border-color);
+    text-align: center;
+
+    h3,
+    p {
+        @include font16;
+        font-weight: 600;
+        color: var(--font-color11);
+        font-family: var(--font-family-condensed);
+        margin-bottom: 5px;
+    }
+
+    p {
+        font-weight: 400;
+    }
+}
