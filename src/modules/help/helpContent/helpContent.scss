@@ -1,10 +1,10 @@
-@import "../../styles/index.scss";
+@import "../../../styles/index.scss";
 
 .help-banner {
     margin-bottom: 60px;
     min-height: 300px;
     width: 100%;
-    background-image: url("../../assets/images/png/helpHB.png");
+    background-image: url("../../../assets/images/png/helpHB.png");
     background-size: cover;
     background-position: center;
     @include flex-center;
