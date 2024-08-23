@@ -1,6 +1,6 @@
 @import "../../styles/index.scss";
 
-.agreement-links {
+.annual-plus {
     padding: 30px 0 35px 0;
 
     h2 {
@@ -27,32 +27,38 @@
         }
     }
 
+    h3 {
+        padding: 25px 0;
+        @include font20;
+        font-weight: 600;
+        line-height: 1.3;
+        color: var(--bgcolor-header);
+    }
+
     p {
         @include font14;
         color: var(--bgcolor-header);
-        font-weight: 600;
+        line-height: 1.5;
         letter-spacing: 0.5px;
-        line-height: 1.3;
-    }
-
-    h3 {
-        margin: 26px 0;
-        @include font26b;
-        font-weight: 600;
-        font-family: var(--font-family-condensed);
     }
 
     ol {
-        margin-left: 35px;
-        
+        margin: 42px 0 63px 35px;
+
         li {
             @include font16;
-            letter-spacing: 0.5;
             line-height: 1.3;
+            letter-spacing: 0.5px;
+            color: var(--bgcolor-header);
 
             a {
                 color: var(--font-color3);
                 text-decoration-line: underline;
+
+                &:hover {
+                    color: var(--bgcolor3);
+                    text-decoration-line: none;
+                }
             }
         }
     }

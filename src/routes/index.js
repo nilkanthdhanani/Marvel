@@ -17,6 +17,7 @@ import LifeStyle from "../modules/lifestyle";
 import Roleplaying from "../modules/roleplaying";
 import Books from "../modules/books";
 import Help from "../modules/help";
+import AnnualPlus from "../modules/annualPlus";
 
 const router = createBrowserRouter([
     {
@@ -74,6 +75,10 @@ const router = createBrowserRouter([
             {
                 path: "/books",
                 element: <Books />
+            },
+            {
+                path: "/annualplus",
+                element: <AnnualPlus />
             },
         ]
     },
