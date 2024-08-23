@@ -4,7 +4,9 @@
     padding-top: 20px;
 
     .adventure-div {
-        padding-bottom: 20px;
+        @include breakpoint("sm-max") {
+            padding-bottom: 20px;
+        }
 
         h2 {
             margin: 30px 0;
@@ -27,7 +29,7 @@
 
         .adventure-grid {
             @include grid2c;
-
+                    
             @include breakpoint("sm-max") {
                 grid-template-columns: 1fr;
             }
@@ -58,7 +60,7 @@
                 justify-content: center;
                 flex-direction: column;
                 position: relative;
-
+                    
                 @include breakpoint("sm-max") {
                     padding: 10px 0 0 0;
                 }
@@ -95,12 +97,12 @@
         .adventure-slider {
             @include grid3c;
             margin: 25px 0 15px 0;
-            gap: 20px 10px;
-
+            gap: 10px;
+                    
             @include breakpoint("sm-max") {
                 grid-template-columns: repeat(2, 1fr);
             }
-
+                    
             @include breakpoint("xs-max") {
                 grid-template-columns: repeat(1, 1fr);
             }
@@ -138,7 +140,7 @@
                     font-weight: 600;
                     cursor: pointer;
                     color: var(--bgcolor-sidebar);
-
+                    
                     @include breakpoint("sm-max") {
                         font-size: 14px;
                     }
@@ -153,6 +155,65 @@
                         &::after {
                             opacity: 1;
                             transition: 0.3s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+
+        .adventure-numbering {
+            margin-bottom: 20px;
+
+            ul {
+                @include flex-center;
+                flex-wrap: wrap;
+
+                li {
+                    list-style: none;
+                    margin: 4px 15px;
+                    cursor: pointer;
+
+                    &:first-child {
+                        span {
+                            font-weight: 800;
+                        }
+                    }
+
+                    span {
+                        @include font18;
+                        font-family: var(--font-family-condensed);
+                        color: var(--bgcolor-header);
+
+                        &:hover {
+                            color: var(--font-color3);
+                        }
+                    }
+                }
+
+                .next-button {
+                    position: relative;
+
+                    span {
+                        font-size: 13px;
+                        font-family: var(--font-family-roboto);
+                        font-weight: 600;
+                    }
+
+                    &::after {
+                        display: inline-block;
+                        content: "";
+                        border-top: 5px solid transparent;
+                        border-bottom: 5px solid transparent;
+                        border-left: 6px solid #767676;
+                        margin-left: 10px;
+                    }
+
+                    &:hover {
+                        span {
+                            color: var(--font-color3);
+                        }
+                        &::after {
+                            border-left-color: var(--font-color3);
                         }
                     }
                 }

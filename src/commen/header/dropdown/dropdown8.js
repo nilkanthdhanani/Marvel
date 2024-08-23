@@ -19,9 +19,9 @@ export default function Dropdown8() {
           <div className="drop-links2">
             <a href="/lifestyle">LIFESTYLE</a>
             <a href="/roleplaying">ROLE-PLAYING GAME</a>
-            <a href="/">BOOKS</a>
-            <a href="/">PODCASTS</a>
-            <a href="/">SHOP</a>
+            <a href="/books">BOOKS</a>
+            <a href="/podcasts">PODCASTS</a>
+            <a href="https://www.disneystore.com/marvel-content/?CMP=SYN-MARVELCOM:NAV_MORE">SHOP</a>
           </div>
           <div className="drop-grid8">
             <div className="drop-grid8-box1">

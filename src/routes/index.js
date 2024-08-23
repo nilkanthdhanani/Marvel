@@ -15,6 +15,7 @@ import Agreement from "../modules/agreement";
 import Insider from "../modules/insider";
 import LifeStyle from "../modules/lifestyle";
 import Roleplaying from "../modules/roleplaying";
+import Books from "../modules/books";
 
 const router = createBrowserRouter([
     {
@@ -68,6 +69,10 @@ const router = createBrowserRouter([
             {
                 path: "/roleplaying",
                 element: <Roleplaying />
+            },
+            {
+                path: "/books",
+                element: <Books />
             },
         ]
     },
