@@ -1,0 +1,189 @@
+@import "../../../../styles/index.scss";
+
+.music-box {
+    h3 {
+        text-transform: uppercase;
+        padding: 26px 0;
+        @include font26b;
+        font-weight: 600;
+        font-family: var(--font-family-condensed);
+        color: var(--bgcolor-header);
+    }
+
+    .music-box-main {
+        max-height: 445px;
+        margin: 21px 0;
+        display: grid;
+        grid-template-columns: 260px 1fr;
+        border-radius: 10px;
+        overflow: hidden;
+
+        .music-box-main1 {
+            padding: 15px 20px 30px 20px;
+            background-color: var(--bgcolor15);
+
+            .apple {
+                display: flex;
+                gap: 2px;
+
+                img {
+                    width: 12px;
+                    padding-bottom: 2px;
+                }
+
+                span {
+                    @include font12;
+                    font-weight: 500;
+                    color: var(--font-color);
+                }
+            }
+
+            .music-box-poster {
+                padding: 20px 0 15px 0;
+
+                img {
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            }
+
+            .music-box-text {
+                width: 100%;
+                display: flex;
+                gap: 12px;
+                margin-bottom: 5px;
+
+                .music-box-text-main {
+                    max-width: 180px;
+
+                    h4 {
+                        @include font15;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        color: var(--font-color12);
+                    }
+
+                    span {
+                        @include font15;
+                        color: var(--font-color13);
+                    }
+                }
+
+                .more-button {
+                    img {
+                        width: 28px;
+                        padding: 5px;
+                        border-radius: 50%;
+                        background-color: var(--bgcolor17);
+                    }
+                }
+            }
+
+            p {
+                @include font12;
+                line-height: 1.3;
+                letter-spacing: 0.5px;
+                margin-bottom: 20px;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                color: var(--font-color14);
+            }
+        }
+
+        .music-box-main2 {
+            padding: 50px 10px 20px 10px;
+            background-color: var(--bgcolor16);
+            position: relative;
+
+            .music-list {
+                padding: 10px;
+                border-bottom: 1px solid var(--bgcolor19);
+                cursor: pointer;
+
+                h5 {
+                    margin-bottom: 3px;
+                    @include flex;
+                    gap: 7px;
+                    @include font11;
+                    font-weight: 500;
+                    color: var(--font-color16);
+                    transform: translateX(-19px);
+                    transition: 0.2s ease-in-out;
+
+                    img {
+                        width: 11px;
+                        height: 11px;
+                        opacity: 0;
+                    }
+                }
+
+                p {
+                    @include font12;
+                    line-height: 1.3;
+                    letter-spacing: 0.5px;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    color: var(--font-color15);
+                }
+
+                &:hover {
+                    background-color: var(--bgcolor19);
+                    border-radius: 6px;
+
+                    h5 {
+                        transform: translateX(0);
+                        transition: 0.2s ease-in-out;
+
+                        img {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+
+            .music-box-main2-last {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+                padding: 50px 20px 35px 20px;
+                background: rgb(242, 242, 244);
+                background: linear-gradient(
+                    180deg,
+                    rgba(242, 242, 244, 0) 0%,
+                    rgba(242, 242, 244, 1) 40%,
+                    rgba(242, 242, 244, 1) 100%
+                );
+
+                h6 {
+                    @include flex;
+                    gap: 6px;
+                    @include font15;
+                    font-weight: 600;
+                    color: var(--bgcolor18);
+
+                    img {
+                        width: 11px;
+                    }
+                }
+            }
+
+            .last-text {
+                position: absolute;
+                bottom: 5px;
+                right: 10px;
+                @include font11;
+                font-weight: 500;
+                letter-spacing: 0.5px;
+                color: var(--font-color13);
+            }
+        }
+    }
+}

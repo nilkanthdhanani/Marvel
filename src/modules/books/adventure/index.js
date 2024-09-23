@@ -1,6 +1,6 @@
 import React from 'react';
 import './adventure.scss';
-import { booksNews, booksNews1, booksNews2, booksNews3 } from '../../../assets/images/imageJS/books';
+import { booksNews, booksNews1, booksNews2, booksNews3 } from '../../../assets/images/imageJS/booksImg';
 
 export default function Adventure() {
   return (

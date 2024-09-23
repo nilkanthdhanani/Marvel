@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './crafts.scss';
-import { booksImg1, booksImg2, booksImg3, booksImg4, booksImg5, booksImg6, booksImg7 } from '../../../assets/images/imageJS/books';
+import { booksImg1, booksImg2, booksImg3, booksImg4, booksImg5, booksImg6, booksImg7 } from '../../../assets/images/imageJS/booksImg';
 
 export default function Crafts() {
   const [visibleBoxes, setVisibleBoxes] = useState(3);

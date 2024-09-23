@@ -1,6 +1,6 @@
 import React from 'react';
 import './adventure.scss';
-import { booksImg10, booksImg2, booksImg8, booksImg9 } from '../../../assets/images/imageJS/books';
+import { booksImg10, booksImg2, booksImg8, booksImg9 } from '../../../assets/images/imageJS/booksImg';
 
 export default function ProseNovels() {
   return (

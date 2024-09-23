@@ -1,7 +1,7 @@
 @import "../../../styles/index.scss";
 
-.books-banner {
-    .books-banner-main {
+.podcast-banner {
+    .podcast-banner-main {
         background-color: var(--bgcolor-sidebar);
         clip-path: polygon(0 0, 0 100%, 100% 92%, 100% 0);
         position: relative;
@@ -22,9 +22,9 @@
             }
         }
 
-        .books-banner-two {
+        .podcast-banner-two {
             position: absolute;
-            background-image: url("../../../assets/images/jpg/booksHB.jpg");
+            background-image: url("../../../assets/images/jpg/podcastHB.jpg");
             width: 60%;
             height: 100%;
             right: 0;
@@ -44,8 +44,8 @@
             }
         }
 
-        .books-banner-one {
-            padding: 210px 0;
+        .podcast-banner-one {
+            padding: 140px 0;
             position: relative;
             z-index: 3;
 
@@ -57,9 +57,9 @@
                 }
             }
 
-            .books-banner-one-div {
+            .podcast-banner-one-div {
                 padding-left: 50px;
-                max-width: 50%;
+                max-width: 35%;
                 color: var(--color-white);
                 font-family: var(--font-family-condensed);
 
@@ -81,12 +81,17 @@
                     @include font16;
                     letter-spacing: 0.5px;
                     margin-top: 10px;
+                    padding-bottom: 20px;
+                }
+
+                .banner-content-button {
+                    flex-wrap: wrap;
                 }
             }
         }
     }
 
-    .books-banner-batch {
+    .podcast-banner-batch {
         position: relative;
         margin-top: -30px;
 

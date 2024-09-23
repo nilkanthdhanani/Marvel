@@ -18,6 +18,7 @@ import Roleplaying from "../modules/roleplaying";
 import Books from "../modules/books";
 import Help from "../modules/help";
 import AnnualPlus from "../modules/annualPlus";
+import Podcasts from "../modules/podcasts";
 
 const router = createBrowserRouter([
     {
@@ -79,6 +80,10 @@ const router = createBrowserRouter([
             {
                 path: "/annualplus",
                 element: <AnnualPlus />
+            },
+            {
+                path: "/podcasts",
+                element: <Podcasts />
             },
         ]
     },

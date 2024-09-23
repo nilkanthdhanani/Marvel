@@ -1,0 +1,96 @@
+@import "../../../styles/index.scss";
+
+.archive {
+    padding: 10px 0 40px 0;
+
+    h2 {
+        @include font26b;
+        font-weight: 600;
+        line-height: 0.9;
+        font-family: var(--font-family-condensed);
+        text-transform: uppercase;
+        margin: 25px 0;
+        position: relative;
+
+        &::after {
+            @include fontline-top;
+            width: 20px;
+        }
+
+        &::before {
+            @include fontline-bottom;
+            width: 20px;
+        }
+    }
+
+    .archive-card {
+        padding-top: 10px;
+        @include flex;
+        gap: 20px;
+
+        .archive-card-box {
+            max-width: 185px;
+            cursor: pointer;
+
+            .archive-card-img {
+                max-height: 185px;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    box-shadow: 0 7px 17px -8px rgba(0, 0, 0, 0.8);
+                    transition: 0.6s ease-in-out;
+                }
+
+                .backtext {
+                    position: absolute;
+                    top: 0;
+                    height: 185px;
+                    overflow: hidden;
+                    @include flex;
+                    background-color: rgba(0, 0, 0, 0.85);
+                    transform: rotateY(180deg);
+                    transition: 0.6s ease-in-out;
+                    backface-visibility: hidden;
+
+                    p {
+                        @include font16;
+                        font-weight: 700;
+                        line-height: 22px;
+                        letter-spacing: 0.5;
+                        text-align: center;
+                        padding: 0 10px;
+                        color: var(--color-white);
+                    }
+                }
+
+                &:hover {
+                    img {
+                        transform: rotateY(180deg);
+                        transition: 0.4s ease-in-out;
+                    }
+
+                    .backtext {
+                        transform: rotateY(0deg);
+                        transition: 0.4s ease-in-out;
+                    }
+                }
+            }
+
+            h3 {
+                padding: 18px 0 5px 0;
+                @include font15;
+                line-height: 1.2;
+                letter-spacing: 0.5px;
+                font-weight: 600;
+                color: var(--bgcolor-sidebar);
+            }
+
+            &:hover {
+                h3 {
+                    color: var(--font-color3);
+                }
+            }
+        }
+    }
+}

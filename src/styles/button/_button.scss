@@ -775,3 +775,23 @@
         }
     }
 }
+
+.music-box-button {
+    button {
+        width: 100%;
+        padding: 11px;
+        border: transparent;
+        border-radius: 6px;
+        @include flex-center;
+        gap: 8px;
+        background-color: var(--bgcolor18);
+        color: var(--color-white);
+        @include font15;
+        font-weight: 600;
+        cursor: pointer;
+
+        img {
+            width: 13px;
+        }
+    }
+}

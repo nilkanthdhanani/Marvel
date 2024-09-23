@@ -1,6 +1,6 @@
 import React from 'react';
 import './adventure.scss';
-import { booksImg11, booksNews, booksNews1, booksNews2 } from '../../../assets/images/imageJS/books';
+import { booksImg11, booksNews, booksNews1, booksNews2 } from '../../../assets/images/imageJS/booksImg';
 
 export default function SpecialtyBooks() {
   return (
